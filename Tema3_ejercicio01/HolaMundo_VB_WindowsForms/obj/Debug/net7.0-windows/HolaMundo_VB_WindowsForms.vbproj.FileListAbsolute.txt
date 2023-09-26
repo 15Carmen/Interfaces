@@ -1,0 +1,16 @@
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\bin\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.exe
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\bin\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.deps.json
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\bin\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.runtimeconfig.json
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\bin\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.dll
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\bin\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.pdb
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.Form1.resources
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.vbproj.GenerateResource.cache
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.AssemblyInfoInputs.cache
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.AssemblyInfo.vb
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.vbproj.CoreCompileInputs.cache
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.dll
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\refint\HolaMundo_VB_WindowsForms.dll
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.pdb
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\HolaMundo_VB_WindowsForms.genruntimeconfig.cache
+C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_VB_WindowsForms\obj\Debug\net7.0-windows\ref\HolaMundo_VB_WindowsForms.dll
