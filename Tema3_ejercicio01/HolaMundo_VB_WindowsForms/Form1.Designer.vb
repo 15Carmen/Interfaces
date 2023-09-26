@@ -22,18 +22,18 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Button1 = New Button()
+        BotonSaludo = New Button()
         TextBox1 = New TextBox()
         SuspendLayout()
         ' 
-        ' Button1
+        ' BotonSaludo
         ' 
-        Button1.Location = New Point(631, 157)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(121, 61)
-        Button1.TabIndex = 0
-        Button1.Text = "Salu2"
-        Button1.UseVisualStyleBackColor = True
+        BotonSaludo.Location = New Point(631, 157)
+        BotonSaludo.Name = "BotonSaludo"
+        BotonSaludo.Size = New Size(121, 61)
+        BotonSaludo.TabIndex = 0
+        BotonSaludo.Text = "Salu2"
+        BotonSaludo.UseVisualStyleBackColor = True
         ' 
         ' TextBox1
         ' 
@@ -48,13 +48,13 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(TextBox1)
-        Controls.Add(Button1)
+        Controls.Add(BotonSaludo)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BotonSaludo As Button
     Friend WithEvents TextBox1 As TextBox
 End Class
