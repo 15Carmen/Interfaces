@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6UPkIkFKGZJaT6rVO18d+TKzEXMNy3cJHQZKp1Ow7yryQEAdv2fSIjLi43vpkAvCao8i5O/1jsXfVfRikKbKXg==",
+  "dgSpecHash": "m8fid6SYEOhHYGW4//4G6Bind/LWJoIalaEV2wMY1KEYprDLGYZBDLj7aFHIS7Iet4HrhK9tLLH+5APVUkGDaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cmartin\\IdeaProjects\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj",
+  "projectFilePath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\cmartin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\cmartin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\cmnbo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\cmnbo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

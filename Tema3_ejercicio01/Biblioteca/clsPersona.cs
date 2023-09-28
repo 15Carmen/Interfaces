@@ -47,8 +47,8 @@ namespace Biblioteca
         #region funciones y metodos
         /// <summary>
         /// Función que devuelve la concatenación del atributo nombre y del atributo apellido
-        /// Precondiciones: 
-        /// Postcondiciones: 
+        /// Precondiciones: ninguna
+        /// Postcondiciones: La función no puede devolver una cadena vacía
         /// </summary>
         /// <param name="nombre"></param>
         /// <param name="apellidos"></param>
