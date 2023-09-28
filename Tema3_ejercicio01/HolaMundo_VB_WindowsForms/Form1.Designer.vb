@@ -22,39 +22,51 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        BotonSaludo = New Button()
-        TextBox1 = New TextBox()
+        btnSaludar = New Button()
+        txtNombre = New TextBox()
+        LabelNombre = New Label()
         SuspendLayout()
         ' 
-        ' BotonSaludo
+        ' btnSaludar
         ' 
-        BotonSaludo.Location = New Point(631, 157)
-        BotonSaludo.Name = "BotonSaludo"
-        BotonSaludo.Size = New Size(121, 61)
-        BotonSaludo.TabIndex = 0
-        BotonSaludo.Text = "Salu2"
-        BotonSaludo.UseVisualStyleBackColor = True
+        btnSaludar.Location = New Point(631, 157)
+        btnSaludar.Name = "btnSaludar"
+        btnSaludar.Size = New Size(121, 61)
+        btnSaludar.TabIndex = 0
+        btnSaludar.Text = "Saludo"
+        btnSaludar.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' txtNombre
         ' 
-        TextBox1.Location = New Point(51, 177)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(553, 23)
-        TextBox1.TabIndex = 1
+        txtNombre.Location = New Point(127, 177)
+        txtNombre.Name = "txtNombre"
+        txtNombre.Size = New Size(477, 23)
+        txtNombre.TabIndex = 1
+        ' 
+        ' LabelNombre
+        ' 
+        LabelNombre.AutoSize = True
+        LabelNombre.Location = New Point(46, 180)
+        LabelNombre.Name = "LabelNombre"
+        LabelNombre.Size = New Size(54, 15)
+        LabelNombre.TabIndex = 2
+        LabelNombre.Text = "Nombre:"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(TextBox1)
-        Controls.Add(BotonSaludo)
+        Controls.Add(LabelNombre)
+        Controls.Add(txtNombre)
+        Controls.Add(btnSaludar)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents BotonSaludo As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btnSaludar As Button
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents LabelNombre As Label
 End Class
