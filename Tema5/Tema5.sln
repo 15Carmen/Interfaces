@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema5_Ejercicio1_HelloWorld", "Tema5_Ejercicio1_HelloWorld\Tema5_Ejercicio1_HelloWorld.csproj", "{BE1865CA-EE7F-42DC-AC91-5168D56ACA1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca", "Biblioteca\Biblioteca.csproj", "{2A6210EB-4DA0-442C-ACC3-C92678CB5A85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE1865CA-EE7F-42DC-AC91-5168D56ACA1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE1865CA-EE7F-42DC-AC91-5168D56ACA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE1865CA-EE7F-42DC-AC91-5168D56ACA1D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BE1865CA-EE7F-42DC-AC91-5168D56ACA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE1865CA-EE7F-42DC-AC91-5168D56ACA1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE1865CA-EE7F-42DC-AC91-5168D56ACA1D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2A6210EB-4DA0-442C-ACC3-C92678CB5A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6210EB-4DA0-442C-ACC3-C92678CB5A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6210EB-4DA0-442C-ACC3-C92678CB5A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6210EB-4DA0-442C-ACC3-C92678CB5A85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27D12743-5596-4CCE-9B84-C75625F4BED3}
+	EndGlobalSection
+EndGlobal
