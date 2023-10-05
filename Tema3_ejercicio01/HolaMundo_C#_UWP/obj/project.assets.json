@@ -6274,7 +6274,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -10341,18 +10341,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cmnbo\\.nuget\\packages\\": {},
+    "C:\\Users\\cmartin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\HolaMundo_C#_UWP\\HolaMundo_CSharp_UWP.csproj",
+      "projectUniqueName": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema3_ejercicio01\\HolaMundo_C#_UWP\\HolaMundo_CSharp_UWP.csproj",
       "projectName": "HolaMundo_C#_UWP",
-      "projectPath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\HolaMundo_C#_UWP\\HolaMundo_CSharp_UWP.csproj",
-      "packagesPath": "C:\\Users\\cmnbo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\HolaMundo_C#_UWP\\obj\\",
+      "projectPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema3_ejercicio01\\HolaMundo_C#_UWP\\HolaMundo_CSharp_UWP.csproj",
+      "packagesPath": "C:\\Users\\cmartin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema3_ejercicio01\\HolaMundo_C#_UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10360,7 +10360,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\cmnbo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cmartin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10374,8 +10374,8 @@
       "frameworks": {
         "uap10.0.17763": {
           "projectReferences": {
-            "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj": {
-              "projectPath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj"
+            "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj": {
+              "projectPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj"
             }
           }
         }

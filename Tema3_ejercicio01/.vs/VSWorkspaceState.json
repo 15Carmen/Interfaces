@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Biblioteca",
     "\\Biblioteca\\bin",
     "\\Biblioteca\\obj",
     "\\HolaMundo_C#_WPF"
   ],
-  "SelectedNode": "\\HolaMundo_C#_WPF\\MainWindow.xaml.cs",
+  "SelectedNode": "\\Biblioteca\\clsPersona.cs",
   "PreviewInSolutionExplorer": false
 }

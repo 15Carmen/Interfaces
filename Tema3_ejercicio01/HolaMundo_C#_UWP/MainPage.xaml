@@ -6,9 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1176" Height="400">
 
     <Grid>
+        <Button x:Name="boton" Content="Saludo" Margin="685,580,0,0" VerticalAlignment="Top" Click="boton_Click" Height="112" Width="167"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="418,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="227"/>
+        <TextBlock x:Name="etiqueta" HorizontalAlignment="Left" Margin="237,194,0,0" TextWrapping="Wrap" Text="Introduce tu nombre" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtError" HorizontalAlignment="Left" Margin="819,177,0,0" TextWrapping="Wrap" Text="Debes introducir un nombre" VerticalAlignment="Top" Foreground="#FFDA0000"/>
 
     </Grid>
 </Page>

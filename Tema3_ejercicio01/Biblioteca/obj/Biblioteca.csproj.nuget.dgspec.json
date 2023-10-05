@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj": {}
+    "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj": {
+    "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj",
-        "packagesPath": "C:\\Users\\cmnbo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\obj\\",
+        "projectPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\Biblioteca.csproj",
+        "packagesPath": "C:\\Users\\cmartin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema3_ejercicio01\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cmnbo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cmartin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

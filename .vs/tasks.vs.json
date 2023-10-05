@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarea-Tema3_ejercicio01",
+      "appliesTo": "Tema3_ejercicio01/",
+      "type": "launch"
+    }
+  ]
+}

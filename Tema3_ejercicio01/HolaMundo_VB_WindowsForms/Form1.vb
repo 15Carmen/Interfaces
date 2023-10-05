@@ -1,18 +1,16 @@
-﻿Public Class Form1
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtNombre.TextChanged
+﻿
+Imports Biblioteca
 
+
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim nombre = New clsPersona
+        nombre.Nombre = txtNombre.Text
+        If nombre.Nombre = "" Or nombre.Nombre = " " Then
+            advertencia.Text = "El nombre no puede estar vacío"
+        Else
+            MessageBox.Show("Hola " & nombre.Nombre)
+        End If
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub BotonSaludo_Click(sender As Object, e As EventArgs) Handles btnSaludar.Click
-        MessageBox.Show("Hola Mundo", "saluditos")
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles LabelNombre.Click
-
-    End Sub
 End Class

@@ -18,3 +18,11 @@ C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\
 C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\HolaMundo_CSharp_WPF.pdb
 C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\HolaMundo_CSharp_WPF.genruntimeconfig.cache
 C:\Users\cmartin\IdeaProjects\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\ref\HolaMundo_CSharp_WPF.dll
+C:\Users\cmartin\GitHub\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\cmartin\GitHub\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\cmartin\GitHub\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\HolaMundo_CSharp_WPF_MarkupCompile.cache
+C:\Users\cmartin\GitHub\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\HolaMundo_CSharp_WPF_MarkupCompile.lref
+C:\Users\cmartin\GitHub\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\HolaMundo_CSharp_WPF.dll
+C:\Users\cmartin\GitHub\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\refint\HolaMundo_CSharp_WPF.dll
+C:\Users\cmartin\GitHub\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\HolaMundo_CSharp_WPF.pdb
+C:\Users\cmartin\GitHub\Interfaces\Tema3_ejercicio01\HolaMundo_C#_WPF\obj\Debug\net7.0-windows\HolaMundo_CSharp_WPF.csproj.AssemblyReference.cache
