@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\cmartin\GitHub\Interfaces\Tema5\Tema5_Ejercicio2_Controles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-06T08:07:33.880</Modified>
+      <Modified>2023-10-10T10:48:19.889</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema5\Tema5_Ejercicio2_Controles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Tema5_Ejercicio2_Controles.dll">
       <PackagePath>Tema5_Ejercicio2_Controles.dll</PackagePath>
-      <Modified>2023-10-06T08:07:32.952</Modified>
+      <Modified>2023-10-10T10:48:18.577</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema5\Tema5_Ejercicio2_Controles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Tema5_Ejercicio2_Controles.exe</PackagePath>
-      <Modified>2023-10-06T08:07:32.959</Modified>
+      <Modified>2023-10-10T10:48:18.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema5\Tema5_Ejercicio2_Controles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Tema5_Ejercicio2_Controles.deps.json">
       <PackagePath>Tema5_Ejercicio2_Controles.deps.json</PackagePath>

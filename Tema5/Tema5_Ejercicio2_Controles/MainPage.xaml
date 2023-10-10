@@ -4,10 +4,7 @@
              x:Class="Tema5_Ejercicio2_Controles.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            HorizontalOptions="Center"
-          
-            VerticalOptions="Center">
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
 
             <Label Text="Slider" FontSize="18"/>
             <Slider 
