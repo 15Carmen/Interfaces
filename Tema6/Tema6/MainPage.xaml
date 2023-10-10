@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tema6.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0">
+
+            <Button 
+                x:Name="btn1" 
+                Text="Boton1" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" 
+                BackgroundColor="CornflowerBlue" 
+                HeightRequest="70" 
+                WidthRequest="200" 
+                FontFamily="Verdana" 
+                FontSize="16" 
+                BorderColor="Yellow"
+                Margin="30"
+                IsVisible="true"/>
+
+            <Button x:Name="btn2" Clicked="ClickedBtn2">
+                <Button.Text>Boton2</Button.Text>
+                <Button.HorizontalOptions>Center</Button.HorizontalOptions>
+                <Button.VerticalOptions>Center</Button.VerticalOptions>
+                <Button.BackgroundColor>CornflowerBlue</Button.BackgroundColor>
+                <Button.HeightRequest>70</Button.HeightRequest>
+                <Button.WidthRequest>200</Button.WidthRequest>
+                <Button.FontFamily>Verdana</Button.FontFamily>
+                <Button.BorderColor>Yellow</Button.BorderColor>
+                <Button.Margin>30</Button.Margin>
+            </Button>
+
+            <Button 
+                x:Name="btn3" 
+                Text="Boton3"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                BackgroundColor="CornflowerBlue"
+                HeightRequest="70" 
+                WidthRequest="200"
+                FontFamily="Verdana" 
+                FontSize="16" 
+                BorderColor="Yellow"
+                Margin="30"
+                IsVisible="false"
+                Clicked="ClickedBtn3"/> 
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
