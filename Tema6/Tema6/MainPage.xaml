@@ -4,9 +4,11 @@
              x:Class="Tema6.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0">
+        <VerticalStackLayout 
+            x:Name= "botones"
+            Spacing= "25"
+            Padding= "30,0"
+            VerticalOptions="Center">
 
             <Button 
                 x:Name="btn1" 
@@ -19,8 +21,7 @@
                 FontFamily="Verdana" 
                 FontSize="16" 
                 BorderColor="Yellow"
-                Margin="30"
-                IsVisible="true"/>
+                Margin="30"/>
 
             <Button x:Name="btn2" Clicked="ClickedBtn2">
                 <Button.Text>Boton2</Button.Text>
@@ -30,24 +31,11 @@
                 <Button.HeightRequest>70</Button.HeightRequest>
                 <Button.WidthRequest>200</Button.WidthRequest>
                 <Button.FontFamily>Verdana</Button.FontFamily>
+                <Button.FontSize>16</Button.FontSize>
                 <Button.BorderColor>Yellow</Button.BorderColor>
                 <Button.Margin>30</Button.Margin>
             </Button>
 
-            <Button 
-                x:Name="btn3" 
-                Text="Boton3"
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"
-                BackgroundColor="CornflowerBlue"
-                HeightRequest="70" 
-                WidthRequest="200"
-                FontFamily="Verdana" 
-                FontSize="16" 
-                BorderColor="Yellow"
-                Margin="30"
-                IsVisible="false"
-                Clicked="ClickedBtn3"/> 
         </VerticalStackLayout>
     </ScrollView>
 
