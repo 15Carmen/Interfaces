@@ -11,6 +11,12 @@
 
         Boolean btnYaCreado = false;
 
+
+        /// <summary>
+        /// Método que crea al clickar el boton 2 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ClickedBtn2(object sender, EventArgs e)
         {
             //btn3.IsVisible = true;
