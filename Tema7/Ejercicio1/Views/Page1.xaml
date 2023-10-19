@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejercicio1.Views.Page1"
-             Title="Page1">
+             Title="Page1"
+             IconImageSource="bombastic_side_eye.png">
     <VerticalStackLayout>
         <Label 
             Text="Hola soy la Pagina 1"

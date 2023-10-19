@@ -5,6 +5,8 @@
         public AppShell()
         {
             InitializeComponent();
+
+            MainPage = new NavigationPage(new MainPage());
         }
     }
 }

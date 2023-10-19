@@ -322,3 +322,6 @@ C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0
 C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bombastic_side_eye.scale-100.png
+C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\shocked_pikachu.scale-100.png
+C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\this_is_fine.scale-100.png

@@ -1,1 +1,0 @@
-C:\Users\cmartin\GitHub\Interfaces\Tema7\Tema7\Ejercicio1_TabbedPage.csproj;x64

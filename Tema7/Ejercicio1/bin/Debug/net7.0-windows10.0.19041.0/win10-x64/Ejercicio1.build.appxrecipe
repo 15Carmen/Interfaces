@@ -862,6 +862,9 @@
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bombastic_side_eye.scale-100.png">
+      <PackagePath>bombastic_side_eye.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -876,6 +879,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\shocked_pikachu.scale-100.png">
+      <PackagePath>shocked_pikachu.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\this_is_fine.scale-100.png">
+      <PackagePath>this_is_fine.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
