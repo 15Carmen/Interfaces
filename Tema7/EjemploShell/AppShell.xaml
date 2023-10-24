@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="EjemploShell.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:EjemploShell"
+    Shell.FlyoutBehavior="Disabled">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Domestic"
+             Icon="paw.png">
+            <ShellContent Title="Cats"
+                          Icon="michi_gafas.png"
+                          ContentTemplate="{DataTemplate views:CatsPage}" />
+            <ShellContent Title="Dogs"
+                          Icon="this_is_fine.png"
+                          ContentTemplate="{DataTemplate views:DogsPage}" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>

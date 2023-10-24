@@ -16,11 +16,34 @@
                 FontSize="32"
                 HorizontalOptions="Center" />
 
+            <Entry
+                x:Name="txtNombre"
+                Text=""
+                WidthRequest="200"
+                HeightRequest="20"/>
+
+            <Entry
+                x:Name="txtApellidos"
+                Text=""
+                WidthRequest="200"
+                HeightRequest="20"/>
 
             <Button
                 x:Name="btnToTabbedPage"
                 Text="Ir a TabbedPage"
-                Clicked="OnClick"
+                Clicked="btnTabbedPageClick"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="btnToFourPage"
+                Text="Ir a la pagina 4"
+                Clicked="btn4PageClick"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="btnToFivePage"
+                Text="Ir a la pagina 5"
+                Clicked="btn5PageClick"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

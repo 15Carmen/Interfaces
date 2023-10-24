@@ -5,7 +5,14 @@
              Title="Page3">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Hola, soy la página 3!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+            x:Name="btnToMainPage"
+            Text="Ir a MainPage"
+            Clicked="btnMainClick"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>

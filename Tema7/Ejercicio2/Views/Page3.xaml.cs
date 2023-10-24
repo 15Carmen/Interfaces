@@ -6,4 +6,10 @@ public partial class Page3 : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void btnMainClick(object sender, EventArgs e)
+    {
+
+        await Navigation.PushAsync(new MainPage());
+    }
 }

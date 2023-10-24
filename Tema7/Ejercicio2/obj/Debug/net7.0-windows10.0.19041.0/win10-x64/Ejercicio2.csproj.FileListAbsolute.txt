@@ -325,3 +325,5 @@ C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\obj\Debug\net7.0-windows10.0
 C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bombastic_side_eye.scale-100.png
 C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\shocked_pikachu.scale-100.png
 C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\this_is_fine.scale-100.png
+C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Biblioteca.dll
+C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Biblioteca.pdb
