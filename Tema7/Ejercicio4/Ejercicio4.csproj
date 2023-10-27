@@ -53,7 +53,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Views\" />
+	  <Compile Update="Views\MenuFlyout\FlyoutMenuPage.xaml.cs">
+	    <DependentUpon>FlyoutMenuPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\MenuFlyout\FlyoutMenuPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
