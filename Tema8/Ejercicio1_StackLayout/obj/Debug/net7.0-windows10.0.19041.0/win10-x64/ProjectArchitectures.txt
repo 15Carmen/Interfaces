@@ -1,0 +1,1 @@
+C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio1_StackLayout\Ejercicio1_StackLayout.csproj;x64
