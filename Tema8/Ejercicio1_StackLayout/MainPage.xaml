@@ -3,49 +3,56 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejercicio1_StackLayout.MainPage">
 
-    <Frame BackgroundColor="Purple" Padding="10" >
-        <Frame BackgroundColor="White">
 
-            <StackLayout
-                     Spacing="25"
-                     Padding="30,0"
-                     VerticalOptions="Center">
+    <Border Stroke="Purple" StrokeShape="RoundRectangle 20, 20, 20, 0" StrokeThickness="5" Padding="10" Margin="10">
+        
 
-                    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                        <Button
-                          x:Name="Boton1"
-                          Text="Boton 1"
-                          HorizontalOptions="Center" />
+        <StackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+        
 
-                        <Button
-                           x:Name="Boton2"
-                           Text="Boton 2"
-                           HorizontalOptions="Center" />
+            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Button
+                            x:Name="Boton1"
+                            Text="Boton 1"
+                            HorizontalOptions="Center"
+                            BorderWidth="4"
+                            BorderColor="Black"
+                            Margin="10"/>
 
-                        <Button
-                           x:Name="Boton3"
-                           Text="Boton 3"
-                           HorizontalOptions="Center" />
+                <Button
+                            x:Name="Boton2"
+                            Text="Boton 2"
+                            HorizontalOptions="Center"
+                            Margin="10"/>
 
-                    </VerticalStackLayout>
+                <Button
+                            x:Name="Boton3"
+                            Text="Boton 3"
+                            HorizontalOptions="Center"
+                            Margin="10"/>
 
-                    <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            </VerticalStackLayout>
 
-                        <Label 
-                         Text="Nombre: " 
-                         TextColor="Black" 
-                         Padding="10"/>
+            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
-                        <Entry 
-                         BackgroundColor="AliceBlue" 
-                         TextColor="Black" 
-                         MinimumWidthRequest="200"/>
+                <Label 
+                            Text="Nombre: " 
+                            TextColor="Black" 
+                            Padding="10"/>
 
-                    </HorizontalStackLayout>
+                <Entry 
+                            BackgroundColor="AliceBlue" 
+                            TextColor="Black" 
+                            MinimumWidthRequest="200"/>
 
-                </StackLayout>
+            </HorizontalStackLayout>
 
-        </Frame>
-    </Frame>
+        </StackLayout>
+
+
+    </Border>
 
 </ContentPage>

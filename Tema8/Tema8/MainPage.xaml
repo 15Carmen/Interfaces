@@ -4,13 +4,14 @@
              x:Class="Tema8.MainPage">
 
     <FlexLayout Direction="Column">
+        
         <Label FlexLayout.Basis="50"
                Text="HEADER"
                TextColor="BlueViolet"
                BackgroundColor="Aquamarine"
                HorizontalTextAlignment="Center" />
 
-        <!--El grow tiene el valor 0 predeterminado, y al ponerlo en 1 sirve para que ocupe todo el espacio disponible-->
+
         <FlexLayout FlexLayout.Grow="1">
             <Label FlexLayout.Basis="50"
                    Text="CONTENT"
@@ -19,16 +20,15 @@
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    FlexLayout.Grow="1" />
-           
-            <!--el Order es un valor entero predeterminado en 0, al ponerlo en -1 hace que aparezca como el primer elemento de la fila-->
+  
             <Label FlexLayout.Basis="50"
                      FlexLayout.Order="-1"  
                      BackgroundColor="Blue"/>
-                
-            <!--el Basis sirve para ajustar el tamaño-->
+          
             <Label FlexLayout.Basis="50"
                      BackgroundColor="Green" />
         </FlexLayout>
+        
         <Label FlexLayout.Basis="50"
                    Text="FOOTER"
                    TextColor="BlueViolet"
