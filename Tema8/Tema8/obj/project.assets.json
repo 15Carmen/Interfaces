@@ -24028,9 +24028,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema8\\Tema8\\Tema8.csproj",
-      "projectName": "Tema8",
-      "projectPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema8\\Tema8\\Tema8.csproj",
+      "projectUniqueName": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema8\\Tema8\\Ejercicio2_FlexLayout.csproj",
+      "projectName": "Ejercicio2_FlexLayout",
+      "projectPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema8\\Tema8\\Ejercicio2_FlexLayout.csproj",
       "packagesPath": "C:\\Users\\cmartin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema8\\Tema8\\obj\\",
       "projectStyle": "PackageReference",

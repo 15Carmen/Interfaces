@@ -7,7 +7,7 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {},
     ".NETCoreApp,Version=v7.0/win10-x64": {
-      "Tema8/1.0": {
+      "Ejercicio2_FlexLayout/1.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
@@ -24,7 +24,7 @@
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.29"
         },
         "runtime": {
-          "Tema8.dll": {}
+          "Ejercicio2_FlexLayout.dll": {}
         }
       },
       "runtimepack.Microsoft.NETCore.App.Runtime.win-x64/7.0.11": {
@@ -998,7 +998,7 @@
     }
   },
   "libraries": {
-    "Tema8/1.0": {
+    "Ejercicio2_FlexLayout/1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

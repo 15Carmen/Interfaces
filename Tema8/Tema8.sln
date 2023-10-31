@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema8", "Tema8\Tema8.csproj", "{C9538CF4-EEC1-4CDD-8D21-4907C01F2C85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejercicio2_FlexLayout", "Tema8\Ejercicio2_FlexLayout.csproj", "{C9538CF4-EEC1-4CDD-8D21-4907C01F2C85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio1_StackLayout", "Ejercicio1_StackLayout\Ejercicio1_StackLayout.csproj", "{C9B6BC7C-2466-4285-AACD-DB88FC2B755F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejercicio1_StackLayout", "Ejercicio1_StackLayout\Ejercicio1_StackLayout.csproj", "{C9B6BC7C-2466-4285-AACD-DB88FC2B755F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
