@@ -6,16 +6,16 @@
     <AbsoluteLayout Margin="20">
         <!-- AbsoluteLayout.LayoutBounds = distancia desde la izq, distancia desde arriba, ancho, alto -->
         <BoxView Color="Red"
-                 AbsoluteLayout.LayoutBounds="0, 0, 0.25, 0.25" 
+                 AbsoluteLayout.LayoutBounds="0, 0, 0.2, 0.25" 
                  AbsoluteLayout.LayoutFlags="All"/>
         <BoxView Color="Blue"
-                 AbsoluteLayout.LayoutBounds="0.25, 0, 0.5, 0.25" 
+                 AbsoluteLayout.LayoutBounds="0.55, 0, 0.65, 0.25" 
                  AbsoluteLayout.LayoutFlags="All"/>
         <BoxView Color="Green"
-                 AbsoluteLayout.LayoutBounds="0, 0.3, 0.625, 0.25" 
+                 AbsoluteLayout.LayoutBounds="0, 0.333, 0.843, 0.25" 
                  AbsoluteLayout.LayoutFlags="All"/>
         <BoxView Color="Yellow"
-                 AbsoluteLayout.LayoutBounds="0.5, 0.95, 0.5, 0.5" 
+                 AbsoluteLayout.LayoutBounds="1, 1, 0.8, 0.5" 
                  AbsoluteLayout.LayoutFlags="All"/>
        
 
