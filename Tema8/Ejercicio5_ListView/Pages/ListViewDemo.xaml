@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio5_ListView.Pages.ListViewDemo"
+             Title="ListViewDemo">
+    <ListView x:Name="listView">
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <HorizontalStackLayout BackgroundColor="Bisque" VerticalOptions="Center" >
+                        <Label Text="{Binding Nombre}" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center" Padding="10"/>
+                        <Label Text="{Binding Apellidos}" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center" Padding="10"/>
+                    </HorizontalStackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        
+    </ListView>
+</ContentPage>
