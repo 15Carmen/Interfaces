@@ -32,12 +32,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio5_ListView.MainPa
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/cmnbo/GitHub/Interfaces/Tema8/Ejercicio5_ListView/Pages/ListViewDemo.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio5_ListView.Pages.ListViewDemo.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\ListViewDemo.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\ListViewDemo.xaml
-
 [C:/Users/cmnbo/GitHub/Interfaces/Tema8/Ejercicio5_ListView/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio5_ListView.Resources.Styles.Colors.xaml

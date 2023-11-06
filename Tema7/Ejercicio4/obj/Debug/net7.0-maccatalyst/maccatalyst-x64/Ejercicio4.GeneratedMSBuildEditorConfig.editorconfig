@@ -40,7 +40,7 @@ build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio4.Resources.Style
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/cmartin/GitHub/Interfaces/Tema7/Ejercicio4/Views/MenuFlyout/FlyoutMenuPage.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema7/Ejercicio4/Views/MenuFlyout/FlyoutMenuPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio4.Views.MenuFlyout.FlyoutMenuPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\MenuFlyout\FlyoutMenuPage.xaml
