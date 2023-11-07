@@ -9,8 +9,8 @@
             <DataTemplate>
                 <ViewCell>
                     <HorizontalStackLayout BackgroundColor="Bisque" VerticalOptions="Center" >
-                        <Label Text="{Binding Nombre}" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center" Padding="10"/>
-                        <Label Text="{Binding Apellidos}" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center" Padding="10"/>
+                        <Label Text="{Binding Nombre}" FontAttributes="Bold" HorizontalOptions="Center" Padding="10"/>
+                        <Label Text="{Binding Apellidos}" FontAttributes="Bold" HorizontalOptions="Center" Padding="10"/>
                     </HorizontalStackLayout>
                 </ViewCell>
             </DataTemplate>
