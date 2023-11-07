@@ -8,45 +8,45 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EjemploShell
-build_property.ProjectDir = C:\Users\cmnbo\GitHub\Interfaces\Tema7\EjemploShell\
+build_property.ProjectDir = C:\Users\cmartin\GitHub\Interfaces\Tema7\EjemploShell\
 
-[C:/Users/cmnbo/GitHub/Interfaces/Tema7/EjemploShell/App.xaml]
+[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = EjemploShell.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/cmnbo/GitHub/Interfaces/Tema7/EjemploShell/AppShell.xaml]
+[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = EjemploShell.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/cmnbo/GitHub/Interfaces/Tema7/EjemploShell/CatsPage.xaml]
+[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/CatsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = EjemploShell.CatsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = CatsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = CatsPage.xaml
 
-[C:/Users/cmnbo/GitHub/Interfaces/Tema7/EjemploShell/DogsPage.xaml]
+[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/DogsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = EjemploShell.DogsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = DogsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = DogsPage.xaml
 
-[C:/Users/cmnbo/GitHub/Interfaces/Tema7/EjemploShell/MainPage.xaml]
+[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = EjemploShell.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/cmnbo/GitHub/Interfaces/Tema7/EjemploShell/Resources/Styles/Colors.xaml]
+[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = EjemploShell.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/cmnbo/GitHub/Interfaces/Tema7/EjemploShell/Resources/Styles/Styles.xaml]
+[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = EjemploShell.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

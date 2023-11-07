@@ -1,1 +1,1 @@
-C:\Users\cmnbo\GitHub\Interfaces\Tema7\Ejercicio2\Ejercicio2.csproj;x64
+C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\Ejercicio2.csproj;x64

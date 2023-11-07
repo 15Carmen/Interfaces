@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tema8_PlacasSolares.Views.Login"
+             Title="Login"
+             BackgroundColor="LightGoldenrodYellow">
+    
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center"  Padding="20">
+
+        <Label
+            Text="Solarius"
+            TextColor="Orange"
+            FontSize="Header"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+        
+        <Entry
+            Margin="20"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Placeholder="Usuario"
+            WidthRequest="200"
+            BackgroundColor="WhiteSmoke"
+            TextColor="Black"
+            />
+
+        <Entry
+            Margin="20"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Placeholder="Contraseña"
+            IsPassword="True"
+            WidthRequest="200"
+            BackgroundColor="WhiteSmoke"
+            TextColor="Black"/>
+
+        <Button
+            Margin="20"
+            x:Name="btnAcceder"
+            Clicked="clickEntrar"
+            Text="Acceder"
+            HorizontalOptions="Center"
+            TextColor="White"
+            BackgroundColor="LightCoral"/>
+
+    </VerticalStackLayout>
+</ContentPage>

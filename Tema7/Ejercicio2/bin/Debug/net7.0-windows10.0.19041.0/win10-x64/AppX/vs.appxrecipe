@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-27T06:23:02.225</Modified>
+      <Modified>2023-11-07T12:18:00.536</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-24T12:15:53.272</Modified>
+      <Modified>2023-11-07T12:18:00.328</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio2.runtimeconfig.json">
       <PackagePath>Ejercicio2.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-24T11:46:52.896</Modified>
+      <Modified>2023-11-07T12:18:00.272</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio2.dll">
       <PackagePath>Ejercicio2.dll</PackagePath>
-      <Modified>2023-10-24T12:15:52.253</Modified>
+      <Modified>2023-11-07T12:17:59.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Ejercicio2.exe</PackagePath>
-      <Modified>2023-10-24T12:15:52.272</Modified>
+      <Modified>2023-11-07T12:17:59.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio2.deps.json">
       <PackagePath>Ejercicio2.deps.json</PackagePath>
-      <Modified>2023-10-24T11:50:35.099</Modified>
+      <Modified>2023-11-07T12:18:00.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.11\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -923,7 +923,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Biblioteca\bin\Debug\net7.0\Biblioteca.dll">
       <PackagePath>Biblioteca.dll</PackagePath>
-      <Modified>2023-10-24T11:46:47.476</Modified>
+      <Modified>2023-11-07T12:17:55.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.92\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
