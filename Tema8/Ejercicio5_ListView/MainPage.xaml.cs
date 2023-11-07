@@ -1,24 +1,18 @@
-﻿namespace Ejercicio5_ListView
+﻿using Ejercicio5_ListView.DAL;
+using Ejercicio5_ListView.Entidades;
+using System.Collections.ObjectModel;
+
+namespace Ejercicio5_ListView
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        ObservableCollection<clsPersona> Personas { get { return clsListadoPersonas.listaPersonas(); } }
 
         public MainPage()
         {
             InitializeComponent();
+            ListViewPersonas.ItemsSource = Personas; 
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
     }
 }

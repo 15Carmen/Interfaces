@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\anim\enterfromleft.xml
 C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\anim\enterfromright.xml
 C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\anim\exittoleft.xml
@@ -5,3 +6,12 @@ C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-an
 C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\layout\flyoutcontent.xml
 C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\layout\shellcontent.xml
 C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\values\strings.xml
+=======
+﻿C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\anim\enterfromleft.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\anim\enterfromright.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\anim\exittoleft.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\anim\exittoright.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\layout\flyoutcontent.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\layout\shellcontent.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\151\jl\res\values\strings.xml
+>>>>>>> 1338224e29c4ae7fd7ed5f8e1f7708bccec434fb

@@ -4,7 +4,11 @@
     "includedFrameworks": [
       {
         "name": "Microsoft.NETCore.App",
+<<<<<<< HEAD
         "version": "7.0.11"
+=======
+        "version": "7.0.13"
+>>>>>>> 1338224e29c4ae7fd7ed5f8e1f7708bccec434fb
       },
       {
         "name": "Microsoft.Maui.Core",

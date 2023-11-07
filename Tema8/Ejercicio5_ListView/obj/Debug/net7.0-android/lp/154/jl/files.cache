@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\anim\nav_default_enter_anim.xml
 C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\anim\nav_default_exit_anim.xml
 C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\anim\nav_default_pop_enter_anim.xml
@@ -10,3 +11,17 @@ C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-an
 C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\values\attr.xml
 C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\values\colors.xml
 C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\values\styles.xml
+=======
+﻿C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\anim\nav_default_enter_anim.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\anim\nav_default_exit_anim.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\anim\nav_default_pop_enter_anim.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\anim\nav_default_pop_exit_anim.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\drawable\maui_splash.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\drawable\maui_splash_image.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\layout\drawer_layout.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\layout\fragment_backstack.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\layout\navigationlayout.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\values\attr.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\values\colors.xml
+C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\obj\Debug\net7.0-android\lp\154\jl\res\values\styles.xml
+>>>>>>> 1338224e29c4ae7fd7ed5f8e1f7708bccec434fb
