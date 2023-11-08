@@ -1,5 +1,4 @@
 ﻿using Tema8_PlacasSolares.Views;
-
 namespace Tema8_PlacasSolares
 {
     public partial class App : Application
@@ -9,8 +8,6 @@ namespace Tema8_PlacasSolares
             InitializeComponent();
 
             MainPage = new NavigationPage(new Login());
-           
         }
-
     }
 }

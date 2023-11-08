@@ -12,42 +12,39 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Ejercicio5_ListView
-build_property.ProjectDir = C:\Users\cmartin\GitHub\Interfaces\Tema8\Ejercicio5_ListView\
+build_property.ProjectDir = C:\Users\cmnbo\GitHub\Interfaces\Tema8\Ejercicio5_ListView\
 
-[C:/Users/cmartin/GitHub/Interfaces/Tema8/Ejercicio5_ListView/App.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8/Ejercicio5_ListView/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio5_ListView.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/cmartin/GitHub/Interfaces/Tema8/Ejercicio5_ListView/AppShell.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8/Ejercicio5_ListView/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio5_ListView.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/cmartin/GitHub/Interfaces/Tema8/Ejercicio5_ListView/MainPage.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8/Ejercicio5_ListView/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio5_ListView.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-<<<<<<< Updated upstream
-[C:/Users/cmartin/GitHub/Interfaces/Tema8/Ejercicio5_ListView/Pages/ListViewDemo.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8/Ejercicio5_ListView/Pages/ListViewDemo.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio5_ListView.Pages.ListViewDemo.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ListViewDemo.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ListViewDemo.xaml
 
-=======
->>>>>>> Stashed changes
-[C:/Users/cmartin/GitHub/Interfaces/Tema8/Ejercicio5_ListView/Resources/Styles/Colors.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8/Ejercicio5_ListView/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio5_ListView.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/cmartin/GitHub/Interfaces/Tema8/Ejercicio5_ListView/Resources/Styles/Styles.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8/Ejercicio5_ListView/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Ejercicio5_ListView.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

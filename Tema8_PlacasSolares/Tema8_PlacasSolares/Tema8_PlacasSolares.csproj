@@ -16,7 +16,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.tema8_placassolares</ApplicationId>
-		<ApplicationIdGuid>49e9cd2c-b97f-4471-a9b0-9ee4fd7374c2</ApplicationIdGuid>
+		<ApplicationIdGuid>e9fbb9c7-c8b4-4bc4-b37e-9e488c88a076</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -49,7 +49,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\login.png" />
+	  <None Remove="Resources\Images\fondo_placas.png" />
+	  <None Remove="Resources\Images\pencil.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -57,10 +58,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\AppDetails.xaml">
+	  <MauiXaml Update="Views\Appointments.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Appointments.xaml">
+	  <MauiXaml Update="Views\Details.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Login.xaml">

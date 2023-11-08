@@ -16,7 +16,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.ejemploshell</ApplicationId>
-		<ApplicationIdGuid>e0833879-1106-4ed1-bcf1-dfd0e402e4da</ApplicationIdGuid>
+		<ApplicationIdGuid>2d198323-46c7-4404-9b53-8c0bc1d031cb</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -49,19 +49,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\michi_gafas.jpeg" />
-	  <None Remove="Resources\Images\this_is_fine.png" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="CatsPage.xaml">
+	  <MauiXaml Update="CactusPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="DogsPage.xaml">
+	  <MauiXaml Update="EnredaderasPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

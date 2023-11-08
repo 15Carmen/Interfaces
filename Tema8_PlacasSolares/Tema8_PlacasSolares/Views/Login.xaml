@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tema8_PlacasSolares.Views.Login"
              Title="Login"
-             BackgroundColor="LightGoldenrodYellow">
-    
+             BackgroundImageSource="fondo_placas.png">
     <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center"  Padding="20">
 
         <Label
@@ -13,7 +12,7 @@
             FontSize="Header"
             HorizontalTextAlignment="Center"
             VerticalTextAlignment="Center"/>
-        
+
         <Entry
             Margin="20"
             HorizontalOptions="Center"
@@ -22,6 +21,7 @@
             WidthRequest="200"
             BackgroundColor="WhiteSmoke"
             TextColor="Black"
+            x:Name="nombreUsuario"
             />
 
         <Entry
@@ -32,7 +32,9 @@
             IsPassword="True"
             WidthRequest="200"
             BackgroundColor="WhiteSmoke"
-            TextColor="Black"/>
+            TextColor="Black"
+            x:Name="password"
+            />
 
         <Button
             Margin="20"

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap rescap">
-  <Identity Name="49e9cd2c-b97f-4471-a9b0-9ee4fd7374c2" Publisher="CN=User Name" Version="1.0.0.1" />
-  <mp:PhoneIdentity PhoneProductId="022770B5-939F-4C82-B544-3128121BEE56" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="e9fbb9c7-c8b4-4bc4-b37e-9e488c88a076" Publisher="CN=User Name" Version="1.0.0.1" />
+  <mp:PhoneIdentity PhoneProductId="79FA02D4-D0E9-4D8A-A420-CE2F9974ED68" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Tema8_PlacasSolares</DisplayName>
     <PublisherDisplayName>User Name</PublisherDisplayName>

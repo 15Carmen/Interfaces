@@ -12,7 +12,4 @@
             <views:Login/>
         </ShellContent>
     </FlyoutItem>
-
-    
-
 </Shell>

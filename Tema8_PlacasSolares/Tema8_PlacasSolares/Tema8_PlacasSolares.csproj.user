@@ -12,6 +12,9 @@
     <MauiXaml Update="AppShell.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Platforms\Windows\App.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -21,10 +24,10 @@
     <MauiXaml Update="Resources\Styles\Styles.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\AppDetails.xaml">
+    <MauiXaml Update="Views\Appointments.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\Appointments.xaml">
+    <MauiXaml Update="Views\Details.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Login.xaml">
