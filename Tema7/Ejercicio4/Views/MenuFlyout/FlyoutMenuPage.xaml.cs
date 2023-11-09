@@ -1,8 +1,8 @@
 namespace Ejercicio4.Views.MenuFlyout;
 
-public partial class NewPage1 : ContentPage
+public partial class FlyoutMenuPage : ContentPage
 {
-	public NewPage1()
+	public FlyoutMenuPage()
 	{
 		InitializeComponent();
 	}

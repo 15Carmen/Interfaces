@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>107-24</Machine>
+    <Machine>107-25</Machine>
     <WindowsUser>cmartin</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio4\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-07T12:17:42.238</Modified>
+      <Modified>2023-11-09T09:15:06.134</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio4\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-07T12:17:41.969</Modified>
+      <Modified>2023-11-09T09:15:05.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio4\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio4.runtimeconfig.json">
       <PackagePath>Ejercicio4.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-07T12:17:41.787</Modified>
+      <Modified>2023-11-09T09:15:05.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio4\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio4.dll">
       <PackagePath>Ejercicio4.dll</PackagePath>
-      <Modified>2023-11-07T12:17:40.561</Modified>
+      <Modified>2023-11-09T09:15:04.134</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio4\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Ejercicio4.exe</PackagePath>
-      <Modified>2023-11-07T12:17:40.579</Modified>
+      <Modified>2023-11-09T09:15:04.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema7\Ejercicio4\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio4.deps.json">
       <PackagePath>Ejercicio4.deps.json</PackagePath>
-      <Modified>2023-11-07T12:17:41.680</Modified>
+      <Modified>2023-11-09T09:15:05.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.11\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

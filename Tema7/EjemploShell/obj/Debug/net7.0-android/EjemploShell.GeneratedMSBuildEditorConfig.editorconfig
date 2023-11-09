@@ -26,21 +26,13 @@ build_metadata.AdditionalFiles.ManifestResourceName = EjemploShell.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-<<<<<<< Updated upstream
-[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/CatsPage.xaml]
-=======
-[C:/Users/cmnbo/GitHub/Interfaces/Tema7/EjemploShell/CactusPage.xaml]
->>>>>>> Stashed changes
+[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/CactusPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = EjemploShell.CactusPage.xaml
 build_metadata.AdditionalFiles.TargetPath = CactusPage.xaml
 build_metadata.AdditionalFiles.RelativePath = CactusPage.xaml
 
-<<<<<<< Updated upstream
-[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/DogsPage.xaml]
-=======
-[C:/Users/cmnbo/GitHub/Interfaces/Tema7/EjemploShell/EnredaderasPage.xaml]
->>>>>>> Stashed changes
+[C:/Users/cmartin/GitHub/Interfaces/Tema7/EjemploShell/EnredaderasPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = EjemploShell.EnredaderasPage.xaml
 build_metadata.AdditionalFiles.TargetPath = EnredaderasPage.xaml
