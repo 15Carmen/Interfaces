@@ -25,19 +25,60 @@
         <FlexLayout Grid.Row="1" Wrap="Wrap" HorizontalOptions="Center" VerticalOptions="Center"  AlignItems="Center" JustifyContent="SpaceEvenly">
 
 
-            <Image
-                 Source="imagen1.jpg"
-                 HeightRequest="300"
-                 HorizontalOptions="Center" 
-                 VerticalOptions="Center">
+            <AbsoluteLayout>
+                <Image
+                     Source="imagen1.jpg"
+                     HeightRequest="300"
+                     HorizontalOptions="Center" 
+                     VerticalOptions="Center">
 
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer
-                        Tapped="TapGestureRecognizer_Tapped"
-                        NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapImagen"
+                            NumberOfTapsRequired="1"/>  
+                    </Image.GestureRecognizers>
 
-            </Image>
+                </Image>
+
+                <Ellipse x:Name="ellipEspalda" 
+                    Stroke="Red" 
+                    StrokeThickness="2" 
+                    Opacity="1"
+                    AbsoluteLayout.LayoutBounds="200, 100, 60, 60" >
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+
+                </Ellipse>
+
+                <Ellipse x:Name="ellipHueso" 
+                     Stroke="Red" 
+                     StrokeThickness="2" 
+                     Opacity="1"
+                     AbsoluteLayout.LayoutBounds="90, 240, 60, 60" >
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+                </Ellipse>
+
+                <Ellipse x:Name="ellipCasa" 
+                     Stroke="Red" 
+                     StrokeThickness="2" 
+                     Opacity="1"
+                     AbsoluteLayout.LayoutBounds="0, 100, 60, 60" >
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+                </Ellipse>
+            </AbsoluteLayout>
+        
+            
 
             <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
 
@@ -57,19 +98,58 @@
             </HorizontalStackLayout>
 
 
-            <Image
-                 Source="imagen2.jpg"
-                 HeightRequest="300"
-                 HorizontalOptions="Center"
-                 VerticalOptions="Center">
+            <AbsoluteLayout>
+                <Image
+                     Source="imagen2.jpg"
+                     HeightRequest="300"
+                     HorizontalOptions="Center" 
+                     VerticalOptions="Center">
 
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer 
-                        Tapped="TapGestureRecognizer_Tapped"
-                        NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapImagen"
+                            NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
 
-            </Image>
+                </Image>
+
+                <Ellipse x:Name="ellipEspalda2" 
+                    Stroke="Red" 
+                    StrokeThickness="2" 
+                    Opacity="1"
+                    AbsoluteLayout.LayoutBounds="200, 100, 60, 60" >    
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+
+                </Ellipse>
+
+                <Ellipse x:Name="ellipHueso2" 
+                     Stroke="Red" 
+                     StrokeThickness="2" 
+                     Opacity="1"
+                     AbsoluteLayout.LayoutBounds="90, 240, 60, 60" >
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+                </Ellipse>
+
+                <Ellipse x:Name="ellipCasa2" 
+                     Stroke="Red" 
+                     StrokeThickness="2" 
+                     Opacity="1"
+                     AbsoluteLayout.LayoutBounds="0, 100, 60, 60" >
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+                </Ellipse>
+            </AbsoluteLayout>
 
 
         </FlexLayout>

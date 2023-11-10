@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\cmartin\GitHub\Interfaces\CarmenMartin_Examen9Nov\CarmenMartin_Examen9Nov\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-09T12:10:42.484</Modified>
+      <Modified>2023-11-10T09:17:44.023</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\CarmenMartin_Examen9Nov\CarmenMartin_Examen9Nov\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-09T12:10:42.195</Modified>
+      <Modified>2023-11-10T09:17:43.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\CarmenMartin_Examen9Nov\CarmenMartin_Examen9Nov\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CarmenMartin_Examen9Nov.runtimeconfig.json">
       <PackagePath>CarmenMartin_Examen9Nov.runtimeconfig.json</PackagePath>
@@ -43,15 +43,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\CarmenMartin_Examen9Nov\CarmenMartin_Examen9Nov\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CarmenMartin_Examen9Nov.dll">
       <PackagePath>CarmenMartin_Examen9Nov.dll</PackagePath>
-      <Modified>2023-11-09T12:10:40.642</Modified>
+      <Modified>2023-11-10T09:17:42.463</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\CarmenMartin_Examen9Nov\CarmenMartin_Examen9Nov\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CarmenMartin_Examen9Nov.exe</PackagePath>
-      <Modified>2023-11-09T12:10:40.665</Modified>
+      <Modified>2023-11-10T09:17:42.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\CarmenMartin_Examen9Nov\CarmenMartin_Examen9Nov\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CarmenMartin_Examen9Nov.deps.json">
       <PackagePath>CarmenMartin_Examen9Nov.deps.json</PackagePath>
-      <Modified>2023-11-09T12:10:42.106</Modified>
+      <Modified>2023-11-10T09:17:43.562</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.11\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
