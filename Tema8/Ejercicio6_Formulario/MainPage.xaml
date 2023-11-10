@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio6_Formulario.MainPage">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Image Source="foto_header.jpg" Aspect="Fill" Grid.Row="0" HeightRequest="100"/>
+
+            <VerticalStackLayout Grid.Row="1" HorizontalOptions="Center">
+                <Label Text="FORMULARIO" FontAttributes="Bold" FontSize="Title" HorizontalOptions="Center" Margin="0,0,0,20"></Label>
+
+                <HorizontalStackLayout Margin="5">
+                    <Label Text="Nombre: " VerticalOptions="Center"></Label>
+                    <Entry x:Name="EntryNombre" WidthRequest="200" Placeholder="Nombre" Keyboard="Text" TextChanged="EntryNombre_TextChanged"/>
+                    <Label x:Name="EstadoNombre"></Label>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Margin="5">
+                    <Label Text="Apellidos: " VerticalOptions="Center"></Label>
+                    <Entry x:Name="EntryApellidos" WidthRequest="200" Placeholder="Apellidos" Keyboard="Text" TextChanged="EntryApellidos_TextChanged"/>
+                    <Label x:Name="EstadoApellidos"></Label>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Margin="5">
+                    <Label Text="Fecha de nacimiento: " VerticalOptions="Center"></Label>
+                    <DatePicker x:Name ="DateFechaNac"></DatePicker>
+                    <Label x:Name="EstadoFecha"></Label>
+                </HorizontalStackLayout>
+
+                <Label x:Name="Estado"></Label>
+
+                <HorizontalStackLayout Grid.Row="2" HorizontalOptions="Center" Margin="0,50,0,0" >
+                    <ImageButton x:Name="Guardar" Source="disco_guardar.png" Aspect="AspectFit" HeightRequest="50" Margin="0,0,5,0" Pressed="Guardar_Pressed"/>
+                    <ImageButton x:Name="Añadir" Source="plus.png" Aspect="AspectFit" HeightRequest="50" Margin="5,0,5,0" Pressed="Añadir_Pressed"/>
+                    <ImageButton x:Name="Eliminar" Source="trash_can.png" Aspect="AspectFit" HeightRequest="60" Margin="5,0,0,0" Pressed="Eliminar_Pressed"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
