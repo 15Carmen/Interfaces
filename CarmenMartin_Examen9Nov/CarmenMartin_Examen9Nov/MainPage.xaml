@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarmenMartin_Examen9Nov.MainPage">
+
+    <Grid>
+
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label
+            Text="¡Encuentra las 3 diferencias!"
+            FontSize="32"
+            FontAttributes="Bold"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            Grid.Row="0"/>
+
+
+
+        <FlexLayout Grid.Row="1" Wrap="Wrap" HorizontalOptions="Center" VerticalOptions="Center"  AlignItems="Center" JustifyContent="SpaceEvenly">
+
+
+            <AbsoluteLayout>
+                <Image
+                     Source="imagen1.jpg"
+                     HeightRequest="300"
+                     HorizontalOptions="Center" 
+                     VerticalOptions="Center">
+
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapImagen"
+                            NumberOfTapsRequired="1"/>  
+                    </Image.GestureRecognizers>
+
+                </Image>
+
+                <Ellipse x:Name="ellipEspalda" 
+                    Stroke="Red" 
+                    StrokeThickness="2" 
+                    Opacity="1"
+                    AbsoluteLayout.LayoutBounds="200, 100, 60, 60" >
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+
+                </Ellipse>
+
+                <Ellipse x:Name="ellipHueso" 
+                     Stroke="Red" 
+                     StrokeThickness="2" 
+                     Opacity="1"
+                     AbsoluteLayout.LayoutBounds="90, 240, 60, 60" >
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+                </Ellipse>
+
+                <Ellipse x:Name="ellipCasa" 
+                     Stroke="Red" 
+                     StrokeThickness="2" 
+                     Opacity="1"
+                     AbsoluteLayout.LayoutBounds="0, 100, 60, 60" >
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+                </Ellipse>
+            </AbsoluteLayout>
+        
+            
+
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+
+                <Label
+                     Text="Errores cometidos: "
+                     FontSize="18"
+                     HorizontalOptions="Center" />
+
+                <!-- Falta que muestre el contador de errores  -->
+                <Label
+                   
+                  Text="0"
+                     FontSize="18"
+                     HorizontalOptions="Center"
+                   
+                    />
+            </HorizontalStackLayout>
+
+
+            <AbsoluteLayout>
+                <Image
+                     Source="imagen2.jpg"
+                     HeightRequest="300"
+                     HorizontalOptions="Center" 
+                     VerticalOptions="Center">
+
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapImagen"
+                            NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+
+                </Image>
+
+                <Ellipse x:Name="ellipEspalda2" 
+                    Stroke="Red" 
+                    StrokeThickness="2" 
+                    Opacity="1"
+                    AbsoluteLayout.LayoutBounds="200, 100, 60, 60" >    
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+
+                </Ellipse>
+
+                <Ellipse x:Name="ellipHueso2" 
+                     Stroke="Red" 
+                     StrokeThickness="2" 
+                     Opacity="1"
+                     AbsoluteLayout.LayoutBounds="90, 240, 60, 60" >
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+                </Ellipse>
+
+                <Ellipse x:Name="ellipCasa2" 
+                     Stroke="Red" 
+                     StrokeThickness="2" 
+                     Opacity="1"
+                     AbsoluteLayout.LayoutBounds="0, 100, 60, 60" >
+
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEllipse"
+                            NumberOfTapsRequired="1"/>
+                    </Ellipse.GestureRecognizers>
+                </Ellipse>
+            </AbsoluteLayout>
+
+
+        </FlexLayout>
+
+
+            <Label
+                Text="¿Encontrarás todas?"
+                FontSize="18"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Grid.Row="2"
+                
+                />
+
+
+        </Grid>
+  
+</ContentPage>

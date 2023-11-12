@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarmenMartin_Examen9Nov</name>
+    </assembly>
+    <members>
+        <member name="M:CarmenMartin_Examen9Nov.MainPage.TapImagen(System.Object,Microsoft.Maui.Controls.TappedEventArgs)">
+            <summary>
+            Función que cada vez que se clique una parte de la página que no tiene una diferencia, aumente el 
+            contador de errores. Cuando se llegue a 3 errores lanzará un mensaje diciendo que hemos perdido
+            Pre: ninguna
+            Post: En el mensaje debe de darse la opción de jugar de nuevo
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>
