@@ -3,7 +3,6 @@ using Tema8_PlacasSolares.Modelo.DAL;
 using Tema8_PlacasSolares.Modelo.Entidades;
 
 namespace Tema8_PlacasSolares.Views;
-
 public partial class Appointments : ContentPage
 {
 

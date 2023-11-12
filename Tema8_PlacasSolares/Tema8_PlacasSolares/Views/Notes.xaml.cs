@@ -1,5 +1,4 @@
 namespace Tema8_PlacasSolares.Views;
-
 public partial class Notes : ContentPage
 {
 	public Notes()

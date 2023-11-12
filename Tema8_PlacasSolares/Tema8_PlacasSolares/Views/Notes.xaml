@@ -4,6 +4,7 @@
              x:Class="Tema8_PlacasSolares.Views.Notes"
              Title="Notes"
              BackgroundImageSource="fondo_placas2.png">
+    
     <Grid>
 
         <Grid.RowDefinitions>

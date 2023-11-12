@@ -4,7 +4,7 @@
              x:Class="Tema8_PlacasSolares.Views.Appointments"
              Title="Appointments"
              BackgroundImageSource="fondo_placas2.png">
-    
+
     <ScrollView>
         <FlexLayout HorizontalOptions="Center" JustifyContent="SpaceEvenly">
 

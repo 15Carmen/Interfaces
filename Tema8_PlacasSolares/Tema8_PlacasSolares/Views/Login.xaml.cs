@@ -1,5 +1,4 @@
 using static System.Runtime.InteropServices.JavaScript.JSType;
-
 namespace Tema8_PlacasSolares.Views;
 
 public partial class Login : ContentPage
@@ -17,7 +16,7 @@ public partial class Login : ContentPage
         }
         else
         {
-            DisplayAlert("Advertencia", "Debe introducir nombre y pasworrd", "OK");
+            DisplayAlert("Advertencia", "Debe introducir nombre y contraseña", "OK");
         }
 
     }

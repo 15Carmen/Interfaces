@@ -1,6 +1,5 @@
 namespace Tema8_PlacasSolares.Views;
 using Tema8_PlacasSolares.Modelo.Entidades;
-
 public partial class Details : ContentPage
 {
 	public Details()

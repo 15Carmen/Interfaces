@@ -4,7 +4,7 @@
              x:Class="Tema8_PlacasSolares.Views.Details"
              Title="Details"
              BackgroundImageSource="fondo_placas2.png">
-
+ 
     <Grid>
 
         <Grid.RowDefinitions>
@@ -12,7 +12,6 @@
             <RowDefinition Height="225"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-
 
         <FlexLayout Grid.Row="0" Wrap="Wrap" HorizontalOptions="Center" AlignItems="Center" JustifyContent="SpaceEvenly" Margin="20">
 

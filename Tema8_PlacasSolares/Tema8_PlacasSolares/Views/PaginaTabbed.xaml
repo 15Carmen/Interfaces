@@ -2,9 +2,8 @@
 <TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:Tema8_PlacasSolares.Views"
-            x:Class="Tema8_PlacasSolares.Views.PaginaTabbed"
-            >
-
+            x:Class="Tema8_PlacasSolares.Views.PaginaTabbed" >
+    
     <local:Details Title="Detalles"></local:Details>
     <local:Notes Title="Notas adicionales"></local:Notes>
 </TabbedPage>

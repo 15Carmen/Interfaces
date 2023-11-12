@@ -4,6 +4,8 @@
              x:Class="Tema8_PlacasSolares.Views.Login"
              Title="Login"
              BackgroundImageSource="fondo_placas.png">
+    
+    
     <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center"  Padding="20">
 
         <Label
