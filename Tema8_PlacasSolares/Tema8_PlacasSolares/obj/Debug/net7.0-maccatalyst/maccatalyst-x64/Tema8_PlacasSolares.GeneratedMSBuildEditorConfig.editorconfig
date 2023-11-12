@@ -57,3 +57,15 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Tema8_PlacasSolares.Views.Login.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Login.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Login.xaml
+
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8_PlacasSolares/Tema8_PlacasSolares/Views/Notes.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Tema8_PlacasSolares.Views.Notes.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Notes.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Notes.xaml
+
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8_PlacasSolares/Tema8_PlacasSolares/Views/PaginaTabbed.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Tema8_PlacasSolares.Views.PaginaTabbed.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PaginaTabbed.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PaginaTabbed.xaml

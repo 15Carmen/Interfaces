@@ -22,11 +22,11 @@ namespace Tema8_PlacasSolares.Modelo.DAL
 
             ObservableCollection<clsCitas> listaCitas = new ObservableCollection<clsCitas>()
             {
-                 new clsCitas("Avenida Federico Molina, 32", "Carmen Martín", 653532798, true),
-                 new clsCitas("Calle de la llorería, 12", "Lucía Molina", 234568124, false),
-                 new clsCitas("Calle Alcotán, 97", "Fernando Acosta", 9531671822, false),
-                 new clsCitas("Plaza de la Perlita, 16", "Marcos Domínguez", 637810234, true),
-                 new clsCitas("Avenida Conquistadores, 25", "Carla Cortés", 523415234, false),
+                 new clsCitas("Avenida Federico Molina, 32", "Carmen Martín", 653532798, "cositas importantes"),
+                 new clsCitas("Calle de la llorería, 12", "Lucía Molina", 234568124, "una descripcion muy buena"),
+                 new clsCitas("Calle Alcotán, 97", "Fernando Acosta", 9531671822, "cositas importantes"),
+                 new clsCitas("Plaza de la Perlita, 16", "Marcos Domínguez", 637810234, "cositas importantes"),
+                 new clsCitas("Avenida Conquistadores, 25", "Carla Cortés", 523415234, "Antonio devuelveme el dinero del bocata"),
 
             };
 

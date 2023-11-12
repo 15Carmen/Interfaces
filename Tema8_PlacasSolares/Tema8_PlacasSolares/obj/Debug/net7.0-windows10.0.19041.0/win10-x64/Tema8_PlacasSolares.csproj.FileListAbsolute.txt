@@ -324,3 +324,9 @@ C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Deb
 C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pencil.scale-100.png
+C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\plus.scale-100.png
+C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash_can.scale-100.png
+C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\save.scale-100.png
+C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\save2.scale-100.png
+C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo_placas2.scale-100.png
+C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash2.scale-100.png

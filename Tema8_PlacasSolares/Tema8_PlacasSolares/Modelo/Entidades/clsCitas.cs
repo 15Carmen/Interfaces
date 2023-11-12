@@ -12,26 +12,28 @@ namespace Tema8_PlacasSolares.Modelo.Entidades
         #region atributos
         private string direccion;
         private string nombreCliente;
-        private long tlf;
-        private Boolean visitado;
+        private long tlf;     
+        private string descripcionCasa;
 
         #endregion
 
         #region constructores
 
-        public clsCitas() {
+        public clsCitas()
+        {
             direccion = "";
             nombreCliente = "";
             tlf = 0;
-            visitado = false;
+            descripcionCasa = "";
         }
 
-        public clsCitas(string direccion, string nombreCliente, long tlf, bool visitado)
+        public clsCitas(string direccion, string nombreCliente, long tlf, string descripcionCasa)
         {
             this.direccion = direccion;
             this.nombreCliente = nombreCliente;
             this.tlf = tlf;
-            this.visitado = visitado;
+            this.descripcionCasa = descripcionCasa;
+            DescripcionCasa = descripcionCasa;
         }
 
         #endregion
@@ -47,7 +49,7 @@ namespace Tema8_PlacasSolares.Modelo.Entidades
         public String NombreCliente
         {
             get { return nombreCliente; }
-            set { nombreCliente = value;}
+            set { nombreCliente = value; }
         }
 
         public long Tlf
@@ -56,12 +58,12 @@ namespace Tema8_PlacasSolares.Modelo.Entidades
             set { tlf = value; }
         }
 
-        public Boolean Visitado
+        public String DescripcionCasa
         {
-            get { return visitado; }
-            set { visitado = value; }
-        }
+            get { return descripcionCasa; }
+            set { descripcionCasa = value; }
 
-        #endregion
+            #endregion
+        }
     }
 }

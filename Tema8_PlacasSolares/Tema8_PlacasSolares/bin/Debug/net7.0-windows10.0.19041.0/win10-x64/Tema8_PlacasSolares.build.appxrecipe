@@ -880,8 +880,26 @@
     <AppxPackagedFile Include="C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo_placas.scale-100.png">
       <PackagePath>fondo_placas.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo_placas2.scale-100.png">
+      <PackagePath>fondo_placas2.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pencil.scale-100.png">
       <PackagePath>pencil.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\plus.scale-100.png">
+      <PackagePath>plus.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\save.scale-100.png">
+      <PackagePath>save.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\save2.scale-100.png">
+      <PackagePath>save2.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash2.scale-100.png">
+      <PackagePath>trash2.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash_can.scale-100.png">
+      <PackagePath>trash_can.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

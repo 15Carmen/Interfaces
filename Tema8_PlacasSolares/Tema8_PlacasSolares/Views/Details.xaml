@@ -2,8 +2,68 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tema8_PlacasSolares.Views.Details"
-             Title="Details">
-    <VerticalStackLayout>
+             Title="Details"
+             BackgroundImageSource="fondo_placas2.png">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="225"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <FlexLayout Grid.Row="0" Wrap="Wrap" HorizontalOptions="Center" AlignItems="Center" JustifyContent="SpaceEvenly" Margin="20">
+
+            <Label x:Name="lblGuardar" HorizontalOptions="Start" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+
+            <HorizontalStackLayout HorizontalOptions="End" VerticalOptions="Center" Spacing="10">
+
+                <Label x:Name="lblCheck" Text="Casa no apta" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+
+                <CheckBox x:Name="check" CheckedChanged="CasaApta_CheckedChanged"></CheckBox>
+
+            </HorizontalStackLayout>
+        </FlexLayout>
+
+        <FlexLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand" AlignItems="Center" JustifyContent="SpaceEvenly"
+                    BackgroundColor="White" Opacity="0.6">
+            <VerticalStackLayout>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Nombre del cliente: " FontSize="25"  TextColor="Black"/>
+                    <Label Text="{Binding NombreCliente}" FontSize="25" TextColor="Black" FontAttributes="Bold"></Label>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Descripción: " FontSize="25" TextColor="Black"/>
+                    <Label Text="{Binding DescripcionCasa}" FontSize="25" TextColor="Black" FontAttributes="Bold" ></Label>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Dirección:" FontSize="25" TextColor="Black"/>
+                    <Label Text="{Binding Direccion}" FontSize="25" TextColor="Black" FontAttributes="Bold"></Label>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Teléfono del cliente:" TextColor="Black" FontSize="25"/>
+                    <Label Text="{Binding Tlf}" FontSize="25" TextColor="Black" FontAttributes="Bold"></Label>
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="3" HorizontalOptions="Center">
+                <Label Text="Añadir foto" TextColor="Black" FontSize="30" FontAttributes="Bold"/>
+                <ImageButton x:Name="btnNuevaFoto" Clicked="btnNuevaFoto_Clicked" Source="plus.png" WidthRequest="140" HeightRequest="140"/>
+            </VerticalStackLayout>
+
+        </FlexLayout>
         
-    </VerticalStackLayout>
+        
+
+        <Button x:Name="btnGuardar" Text="Save" TextColor="DarkOrange" FontSize="24" Grid.Row="2" CornerRadius="20" HeightRequest="50" WidthRequest="100" Clicked="btnGuardar_Clicked"></Button>
+
+    </Grid>
+
 </ContentPage>

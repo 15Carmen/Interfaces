@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tema8_PlacasSolares.Views.Notes"
+             Title="Notes"
+             BackgroundImageSource="fondo_placas2.png">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        
+        <Border Grid.Column="0" Grid.Row="0" Stroke="black" Margin="100, 50,0,0">
+            <Entry 
+                x:Name="Notas" 
+                Placeholder="Notas adicionales sobre la casa..." 
+                PlaceholderColor="DarkOrange" 
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="white" 
+                TextColor="black" 
+                VerticalTextAlignment="Start"
+                Opacity="0.8">
+            </Entry>
+        </Border>
+        
+        <VerticalStackLayout Grid.Row="0" Grid.Column="1" Margin="0, 50, 0, 0">
+
+            <ImageButton x:Name="btnGuardar" Source="save2.png" Clicked="btnGuardar_Clicked" HeightRequest="50" />
+            
+            <ImageButton x:Name="btnBorrar" Source="trash2.png" Clicked="btnBorrar_Clicked" HeightRequest="50" Margin="0, 10, 0, 0"/>
+
+
+
+        </VerticalStackLayout>
+
+        <Label x:Name="Estado" Grid.Row ="1" FontAttributes="Bold" FontSize="30" Margin="100,0,0,0" />
+        
+    
+    </Grid>
+</ContentPage>

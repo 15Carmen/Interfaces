@@ -3,39 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tema8_PlacasSolares.Views.Appointments"
              Title="Appointments"
-             BackgroundColor="LightGoldenrodYellow">
+             BackgroundImageSource="fondo_placas2.png">
     
     <ScrollView>
-        <VerticalStackLayout HorizontalOptions="Center">
+        <FlexLayout HorizontalOptions="Center" JustifyContent="SpaceEvenly">
 
-            <ListView x:Name="ListViewCitas" ItemsSource="{Binding Citas}" HorizontalOptions="Center">
+            <ListView x:Name="ListViewCitas" ItemsSource="{Binding Citas}" HorizontalOptions="Center" ItemSelected="toDetails" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell Height="100">
-                            <Grid Padding="10">
+                        <ViewCell Height="200">
+                            <Grid Padding="20">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="50"></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
 
-                                <ImageButton Source = "pencil.png" Grid.Row="0" Grid.Column="0" Aspect="AspectFit" Clicked = "toDetails"/>
-
                                 <Label  Text= "{Binding Direccion}"
                                         TextColor="Black"
                                         FontAttributes="Bold"
+                                        FontSize="30"
                                         Padding="20,0,0,0"
                                         HorizontalOptions="Start"
                                         Grid.Row="0"
-                                        Grid.Column="1"/>
+                                        Grid.Column="0"/>
 
                                 <Label  Text="{Binding NombreCliente}"
-                                        TextColor="Black"
-                                        FontSize="Caption"
+                                        TextColor="DarkOrange"
+                                        FontAttributes="Bold"
+                                        FontSize="20"
                                         Padding="0,0,20,0"
                                         HorizontalOptions="End"
                                         Grid.Row="0"
-                                        Grid.Column="2"/> 
+                                        Grid.Column="1"/> 
 
                             </Grid>
                         </ViewCell>
@@ -43,6 +42,6 @@
                 </ListView.ItemTemplate>
             </ListView>
             
-        </VerticalStackLayout>
+        </FlexLayout>
     </ScrollView>
 </ContentPage>
