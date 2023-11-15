@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1.MainPage">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="200"
+        Padding="30,0">
+
+            <Slider 
+            x:Name="slider"
+            Minimum="0"
+            Maximum="100"
+            Value="0"
+            VerticalOptions="Start"/>
+
+            <Label
+            x:Name="label"
+            Text="Y baila lento flor moradaaa~ Que me recuerdas a mi amdada~"
+            BindingContext="{Reference entry}"
+            FontSize="{Binding Text}"
+            HorizontalOptions="Start" 
+            VerticalOptions="Center"/>
+
+            <Entry
+            x:Name="entry"
+            Text="{Binding Value, Mode=TwoWay}"
+            BindingContext="{Reference slider}"
+            MaxLength="3"
+            VerticalOptions="End"
+            TextChanged="entry_TextChanged"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:Ejercicio2.Models.Entidades"
+             x:Class="Ejercicio2.Views.MainPage">
+    
+    <ContentPage.BindingContext>
+        <model:clsPersona/>
+    </ContentPage.BindingContext>
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Entry
+                x:Name="ntrNombre"
+                Text="{Binding Nombre}"/>
+            <Label
+                x:Name="lblNombre"
+                Text="{Binding Nombre}"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
