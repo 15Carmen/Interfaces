@@ -66,10 +66,32 @@ namespace CarmenMartin_Examen9Nov
 
             ellipseGeneral.Opacity = 1;
 
-            if (contadorDiferencias == 3)
+            if (contadorDiferencias >= 3)
             {
                 bool volverAJugarVictoria = await DisplayAlert("¡Has ganado!", "¿Quieres volver a jugar?", "Si", "No");
+
+                //Si el usuario elige la opción de volver a jugar, reestablecemos los contadores
+                if (volverAJugarVictoria)
+                {
+                    contadorErrores = 0;
+                    contadorDiferencias = 0;
+
+                    ellipEspalda.Opacity = 0;
+                    ellipEspalda2.Opacity = 0;
+                    ellipCasa.Opacity = 0;
+                    ellipCasa2.Opacity = 0;
+                    ellipHueso.Opacity = 0;
+                    ellipHueso2.Opacity = 0;
+
+                }
+                else
+                {
+
+                    Application.Current.Quit();
+                }
             }
+           
+
         }
 
 

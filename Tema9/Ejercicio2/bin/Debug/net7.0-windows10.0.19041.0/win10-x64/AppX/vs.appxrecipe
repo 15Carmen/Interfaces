@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\cmartin\GitHub\Interfaces\Tema9\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-16T11:22:29.339</Modified>
+      <Modified>2023-11-16T13:07:36.668</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema9\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-16T11:22:29.141</Modified>
+      <Modified>2023-11-16T13:07:36.396</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema9\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio2.runtimeconfig.json">
       <PackagePath>Ejercicio2.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema9\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio2.dll">
       <PackagePath>Ejercicio2.dll</PackagePath>
-      <Modified>2023-11-16T11:22:28.406</Modified>
+      <Modified>2023-11-16T13:07:35.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema9\Ejercicio2\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Ejercicio2.exe</PackagePath>
-      <Modified>2023-11-16T11:22:28.414</Modified>
+      <Modified>2023-11-16T13:07:35.464</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema9\Ejercicio2\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio2.deps.json">
       <PackagePath>Ejercicio2.deps.json</PackagePath>

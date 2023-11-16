@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace Biblioteca
 {
-    public class clsPersona : INotifyPropertyChanged
+    public class clsPersona 
     {
         #region Atributos
         private string nombre;
@@ -26,20 +26,9 @@ namespace Biblioteca
         public string Nombre
         {
             get { return nombre; }
-            set
-            {
-                nombre = value;
-                NotifyPropertyChanged();  //Dentro de los parentesis pasamos las propiedades que deben mandarse, o 
-                //ninguna cosa, porque abajo pilla el nombre de la propiedad que lo esta llamando
-            }
+            set { nombre = value; }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
         #endregion
     }
 }
