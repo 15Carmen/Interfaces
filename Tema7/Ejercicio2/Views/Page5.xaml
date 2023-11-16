@@ -10,10 +10,10 @@
             HorizontalOptions="Center" />
         <Label
             x:Name="Nombre"
-            Text="{Binding Nombre}"/>
+            Text="{Binding txtNombre}"/>
 
         <Label
             x:Name="Apellidos"
-            Text="{Binding Apellidos}"/>
+            Text="{Binding txtApellidos}"/>
     </VerticalStackLayout>
 </ContentPage>
