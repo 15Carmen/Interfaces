@@ -38,6 +38,9 @@ namespace Ejercicio2.Models.Entidades
                 //ninguna cosa, porque abajo pilla el nombre de la propiedad que lo esta llamando
             }
         }
+        #endregion
+
+        #region Métodos
 
         public event PropertyChangedEventHandler PropertyChanged;
 

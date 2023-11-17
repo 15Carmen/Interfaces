@@ -3,6 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:Ejercicio2.Models.Entidades"
              x:Class="Ejercicio2.Views.MainPage">
+    
+    <!-- Si usamos lo que está comentado en el código behind, -->
+    <!-- el ContentPage.BindingContext no seria necesario-->
 
     <ContentPage.BindingContext>
         <model:clsPersona/>
