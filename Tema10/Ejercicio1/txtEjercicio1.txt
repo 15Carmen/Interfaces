@@ -1,0 +1,15 @@
+﻿DAL
+	clsListadoPersonas
+		public static List<clsPersona> listadoCompletoPersonasDAL()
+
+ViewModel
+	DelegateCommand buscarCommand(buscarCommandExecute)
+	DelegateCommand eliminarCommand(eliminarCommandExecute, eliminarCommandCanExecute)
+	List<clsPersona> listadoPersonas
+	clsPersona personaSeleccionada
+	String textoBusqueda
+
+Entidades
+	clsPersona
+		nombre
+		apellido
