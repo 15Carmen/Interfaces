@@ -8,11 +8,15 @@
     <ScrollView>
         <FlexLayout HorizontalOptions="Center" JustifyContent="SpaceEvenly">
 
+            <!--Hacemos un ListView con la lista de las citas de los clientes-->
             <ListView x:Name="ListViewCitas" ItemsSource="{Binding Citas}" HorizontalOptions="Center" ItemSelected="toDetails" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Height="200">
                             <Grid Padding="20">
+                                
+                                <!--Definimos las columnas de la vista de la lista, en una pondremos la dirección
+                                del cliente y en la otra el nombre-->
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
@@ -24,7 +28,6 @@
                                         FontSize="30"
                                         Padding="20,0,0,0"
                                         HorizontalOptions="Start"
-                                        Grid.Row="0"
                                         Grid.Column="0"/>
 
                                 <Label  Text="{Binding NombreCliente}"
@@ -33,7 +36,6 @@
                                         FontSize="20"
                                         Padding="0,0,20,0"
                                         HorizontalOptions="End"
-                                        Grid.Row="0"
                                         Grid.Column="1"/> 
 
                             </Grid>

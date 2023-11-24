@@ -7,17 +7,19 @@
     
     <Grid>
 
+        <!--Definimos las filas del layout-->
         <Grid.RowDefinitions>
             <RowDefinition Height="8*"></RowDefinition>
             <RowDefinition Height="2*"></RowDefinition>
         </Grid.RowDefinitions>
 
+        <!--Definimos las columnas del layout-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="7*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         
-        
+        <!--Caja de texto donde el usuario podrá introducir las notas adicionales. Lo ubicamos en la columna y fila 1-->
         <Border Grid.Column="0" Grid.Row="0" Stroke="black" Margin="100, 50,0,0">
             <Entry 
                 x:Name="Notas" 
@@ -30,17 +32,15 @@
                 Opacity="0.8">
             </Entry>
         </Border>
-        
+
+        <!--Columna donde vamos a colocar los dos botones que interactuarán con la caja de texto. Lo ubicamos en la columna 2 y fila 1-->
         <VerticalStackLayout Grid.Row="0" Grid.Column="1" Margin="0, 50, 0, 0">
-
             <ImageButton x:Name="btnGuardar" Source="save2.png" Clicked="btnGuardar_Clicked" HeightRequest="50" />
-            
+
             <ImageButton x:Name="btnBorrar" Source="trash2.png" Clicked="btnBorrar_Clicked" HeightRequest="50" Margin="0, 10, 0, 0"/>
-
-
-
         </VerticalStackLayout>
 
+        <!--Texto que saldrá cuando se pulse uno de los botones para ver si funcionan-->
         <Label x:Name="Estado" Grid.Row ="1" FontAttributes="Bold" FontSize="30" Margin="100,0,0,0" />
         
     

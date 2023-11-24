@@ -7,16 +7,23 @@
  
     <Grid>
 
+        <!--Definimos las filas del layout, 
+        en la primera ponemos un check que indicará si la casa es o no apta y un label que aparecerá solo cuando se pulse el boton guardar,
+        en la segunda tendrá la información en detalles del cliente y un ImageButton para añadir las fotos,
+        en la tercera tendrá un botón para guardar el cambio del check (no lo guarda, solo hce que aparezca el label de la primera fila)-->
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="225"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
+        
         <FlexLayout Grid.Row="0" Wrap="Wrap" HorizontalOptions="Center" AlignItems="Center" JustifyContent="SpaceEvenly" Margin="20">
 
+            <!--Label que aparece una vez que se pulsa el botón guardar-->
             <Label x:Name="lblGuardar" HorizontalOptions="Start" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
 
+            <!--Check para indicar si la casa es apta o no-->
             <HorizontalStackLayout HorizontalOptions="End" VerticalOptions="Center" Spacing="10">
 
                 <Label x:Name="lblCheck" Text="Casa no apta" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
@@ -26,10 +33,14 @@
             </HorizontalStackLayout>
         </FlexLayout>
 
+        <!--Metemos los datos dentro de un flexLayout y le ponemos un fonde semitransparente para que los datos se vean mejor-->
         <FlexLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand" AlignItems="Center" JustifyContent="SpaceEvenly"
                     BackgroundColor="White" Opacity="0.6">
+            
+            <!--Lista vertical de datos del cliente-->
             <VerticalStackLayout>
 
+                <!--Cada dato los metemos dentro de un horizontal stackLayout para que el label y el dato del cliente esten alineados--> 
                 <HorizontalStackLayout Spacing="10">
                     <Label Text="Nombre del cliente: " FontSize="25"  TextColor="Black"/>
                     <Label Text="{Binding NombreCliente}" FontSize="25" TextColor="Black" FontAttributes="Bold"></Label>
@@ -52,6 +63,7 @@
 
             </VerticalStackLayout>
 
+            <!--En este otro vertical definimos un label que indica para lo que es el boton debajo suyo-->
             <VerticalStackLayout Grid.Row="3" HorizontalOptions="Center">
                 <Label Text="Añadir foto" TextColor="Black" FontSize="30" FontAttributes="Bold"/>
                 <ImageButton x:Name="btnNuevaFoto" Clicked="btnNuevaFoto_Clicked" Source="plus.png" WidthRequest="140" HeightRequest="140"/>
@@ -60,7 +72,7 @@
         </FlexLayout>
         
         
-
+            <!--Boton guardar. Al clicarlo aparecerá el label de la primera fila-->
         <Button x:Name="btnGuardar" Text="Save" TextColor="DarkOrange" FontSize="24" Grid.Row="2" CornerRadius="20" HeightRequest="50" WidthRequest="100" Clicked="btnGuardar_Clicked"></Button>
 
     </Grid>

@@ -1,1 +1,1 @@
-C:\Users\cmnbo\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\Tema8_PlacasSolares.csproj;x64
+C:\Users\cmartin\GitHub\Interfaces\Tema8_PlacasSolares\Tema8_PlacasSolares\Tema8_PlacasSolares.csproj;x64
