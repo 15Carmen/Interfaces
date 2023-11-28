@@ -1,0 +1,8 @@
+﻿DAL
+
+Entidades
+
+ViewModel
+	DelegateCommand numeroCommand(numeroCommandExecute)
+	DelegateCommand operacionCommand(operacionCommandExecute)
+

@@ -7,21 +7,86 @@
     <ContentPage.BindingContext>
         <viewModels:MainPageVM/>
     </ContentPage.BindingContext>
-    
-    
+
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
+        <Grid
             VerticalOptions="Center">
 
-            <ListView ItemsSource="{Binding ListadoPersonas}" SelectedItem="{Binding PersonaSeleccionada}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <FlexLayout Grid.Row="0" HorizontalOptions="Center">
+
+                <Entry
+                    x:Name="searchBar"
+                    Margin="20"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Placeholder="Search..."
+                    WidthRequest="700"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"
+                    />
+
+                <Button
+                    x:Name="btnBuscar"                   
+                    Command="{Binding BuscarCommand}"
+                    Text="Buscar"
+                    BackgroundColor="CornflowerBlue"
+                    WidthRequest="200"
+   
+                    />
+
+            </FlexLayout>
+
+
+            <ListView ItemsSource="{Binding ListadoPersonas}" SelectedItem="{Binding PersonaSeleccionada}" Grid.Row="1">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <FlexLayout >
+                                <Label
+                                    Text="{Binding Nombre} " 
+                                    TextColor="Black"  
+                                    VerticalOptions="Center" 
+                                    HorizontalOptions="Start" 
+                                    Padding="10"
+                                   />
+
+                                <Label
+                                    Text="{Binding Apellido} " 
+                                    TextColor="Black"  
+                                    VerticalOptions="Center" 
+                                    HorizontalOptions="Start" 
+                                    Padding="10"
+                                />
+                                
+                            </FlexLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
                     
+                    
+                </ListView.ItemTemplate>
+                
             </ListView>
 
-            <Button Command="{Binding EliminarCommand}"/>
+            <Button 
+                x:Name="btnBorrar"
+                Grid.Row="2"
+                Command="{Binding EliminarCommand}"
+                Text="Borrar"
+                BackgroundColor="IndianRed"
+                WidthRequest="200"
+                />
 
-        </VerticalStackLayout>
+        </Grid>
     </ScrollView>
 
 </ContentPage>

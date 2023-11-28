@@ -3,6 +3,7 @@ using Ejercicio1.Models.Entidades;
 using Ejercicio1.ViewModels.Utilidades;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace Ejercicio1.ViewModels
 
         private DelegateCommand buscarCommand;
         private DelegateCommand eliminarCommand;
-        private List<clsPersona> listadoPersonas;
+        private ObservableCollection<clsPersona> listadoPersonas;
         private String textoBusqueda;
         private clsPersona personaSeleccionada;
         #endregion
@@ -23,7 +24,7 @@ namespace Ejercicio1.ViewModels
         #region Constructores
         public MainPageVM()
         { 
-            listadoPersonas = clsListadoPersonasDAL.listadoCompletoPersonasDAL();
+            listadoPersonas = new ObservableCollection<clsPersona>(clsListadoPersonasDAL.listadoCompletoPersonasDAL());
             buscarCommand = new DelegateCommand(buscarCommandExecute, buscarCommandCanExecute);
             eliminarCommand = new DelegateCommand(eliminarCommandExecute, eliminarCommandCanExecute);
                
@@ -44,7 +45,7 @@ namespace Ejercicio1.ViewModels
             get { return eliminarCommand; }
         }
 
-        public List<clsPersona> ListadoPersonas
+        public ObservableCollection<clsPersona> ListadoPersonas
         {
             get { return listadoPersonas; }
         }
