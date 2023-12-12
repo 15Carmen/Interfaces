@@ -52,4 +52,15 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\BL\BL.csproj" />
+	  <ProjectReference Include="..\Entidades\Entidades.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\InsertarDepartamentoSPage.xaml.cs">
+	    <DependentUpon>InsertarDepartamentosPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
 </Project>

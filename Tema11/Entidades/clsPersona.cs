@@ -13,6 +13,10 @@ namespace Entidades
         private int id;
         private string nombre;
         private string apellido;
+        private string telefono;
+        private string direccion;
+        private string foto;
+        private DateTime fechaNacimiento;
         private int idDepartamento;
 
 
@@ -25,22 +29,34 @@ namespace Entidades
             id = 1;
             nombre = string.Empty;
             apellido = string.Empty;
+            telefono = string.Empty;
+            direccion = string.Empty;
+            foto = string.Empty;
+            fechaNacimiento = DateTime.MinValue;
             idDepartamento = 1;
 
         }
 
-        public clsPersona(int id, string nombre, string apellido)
+        public clsPersona(int id, string nombre, string apellido, string telefono, string direcccion, string foto, DateTime fechaNacimiento)
         {
             this.id = id;
             this.nombre = nombre; 
             this.apellido = apellido;
+            this.telefono = telefono;
+            this.direccion = direcccion;
+            this.foto = foto;
+            this.fechaNacimiento = fechaNacimiento;
         }
 
-        public clsPersona(int id, string nombre, string apellido, int idDepartamento)
+        public clsPersona(int id, string nombre, string apellido, string telefono, string direcccion, string foto, DateTime fechaNacimiento, int idDepartamento)
         {
             this.id = id;
             this.nombre = nombre;
             this.apellido = apellido;
+            this.telefono = telefono;
+            this.direccion = direcccion;
+            this.foto = foto;
+            this.fechaNacimiento = fechaNacimiento;
             this.idDepartamento = idDepartamento;
 
         }
@@ -69,6 +85,30 @@ namespace Entidades
             set { apellido = value; }
         }
 
+        public string Telefono
+        {
+            get { return telefono; }
+            set { telefono = value; }
+        }
+
+        public string Direccion
+        {
+            get { return direccion; }
+            set { direccion = value; }
+        }
+
+        public string Foto
+        {
+            get { return foto; }
+            set { foto = value; }
+        }
+
+        public DateTime FechaNacimiento
+        {
+            get { return fechaNacimiento; }
+            set {  fechaNacimiento = value;}
+        }
+
         public int IdDepartamento
         {
             get { return idDepartamento; }
@@ -79,4 +119,4 @@ namespace Entidades
     }
 
 }
-}
+
