@@ -12,33 +12,33 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Tema8_Calculadora
-build_property.ProjectDir = C:\Users\cmartin\GitHub\Interfaces\Tema8_Calculadora\Tema8_Calculadora\
+build_property.ProjectDir = C:\Users\cmnbo\GitHub\Interfaces\Tema8_Calculadora\Tema8_Calculadora\
 
-[C:/Users/cmartin/GitHub/Interfaces/Tema8_Calculadora/Tema8_Calculadora/App.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8_Calculadora/Tema8_Calculadora/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Tema8_Calculadora.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/cmartin/GitHub/Interfaces/Tema8_Calculadora/Tema8_Calculadora/AppShell.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8_Calculadora/Tema8_Calculadora/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Tema8_Calculadora.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/cmartin/GitHub/Interfaces/Tema8_Calculadora/Tema8_Calculadora/MainPage.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8_Calculadora/Tema8_Calculadora/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Tema8_Calculadora.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/cmartin/GitHub/Interfaces/Tema8_Calculadora/Tema8_Calculadora/Resources/Styles/Colors.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8_Calculadora/Tema8_Calculadora/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Tema8_Calculadora.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/cmartin/GitHub/Interfaces/Tema8_Calculadora/Tema8_Calculadora/Resources/Styles/Styles.xaml]
+[C:/Users/cmnbo/GitHub/Interfaces/Tema8_Calculadora/Tema8_Calculadora/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Tema8_Calculadora.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

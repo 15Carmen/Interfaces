@@ -15,17 +15,9 @@ namespace Ejercicio3_Calculadora.ViewModels
         #region atributos
 
         private string labelShowOperation = "0";
-        #endregion
 
-        #region propiedades
-
-        public string LabelShowOperation
-        {
-            get { return labelShowOperation; }
-        }
-
-        public ICommand comandoLimpiar { get; set; }
-        public ICommand comandoBorrarCifra {  get; set; }
+        public ICommand comandoLimpiar => new Command(ClickedEventArgs);
+        public ICommand comandoBorrarCifra { get; set; }
         public ICommand comandoOperaciones { get; set; }
         public ICommand comandoNumeros { get; set; }
         public ICommand comandoResultado { get; set; }
@@ -36,10 +28,30 @@ namespace Ejercicio3_Calculadora.ViewModels
 
         public MainPageVM()
         {
-            
            
+
         }
 
+
+        #endregion
+
+        #region propiedades
+
+        public string LabelShowOperation
+        {
+
+            private set
+            {
+                if (labelShowOperation != value)
+                {
+                    labelShowOperation = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("LabelShowOperations"));
+                }
+            }
+            get { return labelShowOperation; }
+        }
+
+       
         #endregion
 
 
