@@ -1,4 +1,4 @@
-namespace Ejercicio1.Views;
+namespace Ejercicio3.Views;
 
 public partial class EditarPersonasPage : ContentPage
 {

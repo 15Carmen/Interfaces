@@ -25713,9 +25713,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2\\Ejercicio2.csproj",
-      "projectName": "Ejercicio2",
-      "projectPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2\\Ejercicio2.csproj",
+      "projectUniqueName": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2\\Ejercicio3.csproj",
+      "projectName": "Ejercicio3",
+      "projectPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2\\Ejercicio3.csproj",
       "packagesPath": "C:\\Users\\cmartin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2\\obj\\",
       "projectStyle": "PackageReference",

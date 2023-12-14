@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace Ejercicio2.ViewModels.Utilidades
+namespace Ejercicio3.ViewModels.Utilidades
 {
     public class DelegateCommand : ICommand
     {

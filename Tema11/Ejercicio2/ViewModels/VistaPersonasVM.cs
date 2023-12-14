@@ -1,6 +1,6 @@
 ﻿using BL.HandlersBL;
 using BL.ListadosBL;
-using Ejercicio2.ViewModels.Utilidades;
+using Ejercicio3.ViewModels.Utilidades;
 using Entidades;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio2.ViewModels
+namespace Ejercicio3.ViewModels
 {
     public class VistaPersonasVM : clsVMBase
     {

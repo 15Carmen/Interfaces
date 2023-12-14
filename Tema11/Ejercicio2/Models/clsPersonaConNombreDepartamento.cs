@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio2.Models
+namespace Ejercicio3.Models
 {
     public class clsPersonaConNombreDepartamento : clsPersona
     {

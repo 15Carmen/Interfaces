@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio2.ViewModels.Utilidades
+namespace Ejercicio3.ViewModels.Utilidades
 {
     public abstract class clsVMBase : INotifyPropertyChanged
     {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uiwSbTL1cQQzvsSFmcMDAlEKIgaC0oZvSyvKC46uPqxt/x24jmKxDi9PqhIfgzZ4EtxPdIvwaEUCPeUfj/NI7w==",
+  "dgSpecHash": "ZXu+TCtkFy+/55zf53Uomnf0IAHXD7Y+feJ39OLJGEwUmBYb3xMpm0zmCnGj9+EZBCspewrvvaEbROntthQoaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2\\Ejercicio2.csproj",
+  "projectFilePath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2\\Ejercicio3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cmartin\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\cmartin\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

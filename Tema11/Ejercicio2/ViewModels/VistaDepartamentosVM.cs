@@ -1,10 +1,10 @@
-﻿using Ejercicio2.ViewModels.Utilidades;
+﻿using Ejercicio3.ViewModels.Utilidades;
 using Entidades;
 using BL.HandlersBL;
 using System.Collections.ObjectModel;
 using BL.ListadosBL;
 
-namespace Ejercicio2.ViewModels
+namespace Ejercicio3.ViewModels
 {
     public class VistaDepartamentosVM : clsVMBase
     {
