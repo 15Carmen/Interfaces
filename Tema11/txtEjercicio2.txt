@@ -1,0 +1,41 @@
+txtEjercicio2
+
+DAL
+
+	clsListadoPersonajesDAL
+		public static async Task <List<clsPersonajes>> listadoCompletoPersonajesDAL()
+	clsListadoPlanetasDAL
+		public static async Task <string <clsPlaneta>> obtenerNombrePlanetaPorId(int id)
+
+BL
+	clsListadoPersonajesBL
+		public static async Task <List<clsPersonajes>> listadoCompletoPersonajesBL()
+
+
+Entidades
+	clsPersonajes
+	clsPlaneta
+
+UI
+
+	Views
+		ListadoPersonajes - listado de personajes con boton
+
+		DetallesPersonaje - detalles de un personaje + peticion para nombre de planeta
+
+	ViewModels
+
+		Utils
+			clsVMBase
+			DelegateCommand
+
+		clsListadoPersonajesVM : clsVMBase
+			public ObservableCollection ListadoPersonajes <clsPersonajes>{get;}
+			public clsPersonajes personajeSeleccionado {get; set;}	
+			public DelegateCommand DetallesCommand {get;}		
+
+		clsDetallesPersonajeVM
+			recibe un personaje de clsListadoPersonajesVM
+						
+			
+		
