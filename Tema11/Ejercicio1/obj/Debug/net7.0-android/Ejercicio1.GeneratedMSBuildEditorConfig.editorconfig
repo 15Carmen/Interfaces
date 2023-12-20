@@ -7,12 +7,10 @@ build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.EnableAotAnalyzer = 
-build_property.EnableSingleFileAnalyzer = true
-build_property.EnableTrimAnalyzer = false
-build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Ejercicio1
 build_property.ProjectDir = C:\Users\cmartin\GitHub\Interfaces\Tema11\Ejercicio1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 
 [C:/Users/cmartin/GitHub/Interfaces/Tema11/Ejercicio1/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

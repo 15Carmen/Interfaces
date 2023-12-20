@@ -9,6 +9,8 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Ejercicio2
 build_property.ProjectDir = C:\Users\cmartin\GitHub\Interfaces\Tema11\Ejercicio2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 
 [C:/Users/cmartin/GitHub/Interfaces/Tema11/Ejercicio2/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
