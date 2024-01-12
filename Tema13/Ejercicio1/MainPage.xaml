@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1.MainPage">
+
+    <ContentPage.Resources>
+
+        <LinearGradientBrush x:Key="buttonBackgroud">
+            <GradientStop Offset="0" Color="HotPink"/>
+            <GradientStop Offset="1" Color="LightPink"/>
+        </LinearGradientBrush>
+
+    </ContentPage.Resources>
+
+
+    <VerticalStackLayout>
+
+        <Button Text="Hello I am a button using a resource"
+            Background="{StaticResource buttonBackgroud}"></Button>
+
+        <Rectangle Fill="{StaticResource rectangleBackgroud}" 
+                   HeightRequest="100" 
+                   WidthRequest="100"
+                   Margin="10"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
