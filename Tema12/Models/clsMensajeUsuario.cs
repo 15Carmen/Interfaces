@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Models
@@ -28,16 +29,18 @@ namespace Models
 
         #region propiedades
 
+        [JsonPropertyName ("NombreUsuario")]
         public String NombreUsuario
         {
             get { return nombreUsuario; }
             set { nombreUsuario = value; }
         }
 
+        [JsonPropertyName("MensajeUsuario")]
         public String MensajeUsuario
         {
-            get { return nombreUsuario; }
-            set { nombreUsuario = value; }
+            get { return mensajeUsuario; }
+            set { mensajeUsuario = value; }
         }
 
         #endregion

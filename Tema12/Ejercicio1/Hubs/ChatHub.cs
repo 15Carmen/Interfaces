@@ -5,9 +5,9 @@ namespace Ejercicio1.Hubs
 {
     public class ChatHub : Hub
     {
-        public async Task SendMessage(clsMensajeUsuario usuario)
+        public async Task SendMessage(clsMensajeUsuario oMensajeUsuario)
         {
-            await Clients.All.SendAsync("ReceiveMessage", usuario.NombreUsuario, usuario.MensajeUsuario);
+            await Clients.All.SendAsync("ReceiveMessage", oMensajeUsuario);
         }
     }
 }

@@ -1,0 +1,10 @@
+C:\Users\cmartin\GitHub\Interfaces\Tema12\Ejercicio1\obj\Release\net7.0\PubTmp\Out\Ejercicio1.exe
+C:\Users\cmartin\GitHub\Interfaces\Tema12\Ejercicio1\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\cmartin\GitHub\Interfaces\Tema12\Ejercicio1\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\cmartin\GitHub\Interfaces\Tema12\Ejercicio1\obj\Release\net7.0\PubTmp\Out\libman.json
+C:\Users\cmartin\GitHub\Interfaces\Tema12\Ejercicio1\obj\Release\net7.0\PubTmp\Out\Ejercicio1.dll
+C:\Users\cmartin\GitHub\Interfaces\Tema12\Ejercicio1\obj\Release\net7.0\PubTmp\Out\Ejercicio1.deps.json
+C:\Users\cmartin\GitHub\Interfaces\Tema12\Ejercicio1\obj\Release\net7.0\PubTmp\Out\Ejercicio1.runtimeconfig.json
+C:\Users\cmartin\GitHub\Interfaces\Tema12\Ejercicio1\obj\Release\net7.0\PubTmp\Out\Ejercicio1.pdb
+C:\Users\cmartin\GitHub\Interfaces\Tema12\Ejercicio1\obj\Release\net7.0\PubTmp\Out\Models.dll
+C:\Users\cmartin\GitHub\Interfaces\Tema12\Ejercicio1\obj\Release\net7.0\PubTmp\Out\Models.pdb
