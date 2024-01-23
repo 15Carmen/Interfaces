@@ -11,12 +11,13 @@ namespace Maui.ViewModels
 
         #region atributos
 
+        private readonly HubConnection hubConnection;
         private clsMensajeUsuario oMensajeUsuario;
         private string nombreUsuario;
         private string mensajeUsuario;
         private DelegateCommand enviarMensajeCommand;
         private ObservableCollection<clsMensajeUsuario> listaChats;
-        private readonly HubConnection hubConnection;
+        
 
         #endregion
 
@@ -24,9 +25,23 @@ namespace Maui.ViewModels
 
         public MainPageVM()
         {
+            hubConnection = new HubConnectionBuilder().WithUrl("https://chathubcarmen.azurewebsites.net/chatHub").Build();
+            hubConnection.On<clsMensajeUsuario>("ReceiveMessage", ReceiveMessage);
+            nombreUsuario = string.Empty;
+            mensajeUsuario = string.Empty;
             listaChats = new ObservableCollection<clsMensajeUsuario>();
-            enviarMensajeCommand = new DelegateCommand(enviarExecute, enviarCanExecute);
-            hubConnection = new HubConnectionBuilder().WithUrl("http://192.168.1.21:5252").Build();
+            enviarMensajeCommand = new DelegateCommand(EnviarCommand_Execute, EnviarCommand_CanExecute);
+        }
+
+        private void ReceiveMessage(clsMensajeUsuario mensaje)
+        {
+            mensaje = new clsMensajeUsuario(NombreUsuario, MensajeUsuario);
+
+            Task.Run(async () =>
+            {
+                await hubConnection.StartAsync();
+            });
+
         }
 
         #endregion
@@ -57,7 +72,7 @@ namespace Maui.ViewModels
 
         #region commands
 
-        public void enviarExecute()
+        public void EnviarCommand_Execute()
         {
             // Validar que se haya ingresado un nombre de usuario y un mensaje antes de enviar
             if (!string.IsNullOrWhiteSpace(NombreUsuario) && !string.IsNullOrWhiteSpace(MensajeUsuario))
@@ -67,12 +82,12 @@ namespace Maui.ViewModels
                 ListaChats.Add(oMensajeUsuario);
 
                 // Limpiar los campos después de enviar el mensaje
-                NombreUsuario = string.Empty;
                 MensajeUsuario = string.Empty;
+                EnviarMensajeCommand.RaiseCanExecuteChanged();
             }
         }
 
-        public bool enviarCanExecute()
+        public bool EnviarCommand_CanExecute()
         {
             bool puedeEnviar = false;
 
