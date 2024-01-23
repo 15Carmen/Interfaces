@@ -16,7 +16,7 @@ namespace Ejercicio3.Models
 
         #region Constructor
         public clsPersonaConNombreDepartamento() { }
-        public clsPersonaConNombreDepartamento(clsPersona persona, string nombreDpto)
+        public clsPersonaConNombreDepartamento(clsPersona persona)
         {
             //Indicamos que las propiedades heredadas de esta clase son iguales a las pasadas por parámetro
             this.Id = persona.Id;
@@ -27,7 +27,7 @@ namespace Ejercicio3.Models
             this.Foto = persona.Foto;
             this.FechaNacimiento = persona.FechaNacimiento;
             this.IdDepartamento = persona.IdDepartamento;
-            this.nombreDpto = nombreDpto;
+            this.nombreDpto = "";
         }
         #endregion
 

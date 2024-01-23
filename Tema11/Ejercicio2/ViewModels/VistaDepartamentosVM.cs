@@ -29,11 +29,7 @@ namespace Ejercicio3.ViewModels
             //crearCommand = new DelegateCommand(CearCommand_Executed);
         }
 
-        public static async Task<VistaDepartamentosVM> BuildViewModelAsync()
-        {
-            ObservableCollection<clsPersona> listaAsincrona = new ObservableCollection<clsPersona>(await clsListadoDepartamentosBL.listadoCompletoDepartamentosBL());
-            return new VistaDepartamentosVM(listaAsincrona);
-        }
+       
 
         #endregion
 

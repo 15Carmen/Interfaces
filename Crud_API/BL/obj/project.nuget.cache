@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ws8g0V6u1gw9WUGccssxi6IIkbfgsJTUoW7OliANtWyjrekepNSsmVC7fez2rgqv1y5zpMnnAf4LzBWsMqtavw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Crud_API\\BL\\BL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cmnbo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

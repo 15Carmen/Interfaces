@@ -1,6 +1,8 @@
 ﻿using BL.HandlersBL;
 using BL.ListadosBL;
+using Ejercicio3.Models;
 using Ejercicio3.ViewModels.Utilidades;
+using Ejercicio3.Views;
 using Entidades;
 using System;
 using System.Collections.Generic;
@@ -18,33 +20,25 @@ namespace Ejercicio3.ViewModels
         private DelegateCommand eliminarCommand;
         private DelegateCommand editarCommand;
         private DelegateCommand buscarCommand;
-        private DelegateCommand detallesCommand;
-        private ObservableCollection<clsPersona> listadoPersonasCompleto;
         private ObservableCollection<clsPersona> listadoPersonasMostrado;
         private clsPersona personaSeleccionada;
-        private string cadena;
+        private string personaBuscada;
         #endregion
-
 
         #region Constructores
 
-        public VistaPersonasVM(ObservableCollection<clsPersona> listaPersonas)
+        public VistaPersonasVM()
         {
-            listadoPersonasCompleto = listaPersonas;
+
+            CargarListaPersonas();
             crearCommand = new DelegateCommand(CrearCommand_Executed);
             buscarCommand = new DelegateCommand(BuscarCommand_Executed);
             eliminarCommand = new DelegateCommand(EliminarCommand_Executed, EliminarCommand_CanExecute);
-            editarCommand = new DelegateCommand(EditarCommand_ExecutedAsync, EditarCommand_CanExecute);
-            detallesCommand = new DelegateCommand(DetallesCommand_Execute, DetallesCommand_CanExecute);
-            listadoDePersonasMostrado = new ObservableCollection<clsPersona>(listadoDePersonasCompleto);
+            editarCommand = new DelegateCommand(EditarCommand_Executed, EditarCommand_CanExecute);
             personaSeleccionada = null;
         }
 
-        public static async Task<VistaPersonasVM> BuildViewModelAsync()
-        {
-            ObservableCollection<clsPersona> listaAsincrona = new ObservableCollection<clsPersona>(await clsListadoPersonasBL.listadoCompletoPersonasBL());
-            return new VistaPersonasVM(listaAsincrona);
-        }
+
 
         #endregion
 
@@ -70,10 +64,6 @@ namespace Ejercicio3.ViewModels
             get { return buscarCommand; }
         }
 
-        public DelegateCommand DetallesCommand { 
-            get { return detallesCommand; } 
-        }
-
         public ObservableCollection<clsPersona> ListadoPersonasMostrado
         {
             get { return listadoPersonasMostrado; }
@@ -87,21 +77,19 @@ namespace Ejercicio3.ViewModels
             {
                 personaSeleccionada = value;
                 NotifyPropertyChanged();
-                editarCommand.RaiseCanExecuteChanged();
-                eliminarCommand.RaiseCanExecuteChanged();
+                EditarCommand.RaiseCanExecuteChanged();
+                EliminarCommand.RaiseCanExecuteChanged();
             }
         }
 
-        public string Cadena
+        public string PersonaBuscada
         {
-            get { return cadena; }
+            get { return personaBuscada; }
             set
             {
-                cadena = value;
-                NotifyPropertyChanged(nameof(cadena));
-
-                //buscarCommand.RaiseCanExecuteChanged();
-                BuscarPersonas();
+                personaBuscada = value;
+                NotifyPropertyChanged(nameof(personaBuscada));
+                buscarCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -126,24 +114,10 @@ namespace Ejercicio3.ViewModels
         /// </summary>
         private async void EliminarCommand_Executed()
         {
-            bool eliminar = await Application.Current.MainPage.DisplayAlert("Eliminar", "¿Seguro que desea eliminar el departamento de la BBDD?", "Si", "No");
-            if (eliminar == true)
-            {
-                listadoPersonasCompleto.Remove(PersonaSeleccionada);
-                listadoPersonasMostrado.Remove(PersonaSeleccionada);
-                try
-                {
-                    await clsHandlerDepartamentosBL.borrarDepartamentoBL(PersonaSeleccionada.Id);
-                    PersonaSeleccionada = null;
-                    EliminarCommand.RaiseCanExecuteChanged();
-                    EditarCommand.RaiseCanExecuteChanged();
-                    NotifyPropertyChanged("ListadoDeDepartamentosMostrado");
-                }
-                catch (Exception)
-                {
-                    await Application.Current.MainPage.DisplayAlert("Alerta", "Error eliminanado el departamento de la BBDD", "OK");
-                }
-            }
+            await clsHandlerPersonasBL.borrarPersonasBL(personaSeleccionada.Id);
+
+            //Recargamos la vista
+            await Shell.Current.Navigation.PushAsync(new ListadoPersonasPage());
         }
 
 
@@ -201,36 +175,66 @@ namespace Ejercicio3.ViewModels
         /// </summary>
         private void BuscarCommand_Executed()
         {
-            BuscarPersonas();
+            if (!String.IsNullOrEmpty(PersonaBuscada) || !PersonaBuscada.Equals(" "))
+            {
+                List<clsPersona> listaAuxiliar = new List<clsPersona>(listadoPersonasMostrado);
+                ListadoPersonasMostrado.Clear();
+                ListadoPersonasMostrado.Add(listaAuxiliar.Find(x => x.Nombre.ToLower().Contains(PersonaBuscada) || x.Apellido.ToLower().Contains(PersonaBuscada)));
+            }
             NotifyPropertyChanged(nameof(ListadoPersonasMostrado));
             NotifyPropertyChanged(nameof(PersonaSeleccionada));
         }
 
         #endregion
 
-        #region Funciones y Metodos
+        #region funciones y metodos
 
-        /// <summary>
-        /// Método que busca el departamento en la lista completa de departamentos
-        /// Pre: ninguna
-        /// Post: ninguna
-        /// </summary>
-        /// <returns>una lista con los departamentos que encuentra</returns>
-        private async void BuscarPersonas()
+        private async void CargarListaPersonas()
         {
-            //Compruebo primero si está vació.
-            if (String.IsNullOrEmpty(Cadena) || Cadena.Equals(" "))
+            //Nos traemos la lista.
+            List<clsPersona> listaPersonas = new List<clsPersona>(await clsListadoPersonasBL.listadoCompletoPersonasBL());
+
+            ObservableCollection<clsPersonaConNombreDepartamento> listaPersonasDepartamento = new ObservableCollection<clsPersonaConNombreDepartamento>();
+
+            foreach (clsPersona p in listaPersonas)
             {
-                ListadoPersonasMostrado = listadoPersonasCompleto;
+                clsPersonaConNombreDepartamento per = new clsPersonaConNombreDepartamento(p);
+
+                //Obviamos a las personas nulas.
+                if (per != null)
+                {
+                    //Rellenamos el listado de personas con departamento pero que no saben el nombre del departamento.
+                    listaPersonasDepartamento.Add(per);
+                }
             }
-            else
+
+            //Recorremos la segunda lista
+            foreach (clsPersonaConNombreDepartamento persona in listaPersonasDepartamento)
             {
-                List<clsPersona> listaAuxiliar = new List<clsPersona>(listadoPersonasCompleto);
-                ListadoPersonasMostrado.Clear();
-                ListadoPersonasMostrado.Add(listaAuxiliar.Find(x => x.Nombre.ToLower().Contains(Cadena) || x.Apellido.ToLower().Contains(Cadena)));
+                //Ahora, buscamos el departamento de cada persona.
+                clsDepartamento departamento = await clsListadoDepartamentosBL.obtenerDepartamentoPorIdBL(persona.IdDepartamento);
+
+                //Asignamos el nombre
+                if (departamento == null)
+                {
+                    persona.NombreDpto = "No tiene departamento asignado.";
+
+                }
+                else
+                {
+                    persona.NombreDpto = departamento.Nombre;
+                }
+
+
+                //añadimos la persona a la lista.
+                listadoPersonasMostrado.Add(persona);
             }
+
+            //Notificamos que ha habido cambios en la propiedad ListaPersonas, para que la cargue la vista.
+            NotifyPropertyChanged("ListaPersonasNombreDept");
         }
 
         #endregion
+
     }
 }
