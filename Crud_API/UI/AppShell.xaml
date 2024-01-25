@@ -3,12 +3,26 @@
     x:Class="UI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:UI"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:local="clr-namespace:UI.Views">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+         Title="Home"
+         ContentTemplate="{DataTemplate local:MainPage}"
+         Route="MainPage"/>
+
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title=" Listados">
+
+            <ShellContent Title="Departamentos"  ContentTemplate="{DataTemplate local:ListadoDepartamentosPage}" Route="ListadoDepartamentosPage"/>
+
+
+            <ShellContent Title="Personas" ContentTemplate="{DataTemplate local:ListadoPersonasPage}" Route="ListadoPersonasPage"/>
+        </Tab>
+    </FlyoutItem>
+
+    <ShellContent Title="Insertar Persona" ContentTemplate="{DataTemplate local:CrearPersonaPage}" Route="CrearPersonaPage"/>
+    <ShellContent Title="Insertar Departamento" ContentTemplate="{DataTemplate local:CrearDepartamentoPage}" Route="CrearDepartamentoPage"/>
+
 
 </Shell>

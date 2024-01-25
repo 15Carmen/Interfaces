@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UI</name>
+    </assembly>
+    <members>
+        <member name="M:UI.ViewModels.CrearPersonaVM.CancelarCommadn_Execute">
+            <summary>
+            Método que cancela la inserción de una persona.
+            </summary>
+        </member>
+        <member name="M:UI.ViewModels.EditarPersonaVM.CancelarCommand_Execute">
+            <summary>
+            Método que cancela la inserción de una persona.
+            </summary>
+        </member>
+        <member name="M:UI.ViewModels.ListadoPersonasVM.CrearCommand_Executed">
+            <summary>
+            Comando que manda la vista de crear departamentos
+            Pre: la vista de crear departamentos debe existir
+            Post: ninguna
+            </summary>
+        </member>
+        <member name="M:UI.ViewModels.ListadoPersonasVM.EliminarCommand_Executed">
+            <summary>
+            Comando que elimina un departamento de la base de datos
+            Pre: el departamento a eliminar debe existir
+            Post: ninguna
+            </summary>
+        </member>
+        <member name="M:UI.ViewModels.ListadoPersonasVM.EliminarCommand_CanExecute">
+            <summary>
+            Comando que devuelve true si se ha elegido eliminar un departamento y false si no
+            Pre: ninguna
+            Post: ninguna
+            </summary>
+            <returns>booleano</returns>
+        </member>
+        <member name="M:UI.ViewModels.ListadoPersonasVM.EditarCommand_Executed">
+            <summary>
+            Comando que la vista para editar el departamento
+            Pre: la vista debe de estar creada
+            Post: ninguna
+            </summary>
+        </member>
+        <member name="M:UI.ViewModels.ListadoPersonasVM.EditarCommand_CanExecute">
+            <summary>
+            Comando que devuelve true si se ha elegido editar un departamento y false si no
+            Pre: ninguna
+            Post: ninguna
+            </summary>
+            <returns>booleano</returns>
+        </member>
+        <member name="M:UI.ViewModels.ListadoPersonasVM.BuscarCommand_Executed">
+            <summary>
+            Comando que busca un departamento en la lista
+            Pre: la lista nodebe estar vacía
+            Post: ninguna
+            </summary>
+        </member>
+        <member name="M:UI.ViewModels.Utilidades.DelegateCommand.#ctor(System.Action)">
+            <summary>
+            Initializes a new instance of the RelayCommand class that 
+            can always execute.
+            </summary>
+            <param name="execute">The execution logic.</param>
+            <exception cref="T:System.ArgumentNullException">If the execute argument is null.</exception>
+        </member>
+        <member name="M:UI.ViewModels.Utilidades.DelegateCommand.#ctor(System.Action,System.Func{System.Boolean})">
+            <summary>
+            Initializes a new instance of the RelayCommand class.
+            </summary>
+            <param name="execute">The execution logic.</param>
+            <param name="canExecute">The execution status logic.</param>
+            <exception cref="T:System.ArgumentNullException">If the execute argument is null.</exception>
+        </member>
+        <member name="E:UI.ViewModels.Utilidades.DelegateCommand.CanExecuteChanged">
+            <summary>
+            Occurs when changes occur that affect whether the command should execute.
+            </summary>
+        </member>
+        <member name="M:UI.ViewModels.Utilidades.DelegateCommand.RaiseCanExecuteChanged">
+            <summary>
+            Raises the <see cref="E:UI.ViewModels.Utilidades.DelegateCommand.CanExecuteChanged" /> event.
+            </summary>
+        </member>
+        <member name="M:UI.ViewModels.Utilidades.DelegateCommand.CanExecute(System.Object)">
+            <summary>
+            Defines the method that determines whether the command can execute in its current state.
+            </summary>
+            <param name="parameter">This parameter will always be ignored.</param>
+            <returns>true if this command can be executed; otherwise, false.</returns>
+        </member>
+        <member name="M:UI.ViewModels.Utilidades.DelegateCommand.Execute(System.Object)">
+            <summary>
+            Defines the method to be called when the command is invoked. 
+            </summary>
+            <param name="parameter">This parameter will always be ignored.</param>
+        </member>
+    </members>
+</doc>

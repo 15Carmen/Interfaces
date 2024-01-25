@@ -8,6 +8,8 @@ using System.Collections.ObjectModel;
 using Entidades;
 using BL.HandlersBL;
 using BL.ListadosBL;
+using UI.Models;
+using UI.Views;
 
 namespace UI.ViewModels
 {
@@ -18,8 +20,8 @@ namespace UI.ViewModels
         private DelegateCommand eliminarCommand;
         private DelegateCommand editarCommand;
         private DelegateCommand buscarCommand;
-        private ObservableCollection<clsPersona> listadoPersonasMostrado;
-        private clsPersona personaSeleccionada;
+        private ObservableCollection<clsPersonaConNombreDepartamento> listadoPersonasMostrado = new ObservableCollection<clsPersonaConNombreDepartamento>();
+        private clsPersonaConNombreDepartamento personaSeleccionada;
         private string personaBuscada;
         #endregion
 
@@ -62,13 +64,14 @@ namespace UI.ViewModels
             get { return buscarCommand; }
         }
 
-        public ObservableCollection<clsPersona> ListadoPersonasMostrado
+        public ObservableCollection<clsPersonaConNombreDepartamento> ListadoPersonasMostrado
+
         {
             get { return listadoPersonasMostrado; }
-            set { listadoPersonasMostrado = value; }
+
         }
 
-        public clsPersona PersonaSeleccionada
+        public clsPersonaConNombreDepartamento PersonaSeleccionada
         {
             get { return personaSeleccionada; }
             set
@@ -102,8 +105,10 @@ namespace UI.ViewModels
         /// </summary>
         private async void CrearCommand_Executed()
         {
-            await Shell.Current.GoToAsync("InsertarPersonasPage");
+            //Aquí nos lleva a otra vista
+            await Shell.Current.Navigation.PushAsync(new CrearPersonaPage());
         }
+       
 
         /// <summary>
         /// Comando que elimina un departamento de la base de datos
@@ -142,11 +147,8 @@ namespace UI.ViewModels
         /// </summary>
         private async void EditarCommand_Executed()
         {
-            var miDiccionario = new Dictionary<string, object>
-            {
-                {"departamentoParaMandar", PersonaSeleccionada }
-            };
-            await Shell.Current.GoToAsync("EditarDepartamento", miDiccionario);
+            //Aquí nos lleva a otra vista
+            await Shell.Current.Navigation.PushAsync(new EditarPersonaPage(personaSeleccionada));
         }
 
 
@@ -173,14 +175,16 @@ namespace UI.ViewModels
         /// </summary>
         private void BuscarCommand_Executed()
         {
-            if (!String.IsNullOrEmpty(PersonaBuscada) || !PersonaBuscada.Equals(" "))
-            {
-                List<clsPersona> listaAuxiliar = new List<clsPersona>(listadoPersonasMostrado);
-                ListadoPersonasMostrado.Clear();
-                ListadoPersonasMostrado.Add(listaAuxiliar.Find(x => x.Nombre.ToLower().Contains(PersonaBuscada) || x.Apellido.ToLower().Contains(PersonaBuscada)));
-            }
+            ObservableCollection<clsPersonaConNombreDepartamento> listaPersonasEncontradas = new ObservableCollection<clsPersonaConNombreDepartamento>(listadoPersonasMostrado.Where(persona => persona.Nombre.Contains(personaBuscada)).ToList());
+
+            //Igualamos las listas.
+            listadoPersonasMostrado = listaPersonasEncontradas;
+
+            //notificamos el cambio.
             NotifyPropertyChanged(nameof(ListadoPersonasMostrado));
-            NotifyPropertyChanged(nameof(PersonaSeleccionada));
+
+
+            //TODO: ahora hay que mostrar esa lista de Personas Encontradas
         }
 
         #endregion
@@ -215,12 +219,12 @@ namespace UI.ViewModels
                 //Asignamos el nombre
                 if (departamento == null)
                 {
-                    persona.NombreDpto = "No tiene departamento asignado.";
+                    persona.NombreDepartamento = "No tiene departamento asignado.";
 
                 }
                 else
                 {
-                    persona.NombreDpto = departamento.Nombre;
+                    persona.NombreDepartamento = departamento.Nombre;
                 }
 
 
@@ -229,7 +233,7 @@ namespace UI.ViewModels
             }
 
             //Notificamos que ha habido cambios en la propiedad ListaPersonas, para que la cargue la vista.
-            NotifyPropertyChanged("ListaPersonasNombreDept");
+            NotifyPropertyChanged(nameof(ListadoPersonasMostrado));
         }
 
         #endregion

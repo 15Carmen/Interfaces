@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Biblioteca
-build_property.ProjectDir = C:\Users\cmartin\GitHub\Interfaces\Tema9\Biblioteca\
+build_property.ProjectDir = C:\Users\cmnbo\GitHub\Interfaces\Tema9\Biblioteca\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

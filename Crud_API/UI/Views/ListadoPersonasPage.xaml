@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:model="clr-namespace:UI.ViewModels"
+             x:Class="UI.Views.ListadoPersonasPage"
+             Title="Listado de Personas">
+    
+    <ContentPage.BindingContext>
+        <model:ListadoPersonasVM/>
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+
+        <VerticalStackLayout>
+
+            <HorizontalStackLayout  Margin="30" HorizontalOptions="Center">
+
+                <Button Command="{Binding CrearCommand}" HorizontalOptions="Start"
+                        Text="Crear"
+                        WidthRequest="100" Margin="0,0,200,0"/>
+
+                <Entry WidthRequest="200" HorizontalOptions="End"
+                        Text="{Binding PersonaBuscada}"
+                        Placeholder="Búsqueda" />
+
+
+                <Button Command="{Binding BuscarCommand}" HorizontalOptions="End"
+                        Text="Buscar"
+                        WidthRequest="100" />      
+
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center" >
+                    <Label Text="Nombre y Apellidos" FontAttributes="Bold" Margin="0,0,10,0" />
+                    <Label Text="Departamento" FontAttributes="Bold" />
+                </HorizontalStackLayout>
+
+                <ListView x:Name="listaPersonasLW" HorizontalOptions="Center"
+                      ItemsSource="{Binding ListadoPersonasMostrado}" SelectedItem="{Binding PersonaSeleccionada}" Margin="15">
+
+                    <ListView.ItemTemplate>
+
+                        <DataTemplate>
+                            <ViewCell>
+                                <HorizontalStackLayout HorizontalOptions="Center" Margin="5">
+
+
+
+                                    <Label Text="{Binding Nombre}" />
+                                    <Label Text="{Binding Apellidos}" />
+
+                                    <Label Text="{Binding NombreDepartamento}"  Margin="15,0,0,0"/>
+
+
+                                </HorizontalStackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+            </VerticalStackLayout>
+
+
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="30">
+
+                <Button Command="{Binding EliminarCommand}" 
+                    Text="Borrar"
+                    WidthRequest="200" Margin=" 5"/>
+
+                <Button Command="{Binding EditarCommand}"
+                    Text="Editar"
+                    WidthRequest="200" Margin=" 5"/>
+
+
+
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+        
+    </ScrollView>
+</ContentPage>
