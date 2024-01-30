@@ -8,8 +8,7 @@ using System.Runtime.InteropServices;
 namespace Maui.ViewModels
 {
     public class MainPageVM : clsVMBase
-    {
-
+    {  
         #region atributos
 
         private readonly HubConnection hubConnection;
@@ -19,7 +18,6 @@ namespace Maui.ViewModels
         private ObservableCollection<string> listaChats;
         private DelegateCommand enviarMensajeCommand;
         private string chat;
-        
 
         #endregion
 
@@ -32,7 +30,8 @@ namespace Maui.ViewModels
             hubConnection = new HubConnectionBuilder().WithUrl("https://chathubcarmen.azurewebsites.net/chatHub").Build();
             hubConnection.On<clsMensajeUsuario>("ReceiveMessage", (oMensajeUsuario) =>
             {
-                listaChats.Add(oMensajeUsuario.NombreUsuario + " says " + oMensajeUsuario.MensajeUsuario);
+                chat = oMensajeUsuario.NombreUsuario + " says " + oMensajeUsuario.MensajeUsuario;
+                listaChats.Add(chat);
             });
 
             Task.Run(async () =>
@@ -75,7 +74,7 @@ namespace Maui.ViewModels
         public string Chat
         {
             get { return chat; }
-            set { chat = value; enviarMensajeCommand.RaiseCanExecuteChanged();}
+            set { chat = value; }
         }
 
         #endregion
@@ -92,8 +91,7 @@ namespace Maui.ViewModels
             });
 
             NombreUsuario = String.Empty;
-            MensajeUsuario = String.Empty;
-            Chat = String.Empty;
+            MensajeUsuario = String.Empty;           
             EnviarMensajeCommand.RaiseCanExecuteChanged();
         }
 
@@ -111,10 +109,6 @@ namespace Maui.ViewModels
 
         #endregion
 
-        #region
-       
-
-        #endregion
 
     }
 }

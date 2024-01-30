@@ -36,10 +36,15 @@
             HorizontalOptions="Start"
             />
 
-        <ScrollView>
-            <Label Text="{Binding Chat}" TextColor="Black" />
-        </ScrollView>
-
+        <ListView x:Name="listaChats" HorizontalOptions="Center" ItemsSource="{Binding ListaChats}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding Chat}" TextColor="Black" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
     </VerticalStackLayout>
 
