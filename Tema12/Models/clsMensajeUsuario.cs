@@ -18,6 +18,8 @@ namespace Models
 
         #region constructores
 
+        public clsMensajeUsuario() { }  
+
         public clsMensajeUsuario(string nombreUsuario, string mensajeUsuario) 
         {
             this.nombreUsuario = nombreUsuario;

@@ -36,19 +36,9 @@
             HorizontalOptions="Start"
             />
 
-        <ListView ItemsSource="{Binding ListaChats}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <HorizontalStackLayout>
-                            <Label Text="{Binding NombreUsuario}" TextColor="Black" />
-                            <Label Text=" says " TextColor="Black" />
-                            <Label Text="{Binding MensajeUsuario}" TextColor="Black"/>
-                        </HorizontalStackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <ScrollView>
+            <Label Text="{Binding Chat}" TextColor="Black" />
+        </ScrollView>
 
 
     </VerticalStackLayout>

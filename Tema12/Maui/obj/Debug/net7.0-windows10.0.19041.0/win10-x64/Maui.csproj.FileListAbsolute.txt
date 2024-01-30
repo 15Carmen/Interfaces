@@ -661,3 +661,12 @@ C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.1904
 C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.Pipelines.dll
 C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Models.dll
 C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Models.pdb
+C:\Users\cmnbo\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\cmnbo\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\cmnbo\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\cmnbo\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\cmnbo\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\cmnbo\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\cmnbo\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\cmnbo\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Features.dll
+C:\Users\cmnbo\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.Pipelines.dll
