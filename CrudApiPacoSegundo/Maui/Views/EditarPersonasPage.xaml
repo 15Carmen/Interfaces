@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.Views.EditarPersonasPage"
+             xmlns:VM="clr-namespace:Maui.ViewModels"
+             x:DataType="VM:AgregarEditarPersonaVM"
+             Title="Editar Personas">
+    <VerticalStackLayout Spacing="10">
+        <HorizontalStackLayout Spacing="10" Padding="10"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center">
+            <Label Text="Nombre"/>
+            <Entry
+                Text="{Binding Persona.nombre}"
+                WidthRequest="100"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10" Padding="10"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center">
+            <Label Text="Apellidos"/>
+            <Entry
+                Text="{Binding Persona.apellidos}"
+                WidthRequest="100"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10" Padding="10"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center">
+            <Label Text="Teléfono"/>
+            <Entry
+                Text="{Binding Persona.telefono}"
+                WidthRequest="100"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10" Padding="10"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center">
+            <Label Text="Dirección"/>
+            <Entry
+                Text="{Binding Persona.direccion}"
+                WidthRequest="100"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10" Padding="10"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center">
+            <Label Text="Foto"/>
+            <Entry
+                Text="{Binding Persona.foto}"
+                WidthRequest="100"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10" Padding="10"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center">
+            <Label Text="Fecha de Nacimiento"/>
+            <DatePicker
+                Date="{Binding Persona.fechaNacimiento}"
+                WidthRequest="120"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10" Padding="10"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center">
+            <Picker 
+                    ItemsSource="{Binding ListaDepartamentos}" 
+                    ItemDisplayBinding="{Binding nombre}"
+                    SelectedIndex="{Binding Persona.idDepartamento}"
+                    SelectedItem="{Binding Departamento, Mode=TwoWay}"
+                    WidthRequest="200"
+                    BackgroundColor="Aquamarine"/>
+
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+            <Button Text="Actualizar" 
+                    Command="{Binding EditarCommand}"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

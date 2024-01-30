@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5xEqQkq0T6OFNC92dZtFVUhUo6ORyo9sySM/vDY5eA7ob+aBb5RYJSswiEfcLf3OEE/pDi4j4Rn3b4R2We9GXw==",
+  "dgSpecHash": "wHYENf/HF3xfjcnOAJ35f3GaTwQ28qx1jPbdiOu4P6icbwBYlnHPJTjJ0I40LPCmbeFHs9rdvd3QmAIOyjEZXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema11\\BL\\BL.csproj",
+  "projectFilePath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\BL\\BL.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\cmnbo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\cmartin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

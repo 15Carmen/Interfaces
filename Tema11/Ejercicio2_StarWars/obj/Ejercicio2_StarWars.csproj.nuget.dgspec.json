@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema11\\Ejercicio2_StarWars\\Ejercicio2_StarWars.csproj": {}
+    "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2_StarWars\\Ejercicio2_StarWars.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema11\\Ejercicio2_StarWars\\Ejercicio2_StarWars.csproj": {
+    "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2_StarWars\\Ejercicio2_StarWars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema11\\Ejercicio2_StarWars\\Ejercicio2_StarWars.csproj",
+        "projectUniqueName": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2_StarWars\\Ejercicio2_StarWars.csproj",
         "projectName": "Ejercicio2_StarWars",
-        "projectPath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema11\\Ejercicio2_StarWars\\Ejercicio2_StarWars.csproj",
-        "packagesPath": "C:\\Users\\cmnbo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Tema11\\Ejercicio2_StarWars\\obj\\",
+        "projectPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2_StarWars\\Ejercicio2_StarWars.csproj",
+        "packagesPath": "C:\\Users\\cmartin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Tema11\\Ejercicio2_StarWars\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cmnbo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cmartin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -165,6 +165,26 @@
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
+            {
+              "name": "Microsoft.Android.Ref.33",
+              "version": "[33.0.95, 33.0.95]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.33.android-arm",
+              "version": "[33.0.95, 33.0.95]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.33.android-arm64",
+              "version": "[33.0.95, 33.0.95]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.33.android-x64",
+              "version": "[33.0.95, 33.0.95]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.33.android-x86",
+              "version": "[33.0.95, 33.0.95]"
+            },
             {
               "name": "Microsoft.Maui.Controls.Ref.android",
               "version": "[7.0.101, 7.0.101]"

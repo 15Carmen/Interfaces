@@ -184,7 +184,6 @@ namespace UI.ViewModels
             NotifyPropertyChanged(nameof(ListadoPersonasMostrado));
 
 
-            //TODO: ahora hay que mostrar esa lista de Personas Encontradas
         }
 
         #endregion

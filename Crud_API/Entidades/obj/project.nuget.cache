@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dUeVy9jdMdKJinK+nIRMxewmEKYQn1M5fEPqrWR47dNjLUrePbsQf9mP1BPf4FmkEV9L87sSLhTnd4p9PGFTVA==",
+  "dgSpecHash": "3TIKZaxqNFuTktas4ahvs0J1QU6OPrFeEYMAj0Ly0+G9sHbJWdsEN83Y53J4bas3rF0B5z5TKv4XsME+3oNlbw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\Crud_API\\Entidades\\Entidades.csproj",
+  "projectFilePath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\Crud_API\\Entidades\\Entidades.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:VM="clr-namespace:Maui.ViewModels"
+             xmlns:Model="clr-namespace:Entities;assembly=Entities"
+             x:DataType="VM:VistaPersonasVM"
+             x:Class="Maui.Views.VistaPersonasPage"
+             Title="Lista de Personas">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ActivityIndicator IsVisible="true"
+                           IsRunning="True"/>
+        <HorizontalStackLayout Grid.Row="0"
+                               HorizontalOptions="End"
+                               VerticalOptions="End"
+                               Padding="20"
+                               Spacing="10">
+        </HorizontalStackLayout>
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout
+                Padding="20"
+                Spacing="20">
+                <HorizontalStackLayout VerticalOptions="StartAndExpand" Grid.Row="0" HorizontalOptions="Center">
+                    <SearchBar BackgroundColor="Beige"
+                       Placeholder="Buscar"
+                        MinimumWidthRequest="100"
+                        Text="{Binding Busqueda, Mode=TwoWay}"
+                        SearchCommand="{Binding BuscarCommand}"/>
+                </HorizontalStackLayout>
+                <ListView
+                    ItemsSource="{Binding ListadoDePersonasMostrado}"
+                    SelectedItem="{Binding PersonaSeleccionada}"
+                    RowHeight="100">
+                    <ListView.ItemTemplate>
+                        <DataTemplate
+                            x:DataType="Model:clsPersona">
+                            <ViewCell>
+                                <Frame CornerRadius="10" BorderColor="Black">
+                                    <HorizontalStackLayout Spacing="10">
+                                        <Image Source="{Binding foto}" WidthRequest="100" HorizontalOptions="Start"/>
+                                        <VerticalStackLayout Spacing="20">
+                                            <Label Text="{Binding nombre}"/>
+                                            <Label Text="{Binding apellidos}"/>
+                                        </VerticalStackLayout>
+                                        <VerticalStackLayout Spacing="20">
+                                            <Label Text="{Binding direccion}"/>
+                                            <Label Text="{Binding fechaNacimiento}"/>
+                                        </VerticalStackLayout>
+                                    </HorizontalStackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
+        </ScrollView>
+        <HorizontalStackLayout Grid.Row="0"
+                               HorizontalOptions="End"
+                               VerticalOptions="Start"
+                               Padding="20"
+                               Spacing="10">
+            <Button
+                Command="{Binding DetallesCommand}"
+                Text="Detalles"
+                WidthRequest="50"
+                HeightRequest="50"
+                BackgroundColor="LightSalmon"
+                CornerRadius="10"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Grid.Row="0"
+                               HorizontalOptions="End"
+                               VerticalOptions="End"
+                               Padding="20"
+                               Spacing="10">
+            <Button
+                Command="{Binding EditarCommand}"
+                Text="Editar"
+                WidthRequest="50"
+                HeightRequest="50"
+                BackgroundColor="LightYellow"
+                CornerRadius="10"/>
+            <Button
+                Command="{Binding EliminarCommand}"
+                Text="Delete"
+                WidthRequest="50"
+                HeightRequest="50"
+                BackgroundColor="LightYellow"
+                CornerRadius="10"/>
+            <Button
+                Command="{Binding CrearCommand}"
+                Text="Agregar"
+                WidthRequest="50"
+                HeightRequest="50"
+                BackgroundColor="LightYellow"
+                CornerRadius="10"/>
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>
