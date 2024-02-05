@@ -12,11 +12,11 @@ namespace Entidades
         #region Atributos
         private int id;
         private string nombre;
-        private string apellido;
+        private string apellidos;
         private string telefono;
         private string direccion;
         private string foto;
-        private DateTime fechaNacimiento;
+        private DateTime fechaNac;
         private int idDepartamento;
 
 
@@ -28,35 +28,35 @@ namespace Entidades
         {
             id = 1;
             nombre = string.Empty;
-            apellido = string.Empty;
+            apellidos = string.Empty;
             telefono = string.Empty;
             direccion = string.Empty;
             foto = string.Empty;
-            fechaNacimiento = DateTime.MinValue;
+            fechaNac = DateTime.MinValue;
             idDepartamento = 1;
 
         }
 
-        public clsPersona(int id, string nombre, string apellido, string telefono, string direcccion, string foto, DateTime fechaNacimiento)
+        public clsPersona(int id, string nombre, string apellidos, string telefono, string direcccion, string foto, DateTime fechaNacimiento)
         {
             this.id = id;
             this.nombre = nombre;
-            this.apellido = apellido;
+            this.apellidos = apellidos;
             this.telefono = telefono;
             this.direccion = direcccion;
             this.foto = foto;
-            this.fechaNacimiento = fechaNacimiento;
+            this.fechaNac = fechaNacimiento;
         }
 
-        public clsPersona(int id, string nombre, string apellido, string telefono, string direcccion, string foto, DateTime fechaNacimiento, int idDepartamento)
+        public clsPersona(int id, string nombre, string apellidos, string telefono, string direcccion, string foto, DateTime fechaNacimiento, int idDepartamento)
         {
             this.id = id;
             this.nombre = nombre;
-            this.apellido = apellido;
+            this.apellidos = apellidos;
             this.telefono = telefono;
             this.direccion = direcccion;
             this.foto = foto;
-            this.fechaNacimiento = fechaNacimiento;
+            this.fechaNac = fechaNacimiento;
             this.idDepartamento = idDepartamento;
 
         }
@@ -79,10 +79,10 @@ namespace Entidades
         }
 
 
-        public string Apellido
+        public string Apellidos
         {
-            get { return apellido; }
-            set { apellido = value; }
+            get { return apellidos; }
+            set { apellidos = value; }
         }
 
         public string Telefono
@@ -103,10 +103,10 @@ namespace Entidades
             set { foto = value; }
         }
 
-        public DateTime FechaNacimiento
+        public DateTime FechaNac
         {
-            get { return fechaNacimiento; }
-            set { fechaNacimiento = value; }
+            get { return fechaNac; }
+            set { fechaNac = value; }
         }
 
         public int IdDepartamento

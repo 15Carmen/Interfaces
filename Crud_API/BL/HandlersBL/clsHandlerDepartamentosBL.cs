@@ -11,12 +11,12 @@ namespace BL.HandlersBL
 {
     public class clsHandlerDepartamentosBL
     {
-        public static async Task<HttpStatusCode> insertarDepartamentoBL(clsPersona departamento)
+        public static async Task<HttpStatusCode> insertarDepartamentoBL(clsDepartamento departamento)
         {
             return await clsHandlerDepartamentosDAL.insertarDepartamentoDAL(departamento);
         }
 
-        public static async Task<HttpStatusCode> editarDepartamentoBL(clsPersona departamento)
+        public static async Task<HttpStatusCode> editarDepartamentoBL(clsDepartamento departamento)
         {
             return await clsHandlerDepartamentosDAL.editarDepartamentoDAL(departamento);
         }

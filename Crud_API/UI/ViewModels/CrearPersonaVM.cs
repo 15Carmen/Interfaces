@@ -17,24 +17,24 @@ namespace UI.ViewModels
 
         #region atributos
 
-        ObservableCollection<clsDepartamento> listaDepartamentos = new ObservableCollection<clsDepartamento>();
-        clsDepartamento departamentoSeleccionado;
-        clsPersona nuevaPersona;
+        clsPersona personaNueva;
         DelegateCommand cancelarCommand;
         DelegateCommand guardarCommand;
+        ObservableCollection<clsDepartamento> desplegableDepartamentos = new ObservableCollection<clsDepartamento>();
+        clsDepartamento departamentoSeleccionado;
 
         #endregion
 
         #region constructores
 
+
         public CrearPersonaVM()
         {
-            //cargamos la lista de los departamentos
-            CargarLista();
-            this.nuevaPersona = new clsPersona();
-            this.departamentoSeleccionado = new clsDepartamento();
-            guardarCommand = new DelegateCommand(GuardarCommand_Execute);
-            cancelarCommand = new DelegateCommand(CancelarCommadn_Execute, CancelarCommand_CanExecute);
+            CargarDesplegable();
+            this.personaNueva = new clsPersona();        
+            this.departamentoSeleccionado = null;
+            guardarCommand = new DelegateCommand(GuardarCommand_Execute, GuardarCommand_CanExecute);
+            cancelarCommand = new DelegateCommand(CancelarCommand_Execute);
 
         }
 
@@ -55,19 +55,20 @@ namespace UI.ViewModels
 
         }
 
-        public ObservableCollection<clsDepartamento> ListaDepartamentos
+        public ObservableCollection<clsDepartamento> DesplegableDepartamentos
         {
-            get { return listaDepartamentos; }
+            get { return desplegableDepartamentos; }
+            
         }
 
-        public clsPersona NuevaPersona
+        public clsPersona PersonaNueva
         {
-            get { return nuevaPersona; }
+            get { return personaNueva; }
             set
             {
-                nuevaPersona = value;
+                personaNueva = value;
 
-                NotifyPropertyChanged(nameof(NuevaPersona));
+                NotifyPropertyChanged(nameof(PersonaNueva));
                 cancelarCommand.RaiseCanExecuteChanged();
                 guardarCommand.RaiseCanExecuteChanged();
 
@@ -81,6 +82,8 @@ namespace UI.ViewModels
             {
                 departamentoSeleccionado = value;
                 NotifyPropertyChanged(nameof(DepartamentoSeleccionado));
+                cancelarCommand.RaiseCanExecuteChanged();
+                guardarCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -90,32 +93,40 @@ namespace UI.ViewModels
 
         private async void GuardarCommand_Execute()
         {
-            //Manda la persona a la bbdd.
-            await clsHandlerPersonasBL.insertarPersonasBL(nuevaPersona);
 
-            //Esto navegará al listado de personas.
+            personaNueva.IdDepartamento = departamentoSeleccionado.Id;
+
+            //Manda la persona a la bbdd
+            await clsHandlerPersonasBL.insertarPersonasBL(personaNueva);
+
+            //Volvemos al listado de personas
             await Shell.Current.Navigation.PushAsync(new ListadoPersonasPage());
         }
 
-        private bool CancelarCommand_CanExecute()
+        /// <summary>
+        /// Comando que decide si la operación de insertar se puede o no guardar
+        /// </summary>
+        private bool GuardarCommand_CanExecute()
         {
-            bool puedeCancelar = false;
+            bool puedeGuardar = false;
 
-            if (nuevaPersona != null)
+            if (personaNueva != null)
             {
-                puedeCancelar = true;
+                puedeGuardar = true;
 
             }
 
-            return puedeCancelar;
+            return puedeGuardar;
         }
 
+
+
         /// <summary>
-        /// Método que cancela la inserción de una persona.
+        /// Comando que cancela la inserción de una persona
         /// </summary>
-        private async void CancelarCommadn_Execute()
+        private async void CancelarCommand_Execute()
         {
-            //Esto navegará al listado de personas.
+            //Volvemos al listado de personas
             await Shell.Current.Navigation.PopAsync();
         }
 
@@ -123,13 +134,17 @@ namespace UI.ViewModels
 
         #region metodos
 
-        private async void CargarLista()
-        {
-            //Nos traemos la lista de departamentos.
-            listaDepartamentos = new ObservableCollection<clsDepartamento>(await clsListadoDepartamentosBL.listadoCompletoDepartamentosBL());
 
-            //Notificamos que ha habido cambios en la propiedad ListaPersonas, para que la cargue la vista.
-            NotifyPropertyChanged(nameof(listaDepartamentos));
+        /// <summary>
+        /// Método que guarda en la variable DesplegableDepartamentos el listado de departamentos que sacamos de la api
+        /// </summary>
+        private async void CargarDesplegable()
+        {
+            //Guardamos en una lista los departamentos que sacamos de la api
+            desplegableDepartamentos = new ObservableCollection<clsDepartamento>(await clsListadoDepartamentosBL.listadoCompletoDepartamentosBL());
+
+            //Notificamos que ha habido cambios en la propiedad DesplegableDepartamentos
+            NotifyPropertyChanged(nameof(DesplegableDepartamentos));
         }
 
         #endregion

@@ -17,7 +17,7 @@ namespace DAL.Handlers
             string datos;
             HttpContent contenido;
             string miCadenaUrl = clsConexion.conexionApi();
-            Uri miUri = new Uri($"{miCadenaUrl}personas");
+            Uri miUri = new Uri($"{miCadenaUrl}personas/");
 
             //Usaremos el Status de la respuesta para comprobar si ha borrado
             HttpResponseMessage miRespuesta = new HttpResponseMessage();
@@ -27,6 +27,8 @@ namespace DAL.Handlers
 
                 contenido = new StringContent(datos, System.Text.Encoding.UTF8, "application/json");
                 miRespuesta = await mihttpClient.PostAsync(miUri, contenido);
+
+                
             }
             catch (Exception ex)
             {
@@ -41,9 +43,9 @@ namespace DAL.Handlers
             string datos;
             HttpContent contenido;
             string miCadenaUrl = clsConexion.conexionApi();
-            Uri miUri = new Uri($"{miCadenaUrl}personas");
+            Uri miUri = new Uri($"{miCadenaUrl}personas/{persona.Id}");
 
-            //Usaremos el Status de la respuesta para comprobar si ha borrado
+            //Usaremos el Status de la respuesta para comprobar si ha actualizado
             HttpResponseMessage miRespuesta = new HttpResponseMessage();
             try
             {
@@ -65,7 +67,7 @@ namespace DAL.Handlers
             string datos;
             HttpContent contenido;
             string miCadenaUrl = clsConexion.conexionApi();
-            Uri miUri = new Uri($"{miCadenaUrl}personas");
+            Uri miUri = new Uri($"{miCadenaUrl}personas/{id}");
 
             //Usaremos el Status de la respuesta para comprobar si ha borrado
             HttpResponseMessage miRespuesta = new HttpResponseMessage();

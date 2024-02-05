@@ -1,7 +1,9 @@
 ﻿using BL.HandlersBL;
+using BL.ListadosBL;
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,9 +18,11 @@ namespace UI.ViewModels
 
         #region atributos
 
-        clsPersonaConNombreDepartamento persona;
+        clsPersona persona;
         DelegateCommand guardarCommand;
         DelegateCommand cancelarCommand;
+        ObservableCollection<clsDepartamento> desplegableDepartamentos;
+        clsDepartamento departamentoSeleccionado;
 
         #endregion
 
@@ -26,15 +30,18 @@ namespace UI.ViewModels
 
         public EditarPersonaVM()
         {
-            guardarCommand = new DelegateCommand(GuardarCommand_Execute);
-            cancelarCommand = new DelegateCommand(CancelarCommand_Execute, CancelarCommand_CanExecute);
+            guardarCommand = new DelegateCommand(GuardarCommand_Execute, GuardarCommand_CanExecute);
+            cancelarCommand = new DelegateCommand(CancelarCommand_Execute);
         }
 
-        public EditarPersonaVM(clsPersonaConNombreDepartamento persona)
+        public EditarPersonaVM(clsPersona persona)
         {
+            CargarDesplegable();
             this.persona = persona;
-            guardarCommand = new DelegateCommand(GuardarCommand_Execute);
-            cancelarCommand = new DelegateCommand(CancelarCommand_Execute, CancelarCommand_CanExecute);
+            desplegableDepartamentos = new ObservableCollection<clsDepartamento>();
+            departamentoSeleccionado = null;
+            guardarCommand = new DelegateCommand(GuardarCommand_Execute, GuardarCommand_CanExecute);
+            cancelarCommand = new DelegateCommand(CancelarCommand_Execute);
         }
 
         #endregion
@@ -51,7 +58,7 @@ namespace UI.ViewModels
             get { return cancelarCommand; }
 
         }
-        public clsPersonaConNombreDepartamento Persona
+        public clsPersona Persona
         {
             get { return persona; }
             set
@@ -63,49 +70,75 @@ namespace UI.ViewModels
             }
         }
 
+        public ObservableCollection<clsDepartamento> DesplegableDepartamentos
+        {
+            get { return desplegableDepartamentos; }            
+        }
+
+        public clsDepartamento DepartamentoSeleccionado
+        {
+            get { return departamentoSeleccionado; }
+            set
+            {
+                departamentoSeleccionado = value;
+                NotifyPropertyChanged(nameof(DepartamentoSeleccionado));
+                cancelarCommand.RaiseCanExecuteChanged();
+                guardarCommand.RaiseCanExecuteChanged();
+            }
+        }
+
         #endregion
 
         #region commands
 
         private async void GuardarCommand_Execute()
         {
-            clsPersona p = new clsPersona();
+            
+            persona.IdDepartamento = departamentoSeleccionado.Id;
 
-            p.Nombre = persona.Nombre;
-            p.Apellido = persona.Apellido;
-            p.Id = persona.Id;
-            p.Direccion = persona.Direccion;
-            p.FechaNacimiento = persona.FechaNacimiento;
-            p.Foto = persona.Foto;
-            p.IdDepartamento = persona.IdDepartamento;
+            //Manda la persona a la bbdd
+            await clsHandlerPersonasBL.editarPersonasBL(persona);
 
-            //Manda la persona a la bbdd.
-            await clsHandlerPersonasBL.editarPersonasBL(p);
-
-            //Esto navegará al listado.
+            //Esto navegará al listado
             await Shell.Current.Navigation.PushAsync(new ListadoPersonasPage()); 
 
         }
 
         /// <summary>
-        /// Método que cancela la inserción de una persona.
+        /// Método que cancela la edición de una persona.
         /// </summary>
         private async void CancelarCommand_Execute()
         {
             await Shell.Current.Navigation.PopAsync();
         }
 
-        private bool CancelarCommand_CanExecute()
+        /// <summary>
+        /// Comando que decide si la operación de insertar se puede o no guardar
+        /// </summary>
+        private bool GuardarCommand_CanExecute()
         {
-            bool puedeCancelar = false;
+            bool puedeGuardar = false;
 
-            if (persona != Persona)
+            if (persona != null)
             {
-                puedeCancelar = true;
+                puedeGuardar = true;
 
             }
 
-            return puedeCancelar;
+            return puedeGuardar;
+        }
+
+        #endregion
+
+        #region funciones y métodos
+
+        private async void CargarDesplegable()
+        {
+            //Guardamos en una lista los departamentos que sacamos de la api
+            desplegableDepartamentos = new ObservableCollection<clsDepartamento>(await clsListadoDepartamentosBL.listadoCompletoDepartamentosBL());
+
+            //Notificamos que ha habido cambios en la propiedad DesplegableDepartamentos
+            NotifyPropertyChanged(nameof(DesplegableDepartamentos));
         }
 
         #endregion

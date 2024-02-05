@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:model="clr-namespace:UI.ViewModels"
+             xmlns:model="clr-namespace:UI.ViewModels"
              x:Class="UI.Views.ListadoPersonasPage"
              Title="Listado de Personas">
     
@@ -31,23 +31,19 @@
             </HorizontalStackLayout>
 
             <VerticalStackLayout>
-                <HorizontalStackLayout HorizontalOptions="Center" >
-                    <Label Text="Nombre y Apellidos" FontAttributes="Bold" Margin="0,0,10,0" />
-                    <Label Text="Departamento" FontAttributes="Bold" />
-                </HorizontalStackLayout>
-
-                <ListView x:Name="listaPersonasLW" HorizontalOptions="Center"
+                
+                <Label Text="Empleados" FontSize="Subtitle" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                   
+                <ListView x:Name="listaPersonas" HorizontalOptions="Center"
                       ItemsSource="{Binding ListadoPersonasMostrado}" SelectedItem="{Binding PersonaSeleccionada}" Margin="15">
 
                     <ListView.ItemTemplate>
 
                         <DataTemplate>
                             <ViewCell>
-                                <HorizontalStackLayout HorizontalOptions="Center" Margin="5">
+                                <HorizontalStackLayout HorizontalOptions="Center" Spacing="5">
 
-
-
-                                    <Label Text="{Binding Nombre}" />
+                                    <Label Text="{Binding Nombre} " />
                                     <Label Text="{Binding Apellidos}" />
 
                                     <Label Text="{Binding NombreDepartamento}"  Margin="15,0,0,0"/>

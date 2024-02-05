@@ -12,7 +12,7 @@ namespace DAL.Handlers
     public class clsHandlerDepartamentosDAL
     {
 
-        public static async Task<HttpStatusCode> insertarDepartamentoDAL(clsPersona departamento)
+        public static async Task<HttpStatusCode> insertarDepartamentoDAL(clsDepartamento departamento)
         {
             HttpClient mihttpClient = new HttpClient();
             string datos;
@@ -37,13 +37,13 @@ namespace DAL.Handlers
         }
 
 
-        public static async Task<HttpStatusCode> editarDepartamentoDAL(clsPersona departamento)
+        public static async Task<HttpStatusCode> editarDepartamentoDAL(clsDepartamento departamento)
         {
             HttpClient mihttpClient = new HttpClient();
             string datos;
             HttpContent contenido;
             string miCadenaUrl = clsConexion.conexionApi();
-            Uri miUri = new Uri($"{miCadenaUrl}departamentos");
+            Uri miUri = new Uri($"{miCadenaUrl}departamentos/{departamento.Id}");
 
             //Usaremos el Status de la respuesta para comprobar si ha borrado
             HttpResponseMessage miRespuesta = new HttpResponseMessage();
@@ -67,7 +67,7 @@ namespace DAL.Handlers
             string datos;
             HttpContent contenido;
             string miCadenaUrl = clsConexion.conexionApi();
-            Uri miUri = new Uri($"{miCadenaUrl}departamentos");
+            Uri miUri = new Uri($"{miCadenaUrl}departamentos/{id}");
 
             //Usaremos el Status de la respuesta para comprobar si ha borrado
             HttpResponseMessage miRespuesta = new HttpResponseMessage();

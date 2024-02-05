@@ -14,6 +14,12 @@
             Método que cancela la inserción de una persona.
             </summary>
         </member>
+        <member name="M:UI.ViewModels.ListadoPersonasVM.BuildViewModelAsync">
+            <summary>
+            Constructor asíncrono que guarda la lista completa de personas
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:UI.ViewModels.ListadoPersonasVM.CrearCommand_Executed">
             <summary>
             Comando que manda la vista de crear departamentos

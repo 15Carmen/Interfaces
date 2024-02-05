@@ -23,7 +23,7 @@ namespace DAL.Listados
 
             Uri miUri = new Uri($"{miCadenaUrl}personas");
 
-            List<clsPersona> listadoPersonas = new List<clsPersona>();
+            List<clsPersona> listadoPersonas = new();
 
             HttpClient mihttpClient;
 

@@ -11,23 +11,31 @@ namespace UI.Models
     {
         #region atributos
         private string nombreDepartamento;
+
         #endregion
 
         #region constructores
         public clsPersonaConNombreDepartamento()
         { }
+
+        public clsPersonaConNombreDepartamento(string nombreDepartamento)
+        {
+            this.nombreDepartamento = nombreDepartamento;
+        }
+
         public clsPersonaConNombreDepartamento(clsPersona p)
         {
             this.Nombre = p.Nombre;
-            this.Apellido = p.Apellido;
+            this.Apellidos = p.Apellidos;
             this.Direccion = p.Direccion;
-            this.FechaNacimiento = p.FechaNacimiento;
+            this.FechaNac = p.FechaNac;
             this.Foto = p.Foto;
             this.Id = p.Id;
             this.IdDepartamento = p.IdDepartamento;
             this.Telefono = p.Telefono;
             nombreDepartamento = "";
         }
+
         #endregion
 
         #region propiedades
@@ -36,6 +44,8 @@ namespace UI.Models
             get { return nombreDepartamento; }
             set { nombreDepartamento = value; }
         }
+
+
         #endregion
 
 

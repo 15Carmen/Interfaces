@@ -2,7 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UI.Views.EditarPersonaPage"
-             Title="EditarPersonaPage">
+             xmlns:model="clr-namespace:UI.ViewModels"
+             Title="Editar Persona">
+
+    <ContentPage.BindingContext>
+        <model:EditarPersonaVM/>
+    </ContentPage.BindingContext>
+    
      <ScrollView>
 
         <VerticalStackLayout Spacing="10">
@@ -10,69 +16,72 @@
             <HorizontalStackLayout Spacing="10" Padding="10"
                            VerticalOptions="Center"
                            HorizontalOptions="Center">
-                <Label Text="Nombre"/>
-                <Entry Text="{Binding Persona.Nombre}"/>
-            </HorizontalStackLayout>
-            
-            <HorizontalStackLayout Spacing="10" Padding="10"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center">
-                <Label Text="Apellidos"/>
-                <Entry
-            Text="{Binding Persona.Apellido}"/>
-            </HorizontalStackLayout>
-            
-            <HorizontalStackLayout Spacing="10" Padding="10"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center">
-                <Label Text="Teléfono"/>
-                <Entry
-            Text="{Binding Persona.Telefono}"/>
-            </HorizontalStackLayout>
-            
-            <HorizontalStackLayout Spacing="10" Padding="10"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center">
-                <Label Text="Dirección"/>
-                <Entry
-            Text="{Binding Persona.Direccion}"/>
-            </HorizontalStackLayout>
-            
-            <HorizontalStackLayout Spacing="10" Padding="10"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center">
-                <Label Text="Foto"/>
-                <Entry
-            Text="{Binding Persona.Foto}"/>
-            </HorizontalStackLayout>
-            
-            <HorizontalStackLayout Spacing="10" Padding="10"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center">
-                <Label Text="Fecha de Nacimiento"/>
-                <DatePicker 
-                    Date="{Binding Persona.FechaNac}"/>
-            </HorizontalStackLayout>
-            
-            <HorizontalStackLayout Spacing="10" Padding="10"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center">
-                <Label Text="Departamento"/>
 
-                <Picker ItemsSource="{Binding ListaDepartamentos}" 
-                ItemDisplayBinding="{Binding Nombre}"
-                SelectedItem="{Binding Persona.IdDepartamento}"
-                VerticalOptions="End"
-                VerticalTextAlignment="End"
-                HorizontalTextAlignment="Center"
+                <Label Text="Nombre: "/>
+                <Entry Text="{Binding Persona.Nombre}"  WidthRequest="200"/>
                 
-                WidthRequest="200"/>
             </HorizontalStackLayout>
             
-            <HorizontalStackLayout
-                HorizontalOptions="Center">
-                <Button Text="Guardar" 
-                Command="{Binding GuardarCommand}"/>
+            <HorizontalStackLayout Spacing="10" Padding="10"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                
+                <Label Text="Apellidos: "/>
+                <Entry Text="{Binding Persona.Apellidos}"  WidthRequest="200"/>
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout Spacing="10" Padding="10"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                
+                <Label Text="Teléfono: "/>
+                <Entry Text="{Binding Persona.Telefono}"  WidthRequest="200"/>
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout Spacing="10" Padding="10"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                
+                <Label Text="Dirección: "/>
+                <Entry Text="{Binding Persona.Direccion}"  WidthRequest="200"/>
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout Spacing="10" Padding="10"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                
+                <Label Text="Foto: "/>
+                <Entry Text="{Binding Persona.Foto}"/>
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout Spacing="10" Padding="10"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                
+                <Label Text="Fecha de Nacimiento: "/>
+                <DatePicker Date="{Binding Persona.FechaNac}"  WidthRequest="200"/>
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout Spacing="10" Padding="10"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                
+                <Label Text="Departamento: "/>
+
+                <Picker ItemsSource="{Binding DesplegableDepartamentos}" 
+                        ItemDisplayBinding="{Binding Nombre}"
+                        SelectedItem="{Binding DepartamentoSeleccionado}"
+                        VerticalOptions="End"
+                        VerticalTextAlignment="End"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="200"
+                />
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Button Text="Cancelar" Command="{Binding CancelarCommand}"/>
+                <Button Text="Guardar" Command="{Binding GuardarCommand}"/>
+                
             </HorizontalStackLayout>
             
         </VerticalStackLayout>

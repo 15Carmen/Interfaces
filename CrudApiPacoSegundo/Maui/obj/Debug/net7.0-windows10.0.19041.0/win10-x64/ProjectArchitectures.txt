@@ -1,1 +1,0 @@
-C:\Users\cmartin\GitHub\Interfaces\CrudApiPacoSegundo\Maui\Maui.csproj;x64

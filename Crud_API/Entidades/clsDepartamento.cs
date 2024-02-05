@@ -10,7 +10,7 @@ namespace Entidades
     {
         #region atributos
 
-        private int idDepartamento;
+        private int id;
         private string nombre;
         #endregion
 
@@ -19,13 +19,13 @@ namespace Entidades
         public clsDepartamento()
         {
 
-            idDepartamento = 0;
+            id = 0;
             nombre = string.Empty;
         }
 
         public clsDepartamento(int idDepartamento, string nombre)
         {
-            this.idDepartamento = idDepartamento;
+            this.id = idDepartamento;
             this.nombre = nombre;
         }
 
@@ -33,10 +33,10 @@ namespace Entidades
 
         #region Propiedades
 
-        public int IdDepartamento
+        public int Id
         {
-            get { return idDepartamento; }
-            set { idDepartamento = value; }
+            get { return id; }
+            set { id = value; }
         }
 
         public string Nombre

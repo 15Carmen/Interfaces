@@ -20,7 +20,7 @@ namespace UI.ViewModels
         private DelegateCommand eliminarCommand;
         private DelegateCommand editarCommand;
         private DelegateCommand buscarCommand;
-        private ObservableCollection<clsPersonaConNombreDepartamento> listadoPersonasMostrado = new ObservableCollection<clsPersonaConNombreDepartamento>();
+        private ObservableCollection<clsPersonaConNombreDepartamento> listadoPersonasMostrado;
         private clsPersonaConNombreDepartamento personaSeleccionada;
         private string personaBuscada;
         #endregion
@@ -29,8 +29,8 @@ namespace UI.ViewModels
 
         public ListadoPersonasVM()
         {
-
-            CargarListaPersonas();
+            listadoPersonasMostrado = new ObservableCollection<clsPersonaConNombreDepartamento>();
+            CargarListaPersonas();            
             crearCommand = new DelegateCommand(CrearCommand_Executed);
             buscarCommand = new DelegateCommand(BuscarCommand_Executed);
             eliminarCommand = new DelegateCommand(EliminarCommand_Executed, EliminarCommand_CanExecute);
@@ -99,33 +99,33 @@ namespace UI.ViewModels
         #region Comandos
 
         /// <summary>
-        /// Comando que manda la vista de crear departamentos
-        /// Pre: la vista de crear departamentos debe existir
+        /// Comando que manda la vista de crear personas
+        /// Pre: la vista de crear personas debe existir
         /// Post: ninguna
         /// </summary>
         private async void CrearCommand_Executed()
         {
-            //Aquí nos lleva a otra vista
+            //Navegamos a la vista para crear la persona
             await Shell.Current.Navigation.PushAsync(new CrearPersonaPage());
         }
        
 
         /// <summary>
-        /// Comando que elimina un departamento de la base de datos
-        /// Pre: el departamento a eliminar debe existir
+        /// Comando que elimina una persona de la base de datos
+        /// Pre: la persona a eliminar debe existir
         /// Post: ninguna
         /// </summary>
         private async void EliminarCommand_Executed()
         {
             await clsHandlerPersonasBL.borrarPersonasBL(personaSeleccionada.Id);
 
-            //Recargamos la vista
+            //Volvemos a la página de la lista de personas
             await Shell.Current.Navigation.PushAsync(new ListadoPersonasPage());
         }
 
 
         /// <summary>
-        /// Comando que devuelve true si se ha elegido eliminar un departamento y false si no
+        /// Comando que devuelve true si se ha elegido eliminar una persona y false si no
         /// Pre: ninguna
         /// Post: ninguna
         /// </summary>
@@ -141,19 +141,19 @@ namespace UI.ViewModels
         }
 
         /// <summary>
-        /// Comando que la vista para editar el departamento
+        /// Comando que navega a la vista para editar la persona
         /// Pre: la vista debe de estar creada
         /// Post: ninguna
         /// </summary>
         private async void EditarCommand_Executed()
         {
-            //Aquí nos lleva a otra vista
+            //Navegamos a la vista para editar a la persona selecciona
             await Shell.Current.Navigation.PushAsync(new EditarPersonaPage(personaSeleccionada));
         }
 
 
         /// <summary>
-        /// Comando que devuelve true si se ha elegido editar un departamento y false si no
+        /// Comando que devuelve true si se ha elegido editar una persona y false si no
         /// Pre: ninguna
         /// Post: ninguna
         /// </summary>
@@ -169,15 +169,15 @@ namespace UI.ViewModels
         }
 
         /// <summary>
-        /// Comando que busca un departamento en la lista
-        /// Pre: la lista nodebe estar vacía
+        /// Comando que busca una persona en la lista
+        /// Pre: la lista no debe estar vacía
         /// Post: ninguna
         /// </summary>
         private void BuscarCommand_Executed()
         {
-            ObservableCollection<clsPersonaConNombreDepartamento> listaPersonasEncontradas = new ObservableCollection<clsPersonaConNombreDepartamento>(listadoPersonasMostrado.Where(persona => persona.Nombre.Contains(personaBuscada)).ToList());
+            ObservableCollection<clsPersonaConNombreDepartamento> listaPersonasEncontradas = 
+                new ObservableCollection<clsPersonaConNombreDepartamento>(listadoPersonasMostrado.Where(persona => persona.Nombre.Contains(personaBuscada)).ToList());
 
-            //Igualamos las listas.
             listadoPersonasMostrado = listaPersonasEncontradas;
 
             //notificamos el cambio.
@@ -192,46 +192,51 @@ namespace UI.ViewModels
 
         private async void CargarListaPersonas()
         {
-            //Nos traemos la lista.
-            List<clsPersona> listaPersonas = new List<clsPersona>(await clsListadoPersonasBL.listadoCompletoPersonasBL());
+            //Guardamos en una lista auxiliar de personas a las personas que sacamos de la api
+            List<clsPersona> listaAuxiliarPersonasSinNombreDept = new List<clsPersona>(await clsListadoPersonasBL.listadoCompletoPersonasBL());
 
-            ObservableCollection<clsPersonaConNombreDepartamento> listaPersonasDepartamento = new ObservableCollection<clsPersonaConNombreDepartamento>();
+            ObservableCollection<clsPersonaConNombreDepartamento> listaAuxiliarPersonasConNombreDept = new ObservableCollection<clsPersonaConNombreDepartamento>();
 
-            foreach (clsPersona p in listaPersonas)
+            //Declaramos los objetos que necesitaremos en el método
+            clsPersonaConNombreDepartamento personaNombreDept;
+            clsDepartamento departamento;
+
+            //Recorremos cada persona de la lista auxiliar
+            foreach (clsPersona personaSinNombreDept in listaAuxiliarPersonasSinNombreDept)
             {
-                clsPersonaConNombreDepartamento per = new clsPersonaConNombreDepartamento(p);
+                //Guardamos en una nueva persona con nombre departamento una persona sin nombre departamento. El departamento en esta persona será un string vacío ("")
+                personaNombreDept = new clsPersonaConNombreDepartamento(personaSinNombreDept);
 
-                //Obviamos a las personas nulas.
-                if (per != null)
+                //Si la persona no es nula
+                if (personaNombreDept != null)
                 {
                     //Rellenamos el listado de personas con departamento pero que no saben el nombre del departamento.
-                    listaPersonasDepartamento.Add(per);
+                    listaAuxiliarPersonasConNombreDept.Add(personaNombreDept);
                 }
             }
 
-            //Recorremos la segunda lista
-            foreach (clsPersonaConNombreDepartamento persona in listaPersonasDepartamento)
+            //Recorremos la lista auxiliar de personas con nombre departamento con string vacío
+            foreach (clsPersonaConNombreDepartamento personaConNombreDepartamento in listaAuxiliarPersonasConNombreDept)
             {
-                //Ahora, buscamos el departamento de cada persona.
-                clsDepartamento departamento = await clsListadoDepartamentosBL.obtenerDepartamentoPorIdBL(persona.IdDepartamento);
+                //Guardamos en el objeto departamento el departamento que le corresponde a la persona
+                departamento = await clsListadoDepartamentosBL.obtenerDepartamentoPorIdBL(personaConNombreDepartamento.IdDepartamento);
 
                 //Asignamos el nombre
                 if (departamento == null)
                 {
-                    persona.NombreDepartamento = "No tiene departamento asignado.";
-
+                    personaConNombreDepartamento.NombreDepartamento = "No tiene departamento asignado.";
                 }
                 else
                 {
-                    persona.NombreDepartamento = departamento.Nombre;
+                    personaConNombreDepartamento.NombreDepartamento = departamento.Nombre;
                 }
 
 
-                //añadimos la persona a la lista.
-                listadoPersonasMostrado.Add(persona);
+                //añadimos la persona a la lista que sde mostrará por pantalla
+                listadoPersonasMostrado.Add(personaConNombreDepartamento);
             }
 
-            //Notificamos que ha habido cambios en la propiedad ListaPersonas, para que la cargue la vista.
+            //Notificamos que ha habido cambios en la propiedad ListaPersonas
             NotifyPropertyChanged(nameof(ListadoPersonasMostrado));
         }
 
