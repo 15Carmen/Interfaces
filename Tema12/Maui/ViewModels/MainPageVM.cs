@@ -26,12 +26,15 @@ namespace Maui.ViewModels
         public MainPageVM()
         {
             listaChats = new ObservableCollection<string>();
+            chat = string.Empty;
 
             hubConnection = new HubConnectionBuilder().WithUrl("https://chathubcarmen.azurewebsites.net/chatHub").Build();
             hubConnection.On<clsMensajeUsuario>("ReceiveMessage", (oMensajeUsuario) =>
             {
-                chat = oMensajeUsuario.NombreUsuario + " says " + oMensajeUsuario.MensajeUsuario;
+                chat = $"{oMensajeUsuario.NombreUsuario} says {oMensajeUsuario.MensajeUsuario} ";
                 listaChats.Add(chat);
+
+
             });
 
             Task.Run(async () =>
@@ -68,13 +71,11 @@ namespace Maui.ViewModels
         public ObservableCollection<string> ListaChats
         {
             get { return listaChats; }
-            set { listaChats = value; enviarMensajeCommand.RaiseCanExecuteChanged(); }
         }
 
         public string Chat
         {
             get { return chat; }
-            set { chat = value; }
         }
 
         #endregion
@@ -83,11 +84,10 @@ namespace Maui.ViewModels
 
         public void EnviarCommand_Execute()
         {
-            oMensajeUsuario = new clsMensajeUsuario(NombreUsuario, MensajeUsuario);
-
+            
             Task.Run(async () =>
             {
-                await hubConnection.InvokeCoreAsync("SendMessage", args: new[] {oMensajeUsuario});
+                await hubConnection.InvokeCoreAsync("SendMessage", args: new[] {chat});
             });
 
             NombreUsuario = String.Empty;
@@ -106,6 +106,12 @@ namespace Maui.ViewModels
 
             return puedeEnviar;
         }
+
+        #endregion
+
+        #region funciones y métodos
+
+        
 
         #endregion
 

@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-30T12:25:53.104</Modified>
+      <Modified>2024-02-06T13:39:59.027</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-30T12:25:52.884</Modified>
+      <Modified>2024-02-06T13:39:58.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.runtimeconfig.json">
       <PackagePath>Maui.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.dll">
       <PackagePath>Maui.dll</PackagePath>
-      <Modified>2024-01-30T12:25:52.088</Modified>
+      <Modified>2024-02-06T13:39:57.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Maui.exe</PackagePath>
-      <Modified>2024-01-30T12:25:52.092</Modified>
+      <Modified>2024-02-06T13:39:57.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.deps.json">
       <PackagePath>Maui.deps.json</PackagePath>
