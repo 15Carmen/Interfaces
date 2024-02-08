@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:VM="clr-namespace:UI.ViewModels"
+             xmlns:Model="clr-namespace:UI.Models"
+             x:Class="UI.Views.ListaPersonasPage"
+             Title="Lista de Personas">
+
+    <ContentPage.BindingContext>
+        <VM:ListaPersonasVM/>
+    </ContentPage.BindingContext>
+    
+    <VerticalStackLayout 
+        HorizontalOptions="Center" 
+        VerticalOptions="Center"
+        Padding="20"
+        Spacing="10">
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+
+            <Label Text="Numero de Aciertos: " TextColor="Green"/>
+            <Label Text="{Binding NumAciertos}"/>
+
+            <Label Text="Numero de Intentos: " TextColor="Red"/>
+            <Label Text="{Binding NumIntentos}"/>
+
+        </HorizontalStackLayout>
+
+        <ListView
+            ItemsSource="{Binding ListaPersonasDepartamento}"
+            RowHeight="100">
+            <ListView.ItemTemplate>
+                <DataTemplate
+                     x:DataType="Model:clsPersonaListaDepartamentos">
+                    <ViewCell>
+                        <Frame CornerRadius="10" BorderColor="Black">
+                            <VerticalStackLayout Spacing="10">
+                                <HorizontalStackLayout Spacing="20">
+                                    <Label Text="{Binding Nombre}"/>
+                                    <Label Text="{Binding Apellidos}"/>
+
+                                    <Picker ItemsSource="{Binding ListaDepartamentos}" 
+                                            ItemDisplayBinding="{Binding Nombre}"
+                                            SelectedItem="{Binding DepartamentoEscogido}"
+                                            VerticalOptions="End"
+                                            VerticalTextAlignment="End"
+                                            HorizontalTextAlignment="Center"
+                                            WidthRequest="200"/>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button 
+            Text="Comprobar"
+            Command="{Binding ComprobarCommand}"
+            />
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,60 @@
+Examen2Ev
+
+Entidades
+	clsPersona
+	clsDepartamento
+
+DAL
+	clsListadoDepartamentosDAL
+	clsListadoPersonasDAL
+
+MauiDAL
+	clsHandlerDepartamentosDAL
+		async Task<List<clsDepartamentos>> getListadoCompletoDepartametnosDAL()
+		async Task<clsDepartamentos> getDepartamentoPorIdDAL(int id)
+	clsHandlerPersonasDAL
+		async Task<List<clsPersona>> getListadoCompletoPersonasDAL()
+		async Task<clsPersona> getPersonasPorIdDAL(int id)
+	clsConexion
+		public String conexionApi()
+		
+	
+BL
+	clsListadoDepartamentosBL
+	clsListadoPersonasBL
+
+MauiBL
+	clsHandlerDepartamentosBL
+		async Task<List<clsDepartamentos>> getListadoCompletoDepartametnosBL()
+		async Task<clsDepartamentos> getDepartamentoPorIdBL(int id)
+	clsHandlerPersonasDAL
+		async Task<List<clsPersona>> getListadoCompletoPersonasBL()
+		async Task<clsPersona> getPersonasPorIdBL(int id)
+
+UI
+	Models
+		clsPersonaListaDepartamentos : clsPersona
+			List listadoDepartamentos
+			clsDepartamento departamentoEscogido
+			async void CargarListaDepartamentos()
+
+	Views
+		ListadoPersonasPage
+	
+	ViewModels
+		Utilidades
+			DelegatteCommand
+			clsVMBase
+			
+		ListaPersonasVM
+			public int NumAciertos{get; set;}
+			public int NumIntentos{get; set;}
+			public ObservableCollection<clsPersonaListaDepartamento> ListadoPersonasDepartamento {get;}
+			public DelegatteCommand ComprobarCommand{get;}
+			public clsDepartamento departamentoEscogido{get; set;}
+
+			private void CargarListadoPersonas()
+
+			
+
+	
