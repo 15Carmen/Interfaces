@@ -1,1 +1,1 @@
-C:\Users\cmartin\Desktop\API\API\ExDI\UI\UI.csproj;x64
+C:\Users\cmnbo\GitHub\Interfaces\API\API\ExDI\UI\UI.csproj;x64

@@ -9,6 +9,8 @@
     ".NETCoreApp,Version=v7.0/win10-x64": {
       "UI/1.0": {
         "dependencies": {
+          "Entidades": "1.0.0",
+          "MauiBL": "1.0.0",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0",
@@ -17,8 +19,6 @@
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "7.0.101",
           "Microsoft.WindowsAppSDK": "1.2.221209.1",
           "Newtonsoft.Json": "13.0.3",
-          "Entidades": "1.0.0.0",
-          "MauiBL": "1.0.0.0",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "7.0.14",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "7.0.101",
           "runtimepack.Microsoft.Maui.Controls.Runtime.win": "7.0.101",
@@ -1005,28 +1005,36 @@
           }
         }
       },
-      "Entidades/1.0.0.0": {
+      "DAL/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
         "runtime": {
-          "Entidades.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "DAL.dll": {}
         }
       },
-      "MauiBL/1.0.0.0": {
+      "Entidades/1.0.0": {
         "runtime": {
-          "MauiBL.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Entidades.dll": {}
         }
       },
-      "MauiDAL/1.0.0.0": {
+      "MauiBL/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "MauiDAL": "1.0.0"
+        },
         "runtime": {
-          "MauiDAL.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "MauiBL.dll": {}
+        }
+      },
+      "MauiDAL/1.0.0": {
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Entidades": "1.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "MauiDAL.dll": {}
         }
       }
     }
@@ -1167,18 +1175,23 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
-    "Entidades/1.0.0.0": {
-      "type": "reference",
+    "DAL/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "MauiBL/1.0.0.0": {
-      "type": "reference",
+    "Entidades/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "MauiDAL/1.0.0.0": {
-      "type": "reference",
+    "MauiBL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MauiDAL/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

@@ -6,9 +6,11 @@ namespace MauiDAL
     public class clsHandlerPersonasDAL
     {
         /// <summary>
-        /// 
+        /// Función que pide a la API un listado de personas completo
+        /// Pre: ninguna
+        /// Post: el método siempre devolverá un listado completo o uno vacío
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List<clsPersona></returns>
         public static async Task<List<clsPersona>> getListadoCompletoPersonasDAL()
         {
             //Pido la cadena de la Uri al método estático
@@ -35,6 +37,13 @@ namespace MauiDAL
             return listadoPersonas;
         }
 
+        /// <summary>
+        /// Función que recupera una persona de la api según el id introducido por parámetro
+        /// Pre: ninguna
+        /// Post: ninguna
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>clsPersona</returns>
         public static async Task<clsPersona> getPersonaPorIdDAL(int id)
         {
             //Pido la cadena de la Uri al método estático
@@ -44,6 +53,7 @@ namespace MauiDAL
             HttpClient mihttpClient;
             HttpResponseMessage miCodigoRespuesta;
             string textoJsonRespuesta;
+
             //Instanciamos el cliente Http
             mihttpClient = new HttpClient();
             try

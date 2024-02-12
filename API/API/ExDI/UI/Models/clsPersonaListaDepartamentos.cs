@@ -8,19 +8,24 @@ namespace UI.Models
     {
         #region atributos
         private ObservableCollection<clsDepartamento> listaDepartamentos;
-        private clsDepartamento departamentoEscogido;
-
-
+        
         #endregion
 
         #region constructores
+
 
         public clsPersonaListaDepartamentos(clsPersona p)
         {
             listaDepartamentos = new ObservableCollection<clsDepartamento>();
             this.Nombre = p.Nombre;
             this.Apellidos = p.Apellidos;
-            this.departamentoEscogido = null;
+            this.Direccion = p.Direccion;
+            this.FechaNac = p.FechaNac;
+            this.Foto = p.Foto;
+            this.Id = p.Id;
+            this.IdDepartamento = p.IdDepartamento;
+            this.Telefono = p.Telefono;
+           
         }
 
         #endregion
@@ -30,12 +35,7 @@ namespace UI.Models
         public ObservableCollection<clsDepartamento> ListaDepartamentos
         {
             get { return listaDepartamentos; }
-        }
-
-        public clsDepartamento DepartamentoEscogido
-        {
-            get { return departamentoEscogido; }
-            set { departamentoEscogido = value; }
+            set { listaDepartamentos = value; }
         }
 
         #endregion

@@ -15,9 +15,7 @@ namespace UI.Models
         #endregion
 
         #region constructores
-        public clsPersonaConNombreDepartamento()
-        { }
-
+        
         public clsPersonaConNombreDepartamento(string nombreDepartamento)
         {
             this.nombreDepartamento = nombreDepartamento;

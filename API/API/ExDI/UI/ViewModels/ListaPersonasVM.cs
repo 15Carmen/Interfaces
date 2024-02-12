@@ -1,13 +1,9 @@
 ﻿using Entidades;
 using UI.Models;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UI.ViewModels.Utilidades;
 using MauiBL;
+
 
 namespace UI.ViewModels
 {
@@ -20,7 +16,8 @@ namespace UI.ViewModels
         private int numIntentos;
         private ObservableCollection<clsPersonaListaDepartamentos> listaPersonasDepartamento;
         private DelegateCommand comprobarCommand;
-        private clsDepartamento departamento;
+        private clsDepartamento departamentoSeleccionado;
+
 
         #endregion
 
@@ -28,11 +25,12 @@ namespace UI.ViewModels
 
         public ListaPersonasVM() 
         {
+            listaPersonasDepartamento = new ObservableCollection<clsPersonaListaDepartamentos>();
             CargarListadoPersonas();
             numAciertos = 0;
             numIntentos = 3;
             comprobarCommand = new DelegateCommand(ComprobarCommand_Execute, ComprobarCommand_CanExecute);
-            departamento = null;
+            this.departamentoSeleccionado = null;
 
         }
 
@@ -43,13 +41,11 @@ namespace UI.ViewModels
         public int NumAciertos
         {
             get { return numAciertos; }
-            set { numAciertos = value; }
         }
 
         public int NumIntentos
         {
             get { return numIntentos; }
-            set { numIntentos = value; }
         }
 
         public ObservableCollection<clsPersonaListaDepartamentos> ListaPersonasDepartamento
@@ -61,39 +57,66 @@ namespace UI.ViewModels
             get { return comprobarCommand; }
         }
 
-        public clsDepartamento Departamento
+        public clsDepartamento DepartamentoSeleccionado
         {
-            get { return departamento; }
+            get { return departamentoSeleccionado; }
+            set
+            {
+                departamentoSeleccionado = value;
+                NotifyPropertyChanged(nameof(DepartamentoSeleccionado));
+                comprobarCommand.RaiseCanExecuteChanged();
+            }
         }
+
 
         #endregion
 
         #region commands
 
-        private void ComprobarCommand_Execute()
+        private async void ComprobarCommand_Execute()
         {
-            foreach(clsPersonaListaDepartamentos personaListaDepartamento in ListaPersonasDepartamento)
-            {
-                if (Departamento.Nombre.Equals(personaListaDepartamento.DepartamentoEscogido.Nombre))
-                {
-                    NumAciertos += 1;
-                }
-            }
             
+            foreach(clsPersonaListaDepartamentos persona in ListaPersonasDepartamento)
+            {
+                if (persona.IdDepartamento.Equals(DepartamentoSeleccionado.Id))
+                {
+                    numAciertos++;                   
+                }
+
+                if(numAciertos == 8)
+                {
+                    //Todo: displayAlert diciendo que ha acertado todo
+                }
+                else
+                {
+                    numIntentos--;
+
+                    if(numIntentos == 0)
+                    {
+                        //Todo: DisplayAlert diciendo que ha perdido todas las oportunidades y pidiendo que si quiere 
+                        // reiniciar el juego
+                    }
+                }
+
+            }
+
+            NotifyPropertyChanged(nameof(NumAciertos));
+            NotifyPropertyChanged(nameof(NumIntentos));
             ComprobarCommand.RaiseCanExecuteChanged();
         }
 
-        private bool ComprobarCommand_CanExecute ()
+        private bool ComprobarCommand_CanExecute()
         {
-            bool seComprueba = false;
+            bool puedeComprobar = false;
 
-            if(Departamento != null)
+            if (listaPersonasDepartamento !=  null)
             {
-                seComprueba = true;
+                puedeComprobar = true;
             }
 
-            return seComprueba;
+            return puedeComprobar;
         }
+
 
         #endregion
 
@@ -104,34 +127,32 @@ namespace UI.ViewModels
         /// </summary>
         private async void CargarListadoPersonas()
         {
-            List<clsPersona> listaPersonas = new List<clsPersona>(await clsHandlerPersonasBL.getListadoCompletoPersonasBL());
-            List<clsDepartamento> listaAuxDepartamentos = new List<clsDepartamento>(await clsHandlerDepartamentosBL.getListadoCompletoDepartamentosBL());
 
-            clsPersonaListaDepartamentos pd;
+            //Guardamos las personas de la api en la variable
+            List<clsPersona> listaAuxiliar = new List<clsPersona>
+                (await clsHandlerPersonasBL.getListadoCompletoPersonasBL());
 
-            //Recorremos la lista de personas
-            foreach (clsPersona p in listaPersonas)
+            clsPersonaListaDepartamentos personaConLista;
+
+            foreach(clsPersona personaSinLista in listaAuxiliar)
             {
-                pd = new clsPersonaListaDepartamentos(p);
+                personaConLista = new clsPersonaListaDepartamentos(personaSinLista);
 
-                listaPersonasDepartamento.Add(pd);
-
-
-                foreach (clsDepartamento d in listaAuxDepartamentos)
+                //Si la persona no es nula
+                if (personaConLista != null)
                 {
-                    if (d != null)
-                    {
-                        listaAuxDepartamentos.Add(d);
-                    }
+                    //Le añadimos la lista de departamentos a cada persona
+                    personaConLista.ListaDepartamentos = new ObservableCollection<clsDepartamento>
+                        (await clsHandlerDepartamentosBL.getListadoCompletoDepartamentosBL());
+
+                    //Rellenamos el listado de personas con 
+                    listaPersonasDepartamento.Add(personaConLista);
+   
                 }
-
-                
-
             }
 
             //Notificamos que ha habido cambios en la propiedad ListaPersonas, para que la cargue la vista.
             NotifyPropertyChanged(nameof(ListaPersonasDepartamento));
-
 
         }
 

@@ -10,54 +10,57 @@
         <VM:ListaPersonasVM/>
     </ContentPage.BindingContext>
     
-    <VerticalStackLayout 
-        HorizontalOptions="Center" 
-        VerticalOptions="Center"
-        Padding="20"
-        Spacing="10">
+    <ScrollView>
 
-        <HorizontalStackLayout HorizontalOptions="Center">
+        <VerticalStackLayout 
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"
+            Padding="20"
+            Spacing="10">
 
-            <Label Text="Numero de Aciertos: " TextColor="Green"/>
-            <Label Text="{Binding NumAciertos}"/>
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="50">
 
-            <Label Text="Numero de Intentos: " TextColor="Red"/>
-            <Label Text="{Binding NumIntentos}"/>
+                <Label Text="Numero de Aciertos: " TextColor="Green"/>
+                <Label Text="{Binding NumAciertos}"/>
 
-        </HorizontalStackLayout>
+                <Label Text="Numero de Intentos: " TextColor="Red"/>
+                <Label Text="{Binding NumIntentos}"/>
 
-        <ListView
-            ItemsSource="{Binding ListaPersonasDepartamento}"
-            RowHeight="100">
-            <ListView.ItemTemplate>
-                <DataTemplate
-                     x:DataType="Model:clsPersonaListaDepartamentos">
-                    <ViewCell>
-                        <Frame CornerRadius="10" BorderColor="Black">
-                            <VerticalStackLayout Spacing="10">
+            </HorizontalStackLayout>
+
+            <ListView ItemsSource="{Binding ListaPersonasDepartamento}" SelectedItem="{Binding DepartamentoSeleccionado}" 
+                      RowHeight="100">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <VerticalStackLayout>
                                 <HorizontalStackLayout Spacing="20">
                                     <Label Text="{Binding Nombre}"/>
                                     <Label Text="{Binding Apellidos}"/>
 
                                     <Picker ItemsSource="{Binding ListaDepartamentos}" 
                                             ItemDisplayBinding="{Binding Nombre}"
-                                            SelectedItem="{Binding DepartamentoEscogido}"
                                             VerticalOptions="End"
                                             VerticalTextAlignment="End"
                                             HorizontalTextAlignment="Center"
                                             WidthRequest="200"/>
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
-                        </Frame>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                            
+                      
 
-        <Button 
-            Text="Comprobar"
-            Command="{Binding ComprobarCommand}"
-            />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-    </VerticalStackLayout>
+            <Button 
+                Text="Comprobar"
+                Command="{Binding ComprobarCommand}"
+                />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+    
 </ContentPage>

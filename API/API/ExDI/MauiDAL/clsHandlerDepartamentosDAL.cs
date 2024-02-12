@@ -8,6 +8,12 @@ using System.Threading.Tasks;
 
 namespace MauiDAL
 {
+    /// <summary>
+    /// Función que pide a la API un listado de departamentos completo
+    /// Pre: ninguna
+    /// Post: el método siempre devolverá un listado completo o uno vacío
+    /// </summary>
+    /// <returns>List<clsPersona></returns>
     public class clsHandlerDepartamentosDAL
     {
         public static async Task<List<clsDepartamento>> getListadoCompletoDepartamentosDAL()
@@ -36,10 +42,17 @@ namespace MauiDAL
             return listadoDepartamento;
         }
 
+        /// <summary>
+        /// Función que recupera un departamento de la api según el id introducido por parámetro
+        /// Pre: ninguna
+        /// Post: ninguna
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>clsDepartamento</returns>
         public static async Task<clsDepartamento> getDepartamentoPorIdDAL(int id)
         {
             string miCadenaUrl = clsConexion.conexionApi();
-            Uri miUri = new Uri($"{miCadenaUrl}departamentos/" + id);
+            Uri miUri = new Uri($"{miCadenaUrl}departamentos/{id}");
             clsDepartamento departamento = new clsDepartamento();
             HttpClient mihttpClient;
             HttpResponseMessage miCodigoRespuesta;
