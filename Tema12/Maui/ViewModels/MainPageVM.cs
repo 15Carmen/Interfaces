@@ -1,9 +1,7 @@
 ﻿using Ejercicio1.ViewModels.Utils;
 using Models;
 using System.Collections.ObjectModel;
-using System.Windows.Input;
 using Microsoft.AspNetCore.SignalR.Client;
-using System.Runtime.InteropServices;
 
 namespace Maui.ViewModels
 {

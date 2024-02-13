@@ -1,13 +1,26 @@
 ﻿using JuegoSignalR.ViewModels.Utils;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.AspNetCore.SignalR.Client;
 
 namespace JuegoSignalR.VieModels
 {
     public class MainPageVM : clsVMBase
     {
+        private readonly HubConnection hubConnection;
+
+
+        public MainPageVM()
+        {
+            hubConnection = new HubConnectionBuilder()
+                .WithUrl("http://localhost:5000/gamehub")
+                .Build();
+
+            hubConnection.StartAsync();
+
+           // hubConnection.On<int>("MoveMade, ");
+        }
+
+
+
     }
 }
