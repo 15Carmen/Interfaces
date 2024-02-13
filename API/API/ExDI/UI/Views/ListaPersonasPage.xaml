@@ -9,9 +9,9 @@
     <ContentPage.BindingContext>
         <VM:ListaPersonasVM/>
     </ContentPage.BindingContext>
-    
-    <ScrollView>
 
+
+    <ScrollView>
         <VerticalStackLayout 
             HorizontalOptions="Center" 
             VerticalOptions="Center"
@@ -27,40 +27,44 @@
                 <Label Text="{Binding NumIntentos}"/>
 
             </HorizontalStackLayout>
-
-            <ListView ItemsSource="{Binding ListaPersonasDepartamento}" SelectedItem="{Binding DepartamentoSeleccionado}" 
-                      RowHeight="100">
+            
+            <ListView ItemsSource="{Binding ListaPersonasDepartamento}" 
+                        RowHeight="100" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <VerticalStackLayout>
-                                <HorizontalStackLayout Spacing="20">
+                        
+                            <VerticalStackLayout >
+                                <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
                                     <Label Text="{Binding Nombre}"/>
                                     <Label Text="{Binding Apellidos}"/>
 
                                     <Picker ItemsSource="{Binding ListaDepartamentos}" 
                                             ItemDisplayBinding="{Binding Nombre}"
+                                            SelectedItem="{Binding DepartamentoSeleccionado}"
                                             VerticalOptions="End"
                                             VerticalTextAlignment="End"
                                             HorizontalTextAlignment="Center"
                                             WidthRequest="200"/>
+
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
-                            
-                      
+                        
 
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
+    
             <Button 
                 Text="Comprobar"
                 Command="{Binding ComprobarCommand}"
                 />
-
+      
         </VerticalStackLayout>
 
     </ScrollView>
+
+    
     
 </ContentPage>

@@ -8,6 +8,7 @@ namespace UI.Models
     {
         #region atributos
         private ObservableCollection<clsDepartamento> listaDepartamentos;
+        private clsDepartamento departamentoSeleccionado;
         
         #endregion
 
@@ -25,6 +26,7 @@ namespace UI.Models
             this.Id = p.Id;
             this.IdDepartamento = p.IdDepartamento;
             this.Telefono = p.Telefono;
+            departamentoSeleccionado = null;
            
         }
 
@@ -38,12 +40,15 @@ namespace UI.Models
             set { listaDepartamentos = value; }
         }
 
+        public clsDepartamento DepartamentoSeleccionado
+        {
+            get { return departamentoSeleccionado; }
+            set { departamentoSeleccionado = value; }
+        }
+
         #endregion
 
-        #region funciones y métodos
-
-
-        #endregion
+        
 
     }
 }

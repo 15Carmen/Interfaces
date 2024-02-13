@@ -9,6 +9,11 @@
             Función que cargará el listado completo de las personas en la vista
             </summary>
         </member>
+        <member name="M:UI.ViewModels.ListaPersonasVM.ReiniciarPartida">
+            <summary>
+            Método que reiniciará el juego una vez el usuario haya perdido o ganado
+            </summary>
+        </member>
         <member name="M:UI.ViewModels.Utilidades.DelegateCommand.#ctor(System.Action)">
             <summary>
             Initializes a new instance of the RelayCommand class that 

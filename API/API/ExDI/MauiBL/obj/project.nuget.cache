@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "g7s/qbQ7r4F/gC06ucvOfDbugbkpJ4fgxvIIK9dGykFQZ59Jb2M6bNCBxu9OYltKW0TUXSTn6/xnQ0cONQ88+Q==",
+  "dgSpecHash": "UValsvFiIBCSgMicKP6cgntAeivygutaitsjCoBi2cLXavXHG2Z2n8EvfUM/n6FPsC3Lorvi7hpZiZWjJOqZSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\API\\API\\ExDI\\MauiBL\\MauiBL.csproj",
+  "projectFilePath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\API\\API\\ExDI\\MauiBL\\MauiBL.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\cmnbo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\cmartin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
