@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3yfD8lxQh/xUSuk2MWkPg0CfTbR+3hULJ9KmD22NLD7RI29sd15yEvO7X3pmpzSVWMh5V1o8Lv4NCqZmoSVlgg==",
+  "dgSpecHash": "Kb/QPSfE1PhMpeX29w7TGLQwC3xFchhQxegAOuVz6vaQZDS1lnq0V6vFZtrW5Pva6vLLpR2Elkoid6z4bjwkpA==",
   "success": true,
   "projectFilePath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\JuegoSignalR\\JuegoSignalR\\JuegoSignalR.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\cmartin\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\cmartin\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\cmartin\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.15\\microsoft.aspnetcore.connections.abstractions.7.0.15.nupkg.sha512",
     "C:\\Users\\cmartin\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\7.0.15\\microsoft.aspnetcore.http.connections.client.7.0.15.nupkg.sha512",

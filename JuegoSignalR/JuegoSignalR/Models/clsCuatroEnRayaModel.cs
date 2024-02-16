@@ -8,7 +8,17 @@ namespace JuegoSignalR.Models
 {
     public class clsCuatroEnRayaModel
     {
+        private int index;
 
-       
+
+        public clsCuatroEnRayaModel()
+        {
+
+        }
+
+       public int Index
+        {
+
+        }
     }
 }
