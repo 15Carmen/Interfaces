@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VqkIVn5wCiACQrDoEAKqlEPX6OH+KVFuvzyDY+8nt7lqvwj7o1YMBHhdrFmqZ+Jei0F4mK95JpaFbmW5s/hZ0A==",
+  "dgSpecHash": "zaA4P0NA1RMSWHAR1yfnXg5SU1OceqSy6rARbzCnftIoyYxNJ/fwTtkieU1lBvJWMALNAnbc6wCR08bXy3kQdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\JuegoSignalR\\GameServer\\GameServer.csproj",
+  "projectFilePath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\JuegoSignalR\\GameServer\\GameServer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

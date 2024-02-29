@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cmartin\\.nuget\\packages\\": {},
+    "C:\\Users\\cmnbo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cmartin\\GitHub\\Interfaces\\JuegoSignalR\\GameServer\\GameServer.csproj",
+      "projectUniqueName": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\JuegoSignalR\\GameServer\\GameServer.csproj",
       "projectName": "GameServer",
-      "projectPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\JuegoSignalR\\GameServer\\GameServer.csproj",
-      "packagesPath": "C:\\Users\\cmartin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\JuegoSignalR\\GameServer\\obj\\",
+      "projectPath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\JuegoSignalR\\GameServer\\GameServer.csproj",
+      "packagesPath": "C:\\Users\\cmnbo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\JuegoSignalR\\GameServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\cmartin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cmnbo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -59,8 +59,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\cmartin\\GitHub\\Interfaces\\JuegoSignalR\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\cmartin\\GitHub\\Interfaces\\JuegoSignalR\\Entidades\\Entidades.csproj"
+            "C:\\Users\\cmnbo\\GitHub\\Interfaces\\JuegoSignalR\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\cmnbo\\GitHub\\Interfaces\\JuegoSignalR\\Entidades\\Entidades.csproj"
             }
           }
         }

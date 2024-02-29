@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:JuegoSignalR.ViewModels"
              x:Class="JuegoSignalR.Views.GamePage"
              Title="GamePage">
+
+    <ContentPage.BindingContext>
+        <vm:GamePageVM></vm:GamePageVM>
+    </ContentPage.BindingContext>
+    
     <Grid BackgroundColor="White" ColumnSpacing="5" RowSpacing="5">
 
         <Grid.RowDefinitions>
@@ -53,7 +59,7 @@
          x:Name="LabelXScore" 
          Grid.Row="0"
          Grid.Column="3"
-         Text="0  "
+         Text="{Binding ScoreX}"
          FontSize="28"
          FontAttributes="Bold"
          HorizontalTextAlignment="End"
@@ -66,7 +72,7 @@
          x:Name="LabelOScore" 
          Grid.Row="1"
          Grid.Column="3"
-         Text="0  "
+         Text="{Binding ScoreO}"
          FontSize="28"
          FontAttributes="Bold"
          HorizontalTextAlignment="End"
@@ -82,9 +88,9 @@
          BackgroundColor="Pink"
          CornerRadius="0"
          FontSize="130"
-         Text=""
+         Text="{Binding TextoBotonClicado}"
          TextColor="White"
-         Command="{Binding ButtonClickCommand}"
+         Command="{Binding ButtonXorOCommand}"
          CommandParameter="Button1"
          />
         <Button
@@ -94,9 +100,9 @@
          BackgroundColor="Pink"
          CornerRadius="0"
          FontSize="130"
-         Text=""
+         Text="{Binding TextoBotonClicado}"
          TextColor="White"
-         Command="{Binding ButtonClickCommand}"
+         Command="{Binding ButtonXorOCommand}"
          CommandParameter="Button2"
          />
         <Button
@@ -106,9 +112,9 @@
          BackgroundColor="Pink"
          CornerRadius="0"
          FontSize="130"
-         Text=""
+         Text="{Binding TextoBotonClicado}"
          TextColor="White"
-         Command="{Binding ButtonClickCommand}"
+         Command="{Binding ButtonXorOCommand}"
          CommandParameter="Button3"
          />
         <Button
@@ -118,9 +124,9 @@
          BackgroundColor="Pink"
          CornerRadius="0"
          FontSize="130"
-         Text=""
+         Text="{Binding TextoBotonClicado}"
          TextColor="White"
-         Command="{Binding ButtonClickCommand}"
+         Command="{Binding ButtonXorOCommand}"
          CommandParameter="Button4"
          />
         <Button
@@ -130,9 +136,9 @@
          BackgroundColor="Pink"
          CornerRadius="0"
          FontSize="130"
-         Text=""
+         Text="{Binding TextoBotonClicado}"
          TextColor="White"
-         Command="{Binding ButtonClickCommand}"
+         Command="{Binding ButtonXorOCommand}"
          CommandParameter="Button5"
          />
         <Button
@@ -142,9 +148,9 @@
          BackgroundColor="Pink"
          CornerRadius="0"
          FontSize="130"
-         Text=""
+         Text="{Binding TextoBotonClicado}"
          TextColor="White"
-         Command="{Binding ButtonClickCommand}"
+         Command="{Binding ButtonXorOCommand}"
          CommandParameter="Button6"
          />
         <Button
@@ -154,9 +160,9 @@
          BackgroundColor="Pink"
          CornerRadius="0"
          FontSize="130"
-         Text=""
+         Text="{Binding TextoBotonClicado}"
          TextColor="White"
-         Command="{Binding ButtonClickCommand}"
+         Command="{Binding ButtonXorOCommand}"
          CommandParameter="Button7"
          />
         <Button
@@ -166,9 +172,9 @@
          BackgroundColor="Pink"
          CornerRadius="0"
          FontSize="130"
-         Text=""
+         Text="{Binding TextoBotonClicado}"
          TextColor="White"
-         Command="{Binding ButtonClickCommand}"
+         Command="{Binding ButtonXorOCommand}"
          CommandParameter="Button8"
          />
         <Button
@@ -178,9 +184,9 @@
          BackgroundColor="Pink"
          CornerRadius="0"
          FontSize="130"
-         Text=""
+         Text="{Binding TextoBotonClicado}"
          TextColor="White"
-         Command="{Binding ButtonClickCommand}"
+         Command="{Binding ButtonXorOCommand}"
          CommandParameter="Button9"
          />
         <Button
@@ -193,7 +199,8 @@
          Text="Reset"
          FontAttributes="Bold"
          TextColor="White"
-         
+         Command="{Binding ButtonResetCommand}"
+
          />
         <Button
          x:Name="ButtonNewGame"
@@ -205,7 +212,7 @@
          Text="New Game"
          FontAttributes="Bold"
          TextColor="White"
-         
+         Command="{Binding ButtonNewGameCommand}"
          />
         <Button
          x:Name="ButtonExit"
@@ -217,7 +224,7 @@
          Text="Exit"
          FontAttributes="Bold"
          TextColor="White"
-         
+         Command="{Binding ButtonExitCommand}"         
          />
     </Grid>
 </ContentPage>
