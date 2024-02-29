@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JuegoSignalR.Views.GamePage"
+             Title="GamePage">
+    <Grid BackgroundColor="White" ColumnSpacing="5" RowSpacing="5">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label 
+         x:Name="LabelX" 
+         Grid.Row="0"
+         Grid.Column="0"
+         Grid.ColumnSpan="2"
+         Text=" Player X Score:"
+         FontSize="28"
+         FontAttributes="Bold"
+         HorizontalTextAlignment="Start"
+         VerticalTextAlignment="Center"
+         TextColor="White"
+         FontFamily="Consolas"
+         Background="HotPink"
+         />
+        <Label 
+         x:Name="LabelO" 
+         Grid.Row="1"
+         Grid.Column="0"
+         Grid.ColumnSpan="2"
+         Text=" Player O Score:"
+         FontSize="28"
+         FontAttributes="Bold"
+         HorizontalTextAlignment="Start"
+         VerticalTextAlignment="Center"
+         TextColor="White"
+         FontFamily="Consolas"
+         Background="HotPink"
+         />
+
+        <Label 
+         x:Name="LabelXScore" 
+         Grid.Row="0"
+         Grid.Column="3"
+         Text="0  "
+         FontSize="28"
+         FontAttributes="Bold"
+         HorizontalTextAlignment="End"
+         VerticalTextAlignment="Center"
+         TextColor="White"
+         FontFamily="Consolas"
+         Background="HotPink"
+         />
+        <Label 
+         x:Name="LabelOScore" 
+         Grid.Row="1"
+         Grid.Column="3"
+         Text="0  "
+         FontSize="28"
+         FontAttributes="Bold"
+         HorizontalTextAlignment="End"
+         VerticalTextAlignment="Center"
+         TextColor="White"
+         FontFamily="Consolas"
+         Background="HotPink"
+         />
+        <Button
+         x:Name="Button1"
+         Grid.Row="4"
+         Grid.Column="0"
+         BackgroundColor="Pink"
+         CornerRadius="0"
+         FontSize="130"
+         Text=""
+         TextColor="White"
+         Command="{Binding ButtonClickCommand}"
+         CommandParameter="Button1"
+         />
+        <Button
+         x:Name="Button2"
+         Grid.Row="4"
+         Grid.Column="1"
+         BackgroundColor="Pink"
+         CornerRadius="0"
+         FontSize="130"
+         Text=""
+         TextColor="White"
+         Command="{Binding ButtonClickCommand}"
+         CommandParameter="Button2"
+         />
+        <Button
+         x:Name="Button3"
+         Grid.Row="4"
+         Grid.Column="2"
+         BackgroundColor="Pink"
+         CornerRadius="0"
+         FontSize="130"
+         Text=""
+         TextColor="White"
+         Command="{Binding ButtonClickCommand}"
+         CommandParameter="Button3"
+         />
+        <Button
+         x:Name="Button4"
+         Grid.Row="3"
+         Grid.Column="0"
+         BackgroundColor="Pink"
+         CornerRadius="0"
+         FontSize="130"
+         Text=""
+         TextColor="White"
+         Command="{Binding ButtonClickCommand}"
+         CommandParameter="Button4"
+         />
+        <Button
+         x:Name="Button5"
+         Grid.Row="3"
+         Grid.Column="1"
+         BackgroundColor="Pink"
+         CornerRadius="0"
+         FontSize="130"
+         Text=""
+         TextColor="White"
+         Command="{Binding ButtonClickCommand}"
+         CommandParameter="Button5"
+         />
+        <Button
+         x:Name="Button6"
+         Grid.Row="3"
+         Grid.Column="2"
+         BackgroundColor="Pink"
+         CornerRadius="0"
+         FontSize="130"
+         Text=""
+         TextColor="White"
+         Command="{Binding ButtonClickCommand}"
+         CommandParameter="Button6"
+         />
+        <Button
+         x:Name="Button7"
+         Grid.Row="2"
+         Grid.Column="0"
+         BackgroundColor="Pink"
+         CornerRadius="0"
+         FontSize="130"
+         Text=""
+         TextColor="White"
+         Command="{Binding ButtonClickCommand}"
+         CommandParameter="Button7"
+         />
+        <Button
+         x:Name="Button8"
+         Grid.Row="2"
+         Grid.Column="1"
+         BackgroundColor="Pink"
+         CornerRadius="0"
+         FontSize="130"
+         Text=""
+         TextColor="White"
+         Command="{Binding ButtonClickCommand}"
+         CommandParameter="Button8"
+         />
+        <Button
+         x:Name="Button9"
+         Grid.Row="2"
+         Grid.Column="2"
+         BackgroundColor="Pink"
+         CornerRadius="0"
+         FontSize="130"
+         Text=""
+         TextColor="White"
+         Command="{Binding ButtonClickCommand}"
+         CommandParameter="Button9"
+         />
+        <Button
+         x:Name="ButtonReset"
+         Grid.Row="5"
+         Grid.Column="0"
+         BackgroundColor="HotPink"
+         CornerRadius="0"
+         FontSize="15"
+         Text="Reset"
+         FontAttributes="Bold"
+         TextColor="White"
+         
+         />
+        <Button
+         x:Name="ButtonNewGame"
+         Grid.Row="5"
+         Grid.Column="1"
+         BackgroundColor="HotPink"
+         CornerRadius="0"
+         FontSize="15"
+         Text="New Game"
+         FontAttributes="Bold"
+         TextColor="White"
+         
+         />
+        <Button
+         x:Name="ButtonExit"
+         Grid.Row="5"
+         Grid.Column="2"
+         BackgroundColor="HotPink"
+         CornerRadius="0"
+         FontSize="15"
+         Text="Exit"
+         FontAttributes="Bold"
+         TextColor="White"
+         
+         />
+    </Grid>
+</ContentPage>

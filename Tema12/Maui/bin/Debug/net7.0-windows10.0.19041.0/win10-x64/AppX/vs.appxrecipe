@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-06T13:39:59.027</Modified>
+      <Modified>2024-02-29T08:58:11.832</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-02-06T13:39:58.812</Modified>
+      <Modified>2024-02-29T08:58:11.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.runtimeconfig.json">
       <PackagePath>Maui.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-30T12:15:53.552</Modified>
+      <Modified>2024-02-29T08:57:28.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.dll">
       <PackagePath>Maui.dll</PackagePath>
-      <Modified>2024-02-06T13:39:57.982</Modified>
+      <Modified>2024-02-29T08:58:10.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Maui.exe</PackagePath>
-      <Modified>2024-02-06T13:39:57.987</Modified>
+      <Modified>2024-02-29T08:58:10.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.deps.json">
       <PackagePath>Maui.deps.json</PackagePath>
-      <Modified>2024-01-30T12:15:53.438</Modified>
+      <Modified>2024-02-29T08:57:28.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.14\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -959,7 +959,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\GitHub\Interfaces\Tema12\Models\bin\Debug\net7.0\Models.dll">
       <PackagePath>Models.dll</PackagePath>
-      <Modified>2024-01-30T12:15:45.900</Modified>
+      <Modified>2024-02-29T08:57:20.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cmartin\.nuget\packages\microsoft.maui.controls.ref.win\7.0.101\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
