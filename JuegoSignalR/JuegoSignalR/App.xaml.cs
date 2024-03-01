@@ -1,4 +1,6 @@
-﻿namespace JuegoSignalR
+﻿using JuegoSignalR.Views;
+
+namespace JuegoSignalR
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            App.Current.MainPage = new GamePage();
         }
     }
 }

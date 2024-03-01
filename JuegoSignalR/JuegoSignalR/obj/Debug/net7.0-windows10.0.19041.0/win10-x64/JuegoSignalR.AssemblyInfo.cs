@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JuegoSignalR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+79fe60be4fe3e0c20418f5f84b94a62426988ff3")]
 [assembly: System.Reflection.AssemblyProductAttribute("JuegoSignalR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JuegoSignalR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

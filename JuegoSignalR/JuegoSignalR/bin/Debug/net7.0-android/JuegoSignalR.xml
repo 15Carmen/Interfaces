@@ -4,6 +4,33 @@
         <name>JuegoSignalR</name>
     </assembly>
     <members>
+        <member name="M:JuegoSignalR.ViewModels.GamePageVM.ButtonResetCommand_Execute">
+            <summary>
+            Método que reiniciará el juego, es decir, limpiará los botones para que tengan
+            el texto en blanco y reactivará los botones que se hayan desactivado.
+            </summary>
+        </member>
+        <member name="M:JuegoSignalR.ViewModels.GamePageVM.ButtonNewGameCommand_Execute">
+            <summary>
+            Método que empezará un juego completamente nuevo, por lo que reiniciará las 
+            puntuaciones de los jugadores, limpiará los botones para que tengan el texto en
+            blanco y reactivará los botones que se hayan desactivado
+            </summary>
+        </member>
+        <member name="M:JuegoSignalR.ViewModels.GamePageVM.ButtonExitCommand_Execute">
+            <summary>
+            Método que saldrá de la aplicación. Se le mostrará al usuario un mensaje de 
+            confirmación preguntando si está seguro de salir. La aplicación se cerrará si el 
+            usuario lo confirma.
+            </summary>
+        </member>
+        <member name="M:JuegoSignalR.ViewModels.GamePageVM.CheckForWin">
+            <summary>
+            Método que comprueba si hay un ganador después de cada movimiento.
+            Actualizará las puntuaciones de los jugadores si es necesario.
+            Mostrará un mensahe de ganador, de perdedor o de empate según corresponda.
+            </summary>
+        </member>
         <member name="M:JuegoSignalR.ViewModels.Utils.DelegateCommand.#ctor(System.Action)">
             <summary>
             Initializes a new instance of the RelayCommand class that 
